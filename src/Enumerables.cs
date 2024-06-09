@@ -1,0 +1,222 @@
+namespace Extensions;
+
+/// <summary>
+/// The <c>Enumerables</c> class provides additional operations on the <see cref="IEnumerable{T}"/> type.
+/// </summary>
+public static class Enumerables
+{
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> that contains the same elements as this one, but that only evaluates
+    /// them once upon first emission from an associated <see cref="IEnumerator{T}"/>.
+    /// </summary>
+    /// <remarks>Note that this method is not semantically equivalent to those that force immediate evaluation (e.g.,
+    /// <see cref="Enumerable.ToList{TSource}(IEnumerable{TSource})"/> since the elements contained by the new <see
+    /// cref="IEnumerable{T}"/> are still lazily evaluated during an initial enumeration, but are not reevaluated during
+    /// subsequent ones. Caution using this method is advised since it may alter the expected sematics of enumeration.
+    /// Specifically, the effect of adding or removing elements from the data structure that backs this <see
+    /// cref="IEnumerable{T}"/> will not be observed by enumerating the returned <see cref="IEnumerable{T}"/>.
+    /// Additionally, no guarantees are made with respect to the thread safety of the cached <see
+    /// cref="IEnumerable{T}"/>, and concurrent iterations should be externally synchronized.</remarks>
+    public static IEnumerable<TElement> Cached<TElement>(this IEnumerable<TElement> elements)
+    {
+        return new CachedEnumerable<TElement>(elements);
+    }
+
+    /// <summary>
+    /// Determines whether any element in this <see cref="IEnumerable{T}"/> does not satisfy the specified <paramref
+    /// name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TElement"/> to <see cref="bool"/>.</param>
+    /// <returns><c>true</c> if at least one element from this <see cref="IEnumerable{T}"/> does not satisfy the
+    /// specified <paramref name="predicate"/>.</returns>
+    public static bool NotAll<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
+    {
+        return elements.Any(element => !predicate(element));
+    }
+
+    /// <summary>
+    /// Determines whether this <see cref="IEnumerable{T}"/> is empty.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns><c>true</c> if this <see cref="IEnumerable{T}"/> contains no elements.</returns>
+    public static bool NotAny<TElement>(this IEnumerable<TElement> elements)
+    {
+        return !elements.Any();
+    }
+
+    /// <summary>
+    /// Determines whether no element in this <see cref="IEnumerable{T}"/> satisfies the specified <paramref
+    /// name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TElement"/> to <see cref="bool"/>.</param>
+    /// <returns><c>true</c> if the specified <paramref name="predicate"/> is not satisfied by any element in this <see
+    /// cref="IEnumerable{T}"/>.</returns>
+    public static bool NotAny<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
+    {
+        return !elements.Any(predicate);
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by applying the specified <paramref name="selector"/> to the
+    /// elements in this one, retaining only those projections that are not <c>null</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TResult">The type that the specified <paramref name="selector"/> projects elements in this <see
+    /// cref="IEnumerable{T}"/> to.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A function from <typeparamref name="TElement"/> to <typeparamref
+    /// name="TResult"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TResult> SelectNotNull<TElement, TResult>(this IEnumerable<TElement> elements, Func<TElement, TResult?> selector)
+    {
+        return elements.Select(selector)
+                       .WhereNotNull()
+                       .Cast<TResult>();
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by applying the specified <paramref name="selector"/> to each
+    /// element in this one, and associating each value produced with that element.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TKey">The type of value associated with each element in this <see
+    /// cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A binary relation from <typeparamref name="TElement"/> to <typeparamref
+    /// name="TKey"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/> that associates each element in this one to the values produced by
+    /// applying the specified <paramref name="selector"/> to it.</returns>
+    public static IEnumerable<(TKey key, TElement element)> SelectPairs<TElement, TKey>(this IEnumerable<TElement> elements,
+                                                                                        Func<TElement, IEnumerable<TKey>> selector)
+    {
+        return elements.SelectMany(element => selector.Invoke(element)
+                                                      .Select(key => (key, element)));
+    }
+
+    /// <summary>
+    /// Provides the hash code for this <see cref="IEnumerable{T}"/>, computed over the elements it contains.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>The has code for this <see cref="IEnumerable{T}"/>.</returns>
+    public static int SequenceHashCode<TElement>(this IEnumerable<TElement> elements)
+    {
+        return elements.Aggregate(new HashCode(), Add, hash => hash.ToHashCode());
+    }
+
+    private static HashCode Add<TElement>(HashCode hash, TElement element)
+    {
+        hash.Add(element);
+        return hash;
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting the elements emitted by this one that satisfy the
+    /// specified <paramref name="predicate"/> when combined by the specified <paramref name="accumulator"/>. The
+    /// combination against which the specified <paramref name="predicate"/> is evaluated is initialized by the
+    /// specified <paramref name="seed"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TAccumulate">The type into which elements from this <see cref="IEnumerable{T}"/> are combined,
+    /// and against which the specified <paramref name="predicate"/> is evaluated.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="seed">The initial value from <typeparamref name="TAccumulate"/> with which elements from this <see
+    /// cref="IEnumerable{T}"/> are combined.</param>
+    /// <param name="accumulator">A function from <typeparamref name="TAccumulate"/>-<typeparamref name="TElement"/>
+    /// pairs to <typeparamref name="TAccumulate"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TAccumulate"/> to <see cref="bool"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/> that contains the elements emitted by the enumerator for this one
+    /// until their combination, induced by the specified <paramref name="accumulator"/>, no longer satisfies the
+    /// specified <paramref name="predicate"/>.</returns>
+    public static IEnumerable<TElement> TakeWhileAggregate<TElement, TAccumulate>(this IEnumerable<TElement> elements,
+                                                                                  TAccumulate seed,
+                                                                                  Func<TAccumulate, TElement, TAccumulate> accumulator,
+                                                                                  Func<TAccumulate, bool> predicate)
+    {
+        foreach (var element in elements)
+        {
+            seed = accumulator(seed, element);
+            if (predicate(seed))
+            {
+                yield return element;
+            }
+            else
+            {
+                yield break;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Verifies that no pair of elements in this <see cref="IEnumerable{T}"/> are equal.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/> containing the elements from this one if no pair of them are
+    /// equal.</returns>
+    /// <exception cref="InvalidOperationException">If any pair of elements in this <see cref="IEnumerable{T}"/> are
+    /// equal.</exception>
+    public static IEnumerable<TElement> ThrowIfDuplicates<TElement>(this IEnumerable<TElement> elements)
+    {
+        return ThrowIfDuplicatesBy(elements, IdentityFunction.Make<TElement>());
+    }
+
+    /// <summary>
+    /// Verifies that the specified <paramref name="selector"/> maps every element in this <see cref="IEnumerable{T}"/>
+    /// to a unique value from <typeparamref name="TKey"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
+    /// uniqueness.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A function from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/> containing the elements from this one if the specified <paramref
+    /// name="selector"/> maps every element in it to a unique value from <typeparamref name="TKey"/>.</returns>
+    /// <exception cref="InvalidOperationException">If the specified <paramref name="selector"/> does not map every
+    /// element in this <see cref="IEnumerable{T}"/> to a unique value in <typeparamref name="TKey"/>.</exception>
+    public static IEnumerable<TElement> ThrowIfDuplicatesBy<TElement, TKey>(this IEnumerable<TElement> elements, Func<TElement, TKey> selector)
+    {
+        var keys = new HashSet<TKey>();
+        foreach (var element in elements)
+        {
+            if (keys.Add(selector(element)))
+            {
+                yield return element;
+            }
+            else
+            {
+                throw new InvalidOperationException();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements in this one that do not satisfy
+    /// the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TElements">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TElements"/> to <see cref="bool"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElements> WhereNot<TElements>(this IEnumerable<TElements> elements, Func<TElements, bool> predicate)
+    {
+        return elements.Where(element => !predicate(element));
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements in this one that are not
+    /// <c>null</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> WhereNotNull<TElement>(this IEnumerable<TElement> elements)
+    {
+        return elements.Where(element => element is not null);
+    }
+}
