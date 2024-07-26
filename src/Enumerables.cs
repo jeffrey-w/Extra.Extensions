@@ -6,20 +6,96 @@ namespace Extensions;
 public static class Enumerables
 {
     /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by including the specified <paramref name="element"/> at the
+    /// end of this one, if it satisfies the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TElement"/> to <see cref="bool"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> AppendIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
+    {
+        return predicate(element) ? elements.Append(element) : elements;
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by including the specified <paramref name="element"/> at the
+    /// end of this one, if it is not <c>null</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> AppendIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement element)
+    {
+        return elements.AppendIf(element, element => element is not null);
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by including the specified <paramref name="element"/> at the
+    /// beginning of this one, if it satisfies the specified <paramref name="predicate"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TElement"/> to <see cref="bool"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> PrependIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
+    {
+        return predicate(element) ? elements.Prepend(element) : elements;
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by including the specified <paramref name="element"/> at the
+    /// beginning of this one, if it is not <c>null</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> PrependIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement element)
+    {
+        return elements.PrependIf(element, element => element is not null);
+    }
+    
+    /// <summary>
     /// Provides the <see cref="IEnumerable{T}"/> that contains the same elements as this one, but that only evaluates
     /// them once upon first emission from an associated <see cref="IEnumerator{T}"/>.
     /// </summary>
     /// <remarks>Note that this method is not semantically equivalent to those that force immediate evaluation (e.g.,
-    /// <see cref="Enumerable.ToList{TSource}(IEnumerable{TSource})"/> since the elements contained by the new <see
+    /// <see cref="Enumerable.ToList{TSource}(IEnumerable{TSource})"/>) since the elements contained by the new <see
     /// cref="IEnumerable{T}"/> are still lazily evaluated during an initial enumeration, but are not reevaluated during
-    /// subsequent ones. Caution using this method is advised since it may alter the expected sematics of enumeration.
+    /// subsequent ones. Caution using this method is advised since it may alter the expected semantics of enumeration.
     /// Specifically, the effect of adding or removing elements from the data structure that backs this <see
     /// cref="IEnumerable{T}"/> will not be observed by enumerating the returned <see cref="IEnumerable{T}"/>.
     /// Additionally, no guarantees are made with respect to the thread safety of the cached <see
     /// cref="IEnumerable{T}"/>, and concurrent iterations should be externally synchronized.</remarks>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
     public static IEnumerable<TElement> Cached<TElement>(this IEnumerable<TElement> elements)
     {
         return new CachedEnumerable<TElement>(elements);
+    }
+
+    /// <summary>
+    /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
+    /// </summary>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <returns><c>true</c> if this <see cref="IEnumerable{T}"/> is a singleton.</returns>
+    public static bool IsSingleton<TElement>(this IEnumerable<TElement> elements)
+    {
+        var count = 0;
+        foreach (var _ in elements)
+        {
+            if (++count > 1)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     /// <summary>
