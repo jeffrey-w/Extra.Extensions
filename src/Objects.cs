@@ -13,17 +13,7 @@ public static class Objects
     /// <returns>The <see cref="Type"/>s to which this <see cref="object"/> belongs.</returns>
     public static IEnumerable<Type> GetEveryType(this object obj)
     {
-        var type = obj.GetType();
-        var parent = type.BaseType;
-        yield return type;
-        while (parent is not null && !parent.Equals(typeof(object)))
-        {
-            yield return parent;
-            parent = parent.BaseType;
-        }
-        foreach(var @interface in type.GetInterfaces())
-        {
-            yield return @interface;
-        }
+        return obj.GetType()
+                  .GetEveryBaseType();
     }
 }
