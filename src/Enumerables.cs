@@ -216,9 +216,9 @@ public static class Enumerables
     {
         foreach (var element in elements)
         {
-            seed = accumulator(seed, element);
             if (predicate(seed))
             {
+                seed = accumulator(seed, element);
                 yield return element;
             }
             else
