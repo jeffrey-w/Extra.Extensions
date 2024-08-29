@@ -4,19 +4,19 @@ namespace Extensions;
 
 internal sealed class CachedEnumerable<TElement>(IEnumerable<TElement> elements) : IEnumerable<TElement>
 {
-    private readonly List<TElement> cache = [];
-    private readonly IEnumerator<TElement> enumerator = elements.GetEnumerator();
+    private readonly List<TElement> _cache = [];
+    private readonly IEnumerator<TElement> _enumerator = elements.GetEnumerator();
 
     public IEnumerator<TElement> GetEnumerator()
     {
-        foreach (var element in cache)
+        foreach (var element in _cache)
         {
             yield return element;
         }
-        while (enumerator.MoveNext())
+        while (_enumerator.MoveNext())
         {
-            cache.Add(enumerator.Current);
-            yield return enumerator.Current;
+            _cache.Add(_enumerator.Current);
+            yield return _enumerator.Current;
         }
     }
 
