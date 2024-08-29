@@ -80,6 +80,20 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Performs the specified <paramref name="action"/> on each element in this <see cref="IEnumerable{T}"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="action">The logic to execute against each element in this <see cref="IEnumerable{T}"/>.</param>
+    public static void ForEach<TElement>(this IEnumerable<TElement> elements, Action<TElement> action)
+    {
+        foreach (var element in elements)
+        {
+            action(element);
+        }
+    }
+
+    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
@@ -189,6 +203,32 @@ public static class Enumerables
     {
         hash.Add(element);
         return hash;
+    }
+
+    /// <summary>
+    /// Provides the elements in this <see cref="IEnumerable{T}"/> in a random order.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements)
+    {
+        return elements.Shuffle(new Random());
+    }
+
+    /// <summary>
+    /// Provides the elements in this <see cref="IEnumerable{T}"/> in a random order induced by the specified <paramref
+    /// name="random"/> number generator.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="random">A source of randomness.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements, Random random)
+    {
+        return elements.Select(element => new { Ordinal = random.Next(), Element = element })
+                       .OrderBy(obj => obj.Ordinal)
+                       .Select(obj => obj.Element);
     }
 
     /// <summary>
