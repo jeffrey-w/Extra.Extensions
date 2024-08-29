@@ -15,6 +15,6 @@ public static class IdentityFunction
     /// itself.</returns>
     public static Func<TElement, TElement> Make<TElement>()
     {
-        return (TElement element) => element;
+        return element => element;
     }
 }
