@@ -245,18 +245,19 @@ public static class Enumerables
     /// cref="IEnumerable{T}"/> are combined.</param>
     /// <param name="accumulator">A function from <typeparamref name="TAccumulate"/>-<typeparamref name="TElement"/>
     /// pairs to <typeparamref name="TAccumulate"/>.</param>
-    /// <param name="predicate">A function from <typeparamref name="TAccumulate"/> to <see cref="bool"/>.</param>
+    /// <param name="predicate">A function from <typeparamref name="TAccumulate"/>-<typeparamref name="TElement"/> pairs
+    /// to <see cref="bool"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/> that contains the elements emitted by the enumerator for this one
     /// until their combination, induced by the specified <paramref name="accumulator"/>, no longer satisfies the
     /// specified <paramref name="predicate"/>.</returns>
     public static IEnumerable<TElement> TakeWhileAggregate<TElement, TAccumulate>(this IEnumerable<TElement> elements,
                                                                                   TAccumulate seed,
                                                                                   Func<TAccumulate, TElement, TAccumulate> accumulator,
-                                                                                  Func<TAccumulate, bool> predicate)
+                                                                                  Func<TAccumulate, TElement, bool> predicate)
     {
         foreach (var element in elements)
         {
-            if (predicate(seed))
+            if (predicate(seed, element))
             {
                 seed = accumulator(seed, element);
                 yield return element;
