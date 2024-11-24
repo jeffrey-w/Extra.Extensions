@@ -17,7 +17,8 @@ public static class Members
     /// <returns><c>true</c> if this <see cref="MemberInfo"/> has the specified <see cref="Attribute"/>.</returns>
     public static bool HasCustomAttribute<TAttribute>(this MemberInfo member) where TAttribute : Attribute
     {
-        return member.GetCustomAttribute<TAttribute>() is not null;
+        return member.GetCustomAttributes<TAttribute>()
+                     .Any();
     }
 
     /// <summary>
