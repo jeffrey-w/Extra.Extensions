@@ -27,9 +27,9 @@ public static class Enumerables
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
-    public static IEnumerable<TElement> AppendIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement element)
+    public static IEnumerable<TElement> AppendIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
     {
-        return elements.AppendIf(element, element => element is not null);
+        return elements.AppendIf(element!, element => element is not null);
     }
 
     /// <summary>
@@ -54,9 +54,9 @@ public static class Enumerables
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="element">The item to include in the new <see cref="IEnumerable{T}"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
-    public static IEnumerable<TElement> PrependIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement element)
+    public static IEnumerable<TElement> PrependIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
     {
-        return elements.PrependIf(element, element => element is not null);
+        return elements.PrependIf(element!, element => element is not null);
     }
     
     /// <summary>
