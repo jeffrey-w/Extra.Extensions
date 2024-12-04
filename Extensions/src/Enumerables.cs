@@ -94,6 +94,24 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Provides the <see cref="IGrouping{TKey,TElement}"/>s induced by applying the specified <paramref name="selector"/>
+    /// to each element in this <see cref="IEnumerable{T}"/>, and associating each value produced with that element.
+    /// </summary>
+    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A binary relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <returns><see cref="IGrouping{TKey,TValue}"/>s that associate each element in this <see cref="IEnumerable{T}"/>
+    /// with its images under the specified <paramref name="selector"/>.</returns>
+    public static IEnumerable<IGrouping<TKey, TElement>> GroupByInverse<TKey, TElement>(this IEnumerable<TElement> elements,
+                                                                                        Func<TElement, IEnumerable<TKey>> selector)
+    {
+        return elements.SelectMany(element => selector.Invoke(element)
+                                                      .Select(key => (key, element)))
+                       .GroupBy(pair => pair.key, pair => pair.element);
+    }
+
+    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
@@ -167,25 +185,6 @@ public static class Enumerables
         return elements.Select(selector)
                        .WhereNotNull()
                        .Cast<TResult>();
-    }
-
-    /// <summary>
-    /// Provides the <see cref="IEnumerable{T}"/> induced by applying the specified <paramref name="selector"/> to each
-    /// element in this one, and associating each value produced with that element.
-    /// </summary>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <typeparam name="TKey">The type of value associated with each element in this <see
-    /// cref="IEnumerable{T}"/>.</typeparam>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="selector">A binary relation from <typeparamref name="TElement"/> to <typeparamref
-    /// name="TKey"/>.</param>
-    /// <returns>A new <see cref="IEnumerable{T}"/> that associates each element in this one to the values produced by
-    /// applying the specified <paramref name="selector"/> to it.</returns>
-    public static IEnumerable<(TKey key, TElement element)> SelectPairs<TElement, TKey>(this IEnumerable<TElement> elements,
-                                                                                        Func<TElement, IEnumerable<TKey>> selector)
-    {
-        return elements.SelectMany(element => selector.Invoke(element)
-                                                      .Select(key => (key, element)));
     }
 
     /// <summary>
