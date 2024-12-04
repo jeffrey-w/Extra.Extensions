@@ -17,6 +17,7 @@ public static class Parameters
     /// <returns><c>true</c> if this <see cref="ParameterInfo"/> has the specified <see cref="Attribute"/>.</returns>
     public static bool HasCustomAttribute<TAttribute>(this ParameterInfo parameter) where TAttribute : Attribute
     {
-        return parameter.GetCustomAttribute<TAttribute>() is not null;
+        return parameter.GetCustomAttributes<TAttribute>()
+                        .Any();
     }
 }
