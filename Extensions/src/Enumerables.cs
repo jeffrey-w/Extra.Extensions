@@ -80,6 +80,28 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> that contains every element from this one, and those induced by
+    /// applying the specified <paramref name="selector"/> to them.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A function over <typeparamref name="TElement"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<TElement> ConcatSelection<TElement>(this IEnumerable<TElement> elements, Func<TElement, TElement> selector)
+    {
+        var selected = Enumerable.Empty<TElement>();
+        foreach (var element in elements)
+        {
+            selected = selected.Append(selector(element));
+            yield return element;
+        }
+        foreach (var element in selected)
+        {
+            yield return element;
+        }
+    }
+
+    /// <summary>
     /// Performs the specified <paramref name="action"/> on each element in this <see cref="IEnumerable{T}"/>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -112,10 +134,36 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Provides a new <see cref="IEitherEnumerable{TElement}"/> containing the elements from this <see cref="IEnumerable{T}"/>,
+    /// which can be transformed only if the specified <paramref name="flag"/> is <c>true</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="flag">An arbitrary condition.</param>
+    /// <returns>A new <see cref="IEitherEnumerable{TElement}"/>.</returns>
+    public static IEitherEnumerable<TElement> If<TElement>(this IEnumerable<TElement> elements, bool flag)
+    {
+        return new EitherEnumerable<TElement>(elements, flag);
+    }
+
+    /// <summary>
+    /// Provides a new <see cref="IEitherEnumerable{TElement}"/> containing the elements from this <see cref="IEnumerable{T}"/>,
+    /// which can be transformed only if the specified <paramref name="expression"/> is <c>true</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="expression">An arbitrary statement.</param>
+    /// <returns>A new <see cref="IEitherEnumerable{TElement}"/>.</returns>
+    public static IEitherEnumerable<TElement> If<TElement>(this IEnumerable<TElement> elements, Func<bool> expression)
+    {
+        return new EitherEnumerable<TElement>(elements, expression());
+    }
+
+    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <returns><c>true</c> if this <see cref="IEnumerable{T}"/> is a singleton.</returns>
     public static bool IsSingleton<TElement>(this IEnumerable<TElement> elements)
     {
