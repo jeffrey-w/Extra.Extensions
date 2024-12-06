@@ -85,20 +85,14 @@ public static class Enumerables
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="selector">A function over <typeparamref name="TElement"/>.</param>
+    /// <param name="selector">A relation over <typeparamref name="TElement"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
-    public static IEnumerable<TElement> ConcatSelection<TElement>(this IEnumerable<TElement> elements, Func<TElement, TElement> selector)
+    public static IEnumerable<TElement> ConcatSelection<TElement>(
+        this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TElement>> selector)
     {
-        var selected = Enumerable.Empty<TElement>();
-        foreach (var element in elements)
-        {
-            selected = selected.Append(selector(element));
-            yield return element;
-        }
-        foreach (var element in selected)
-        {
-            yield return element;
-        }
+        return elements.Aggregate(ConcatSelectionAggregator.Empty<TElement>(),
+                                  (aggregator, element) => aggregator.Add(element, selector),
+                                  aggregator => aggregator.ToEnumerable());
     }
 
     /// <summary>
