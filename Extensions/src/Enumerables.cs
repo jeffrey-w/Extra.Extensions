@@ -110,50 +110,6 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the <see cref="IGrouping{TKey,TElement}"/>s induced by applying the specified <paramref name="selector"/>
-    /// to each element in this <see cref="IEnumerable{T}"/>, and associating each value produced with that element.
-    /// </summary>
-    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="selector">A binary relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
-    /// <returns><see cref="IGrouping{TKey,TValue}"/>s that associate each element in this <see cref="IEnumerable{T}"/>
-    /// with its images under the specified <paramref name="selector"/>.</returns>
-    public static IEnumerable<IGrouping<TKey, TElement>> GroupByInverse<TKey, TElement>(this IEnumerable<TElement> elements,
-                                                                                        Func<TElement, IEnumerable<TKey>> selector)
-    {
-        return elements.SelectMany(element => selector.Invoke(element)
-                                                      .Select(key => (key, element)))
-                       .GroupBy(pair => pair.key, pair => pair.element);
-    }
-
-    /// <summary>
-    /// Provides a new <see cref="IEitherEnumerable{TElement}"/> containing the elements from this <see cref="IEnumerable{T}"/>,
-    /// which can be transformed only if the specified <paramref name="flag"/> is <c>true</c>.
-    /// </summary>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="flag">An arbitrary condition.</param>
-    /// <returns>A new <see cref="IEitherEnumerable{TElement}"/>.</returns>
-    public static IEitherEnumerable<TElement> If<TElement>(this IEnumerable<TElement> elements, bool flag)
-    {
-        return new EitherEnumerable<TElement>(elements, flag);
-    }
-
-    /// <summary>
-    /// Provides a new <see cref="IEitherEnumerable{TElement}"/> containing the elements from this <see cref="IEnumerable{T}"/>,
-    /// which can be transformed only if the specified <paramref name="expression"/> is <c>true</c>.
-    /// </summary>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="expression">An arbitrary statement.</param>
-    /// <returns>A new <see cref="IEitherEnumerable{TElement}"/>.</returns>
-    public static IEitherEnumerable<TElement> If<TElement>(this IEnumerable<TElement> elements, Func<bool> expression)
-    {
-        return new EitherEnumerable<TElement>(elements, expression());
-    }
-
-    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -351,6 +307,87 @@ public static class Enumerables
                 throw new InvalidOperationException();
             }
         }
+    }
+    
+    /// <summary>
+    /// Provides the <see cref="IDictionary{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
+    /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimage.
+    /// </summary>
+    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <returns>A new <see cref="IDictionary{TKey,TValue}"/>.</returns>
+    /// <exception cref="ArgumentException">If the inverse of the specified <paramref name="selector"/> applied to the
+    /// elements from <typeparamref name="TKey"/> does not define a function to <typeparamref name="TElement"/>.</exception>
+    public static IDictionary<TKey, TElement> ToDictionaryInverse<TKey, TElement>(
+        this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector) where TKey : notnull
+    {
+        return elements.SelectMany(element => MakePairs(element, selector(element)))
+                       .ToDictionary(pair => pair.key, pair => pair.element);
+    }
+
+    /// <summary>
+    /// Provides the <see cref="IDictionary{TKey,TValue}"/> induced by applying the specified <paramref name="keySelector"/>
+    /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
+    /// applying the specified <paramref name="valueSelector"/> to its preimage.
+    /// </summary>
+    /// <typeparam name="TKey">The type of value associated with the image of each element in this <see cref="IEnumerable{T}"/>
+    /// from <typeparamref name="TValue"/>.</typeparam>
+    /// <typeparam name="TValue">The type to which each element in this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="keySelector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <param name="valueSelector">A function from <typeparamref name="TElement"/> to <typeparamref name="TValue"/>.</param>
+    /// <returns>A new <see cref="IDictionary{TKey,TValue}"/>.</returns>
+    /// <exception cref="ArgumentException">If the inverse of the specified <paramref name="keySelector"/> applied to the
+    /// elements from <typeparamref name="TKey"/> does not define a function to <typeparamref name="TElement"/>.</exception>
+    public static IDictionary<TKey, TValue> ToDictionaryInverse<TKey, TValue, TElement>(
+        this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector) where TKey : notnull
+    {
+        return elements.SelectMany(element => MakePairs(valueSelector.Invoke(element), keySelector(element)))
+                       .ToDictionary(pair => pair.key, pair => pair.element);
+    }
+
+    /// <summary>
+    /// Provides the <see cref="ILookup{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
+    /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimages.
+    /// </summary>
+    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <returns>A new <see cref="ILookup{TKey,TValue}"/>.</returns>
+    public static ILookup<TKey, TElement> ToLookupInverse<TKey, TElement>(
+        this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector)
+    {
+        return elements.SelectMany(element => MakePairs(element, selector(element)))
+                       .ToLookup(pair => pair.key, pair => pair.element);
+    }
+
+    /// <summary>
+    /// Provides the <see cref="ILookup{TKey,TValue}"/> induced by applying the specified <paramref name="keySelector"/>
+    /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
+    /// applying the specified <paramref name="valueSelector"/> to its preimages.
+    /// </summary>
+    /// <typeparam name="TKey">The type of value associated with the image of each element in this <see cref="IEnumerable{T}"/>
+    /// from <typeparamref name="TValue"/>.</typeparam>
+    /// <typeparam name="TValue">The type to which each element in this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="keySelector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
+    /// <param name="valueSelector">A function from <typeparamref name="TElement"/> to <typeparamref name="TValue"/>.</param>
+    /// <returns>A new <see cref="ILookup{TKey,TValue}"/>.</returns>
+    public static ILookup<TKey, TValue> ToLookupInverse<TKey, TValue, TElement>(
+        this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector)
+    {
+        return elements.SelectMany(element => MakePairs(valueSelector(element), keySelector(element)))
+                       .ToLookup(pair => pair.key, pair => pair.element);
+    }
+    
+    private static IEnumerable<(TKey key, TElement element)> MakePairs<TKey, TElement>(TElement element, IEnumerable<TKey> keys)
+    {
+        return keys.Select(key => (key, element));
     }
 
     /// <summary>
