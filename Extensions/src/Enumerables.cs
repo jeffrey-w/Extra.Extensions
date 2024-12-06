@@ -96,11 +96,11 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Performs the specified <paramref name="action"/> on each element in this <see cref="IEnumerable{T}"/>.
+    /// Performs the specified <paramref name="action"/> on each element from this <see cref="IEnumerable{T}"/>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <param name="action">The logic to execute against each element in this <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="action">The logic to execute against each element from this <see cref="IEnumerable{T}"/>.</param>
     public static void ForEach<TElement>(this IEnumerable<TElement> elements, Action<TElement> action)
     {
         foreach (var element in elements)
@@ -129,7 +129,7 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Determines whether any element in this <see cref="IEnumerable{T}"/> does not satisfy the specified <paramref
+    /// Determines whether any element from this <see cref="IEnumerable{T}"/> does not satisfy the specified <paramref
     /// name="predicate"/>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -154,13 +154,13 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Determines whether no element in this <see cref="IEnumerable{T}"/> satisfies the specified <paramref
+    /// Determines whether no element from this <see cref="IEnumerable{T}"/> satisfies the specified <paramref
     /// name="predicate"/>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="predicate">A function from <typeparamref name="TElement"/> to <see cref="bool"/>.</param>
-    /// <returns><c>true</c> if the specified <paramref name="predicate"/> is not satisfied by any element in this <see
+    /// <returns><c>true</c> if the specified <paramref name="predicate"/> is not satisfied by any element from this <see
     /// cref="IEnumerable{T}"/>.</returns>
     public static bool NotAny<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
     {
@@ -169,10 +169,10 @@ public static class Enumerables
 
     /// <summary>
     /// Provides the <see cref="IEnumerable{T}"/> induced by applying the specified <paramref name="selector"/> to the
-    /// elements in this one, retaining only those projections that are not <c>null</c>.
+    /// elements from this one, retaining only those projections that are not <c>null</c>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <typeparam name="TResult">The type that the specified <paramref name="selector"/> projects elements in this <see
+    /// <typeparam name="TResult">The type that the specified <paramref name="selector"/> projects elements from this <see
     /// cref="IEnumerable{T}"/> to.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A function from <typeparamref name="TElement"/> to <typeparamref
@@ -203,7 +203,7 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the elements in this <see cref="IEnumerable{T}"/> in a random order.
+    /// Provides the elements from this <see cref="IEnumerable{T}"/> in a random order.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
@@ -214,7 +214,7 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the elements in this <see cref="IEnumerable{T}"/> in a random order induced by the specified <paramref
+    /// Provides the elements from this <see cref="IEnumerable{T}"/> in a random order induced by the specified <paramref
     /// name="random"/> number generator.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -267,13 +267,13 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Verifies that no pair of elements in this <see cref="IEnumerable{T}"/> are equal.
+    /// Verifies that no pair of elements from this <see cref="IEnumerable{T}"/> are equal.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/> containing the elements from this one if no pair of them are
     /// equal.</returns>
-    /// <exception cref="InvalidOperationException">If any pair of elements in this <see cref="IEnumerable{T}"/> are
+    /// <exception cref="InvalidOperationException">If any pair of elements from this <see cref="IEnumerable{T}"/> are
     /// equal.</exception>
     public static IEnumerable<TElement> ThrowIfDuplicates<TElement>(this IEnumerable<TElement> elements)
     {
@@ -281,19 +281,19 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Verifies that the specified <paramref name="selector"/> maps every element in this <see cref="IEnumerable{T}"/>
+    /// Verifies that the specified <paramref name="selector"/> maps every element from this <see cref="IEnumerable{T}"/>
     /// to a unique value from <typeparamref name="TKey"/>.
     /// </summary>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
     /// uniqueness.</typeparam>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A function from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/> containing the elements from this one if the specified <paramref
     /// name="selector"/> maps every element in it to a unique value from <typeparamref name="TKey"/>.</returns>
     /// <exception cref="InvalidOperationException">If the specified <paramref name="selector"/> does not map every
-    /// element in this <see cref="IEnumerable{T}"/> to a unique value in <typeparamref name="TKey"/>.</exception>
-    public static IEnumerable<TElement> ThrowIfDuplicatesBy<TElement, TKey>(this IEnumerable<TElement> elements, Func<TElement, TKey> selector)
+    /// element from this <see cref="IEnumerable{T}"/> to a unique value in <typeparamref name="TKey"/>.</exception>
+    public static IEnumerable<TElement> ThrowIfDuplicatesBy<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, TKey> selector)
     {
         var keys = new HashSet<TKey>();
         foreach (var element in elements)
@@ -313,7 +313,8 @@ public static class Enumerables
     /// Provides the <see cref="IDictionary{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimage.
     /// </summary>
-    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
+    /// uniqueness.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
@@ -332,16 +333,16 @@ public static class Enumerables
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
     /// applying the specified <paramref name="valueSelector"/> to its preimage.
     /// </summary>
-    /// <typeparam name="TKey">The type of value associated with the image of each element in this <see cref="IEnumerable{T}"/>
-    /// from <typeparamref name="TValue"/>.</typeparam>
-    /// <typeparam name="TValue">The type to which each element in this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
+    /// uniqueness.</typeparam>
+    /// <typeparam name="TValue">The type to which each element from this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="keySelector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
     /// <param name="valueSelector">A function from <typeparamref name="TElement"/> to <typeparamref name="TValue"/>.</param>
     /// <returns>A new <see cref="IDictionary{TKey,TValue}"/>.</returns>
     /// <exception cref="ArgumentException">If the inverse of the specified <paramref name="keySelector"/> applied to the
-    /// elements from <typeparamref name="TKey"/> does not define a function to <typeparamref name="TElement"/>.</exception>
+    /// elements from <typeparamref name="TKey"/> does not define a function to <typeparamref name="TValue"/>.</exception>
     public static IDictionary<TKey, TValue> ToDictionaryInverse<TKey, TValue, TElement>(
         this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector) where TKey : notnull
     {
@@ -353,7 +354,8 @@ public static class Enumerables
     /// Provides the <see cref="ILookup{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimages.
     /// </summary>
-    /// <typeparam name="TKey">The type of value associated with each element in this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
+    /// uniqueness.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
@@ -370,9 +372,9 @@ public static class Enumerables
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
     /// applying the specified <paramref name="valueSelector"/> to its preimages.
     /// </summary>
-    /// <typeparam name="TKey">The type of value associated with the image of each element in this <see cref="IEnumerable{T}"/>
-    /// from <typeparamref name="TValue"/>.</typeparam>
-    /// <typeparam name="TValue">The type to which each element in this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
+    /// uniqueness.</typeparam>
+    /// <typeparam name="TValue">The type to which each element from this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="keySelector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
@@ -391,7 +393,7 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements in this one that do not satisfy
+    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements from this one that do not satisfy
     /// the specified <paramref name="predicate"/>.
     /// </summary>
     /// <typeparam name="TElements">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -404,8 +406,7 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements in this one that are not
-    /// <c>null</c>.
+    /// Provides the <see cref="IEnumerable{T}"/> induced by selecting those elements from this one that are not <c>null</c>.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
