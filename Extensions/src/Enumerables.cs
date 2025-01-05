@@ -6,6 +6,33 @@ namespace Extensions;
 public static class Enumerables
 {
     /// <summary>
+    /// Provides the element from <typeparamref name="TResult"/> obtained by combining the elements from this <see cref="IEnumerable{T}"/>
+    /// into an element from <typeparamref name="TAccumulate"/>, initialized by the specified <paramref name="seed"/>, and
+    /// then applying the specified <paramref name="selector"/> to the result.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TAccumulate">The type into which elements from this <see cref="IEnumerable{T}"/> are combined.</typeparam>
+    /// <typeparam name="TResult">The type that the specified <paramref name="selector"/> projects members of <typeparamref
+    /// name="TAccumulate"/> to.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="seed">The value from which combination of elements in this <see cref="IEnumerable{T}"/> initiates.</param>
+    /// <param name="accumulator">An asynchronous function from <typeparamref name="TAccumulate"/>-<typeparamref name="TElement"/>
+    /// pairs to <typeparamref name="TAccumulate"/>.</param>
+    /// <param name="selector">A function from <typeparamref name="TAccumulate"/> to <typeparamref name="TResult"/>.</param>
+    /// <returns>A new <typeparamref name="TResult"/> instance.</returns>
+    public static async Task<TResult> AggregateAsync<TElement, TAccumulate, TResult>(this IEnumerable<TElement> elements,
+                                                                                     TAccumulate seed,
+                                                                                     Func<TAccumulate, TElement, Task<TAccumulate>> accumulator,
+                                                                                     Func<TAccumulate, TResult> selector)
+    {
+        foreach (var element in elements)
+        {
+            seed = await accumulator(seed, element);
+        }
+        return selector(seed);
+    }
+    
+    /// <summary>
     /// Provides the <see cref="IEnumerable{T}"/> induced by including the specified <paramref name="element"/> at the
     /// end of this one, if it satisfies the specified <paramref name="predicate"/>.
     /// </summary>
@@ -110,6 +137,18 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> that puts the elements from this one into a one-to-one correspondence
+    /// with the natural numbers by associating each with the ordinal at which it is emitted.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<(int index, TElement element)> Index<TElement>(this IEnumerable<TElement> elements)
+    {
+        return elements.Select((element, index) => (index, element));
+    }
+
+    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
@@ -165,6 +204,23 @@ public static class Enumerables
     public static bool NotAny<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
     {
         return !elements.Any(predicate);
+    }
+    
+    /// <summary>
+    /// Provides the <see cref="IEnumerable{T}"/> induced by applying the specified <paramref name="selector"/> to each
+    /// element in this one.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <typeparam name="TResult">The type that the specified <paramref name="selector"/> projects elements from this <see
+    /// cref="IEnumerable{T}"/> to.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="selector">A function from <typeparamref name="TElement"/> to <typeparamref name="TResult"/>.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static async Task<IEnumerable<TResult>> SelectAsync<TElement, TResult>(this IEnumerable<TElement> elements,
+                                                                                  Func<TElement, Task<TResult>> selector)
+    {
+        return await elements.AggregateAsync(
+            [], async (results, element) => results.Append(await selector(element)), IdentityFunction.Make<IEnumerable<TResult>>());
     }
 
     /// <summary>
