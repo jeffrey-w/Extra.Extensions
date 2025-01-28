@@ -137,18 +137,6 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Provides the <see cref="IEnumerable{T}"/> that puts the elements from this one into a one-to-one correspondence
-    /// with the natural numbers by associating each with the ordinal at which it is emitted.
-    /// </summary>
-    /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
-    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
-    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
-    public static IEnumerable<(int index, TElement element)> Index<TElement>(this IEnumerable<TElement> elements)
-    {
-        return elements.Select((element, index) => (index, element));
-    }
-
-    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}"/> contains only one element.
     /// </summary>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
