@@ -237,13 +237,7 @@ public static class Enumerables
     /// <returns>The has code for this <see cref="IEnumerable{T}"/>.</returns>
     public static int SequenceHashCode<TElement>(this IEnumerable<TElement> elements)
     {
-        return elements.Aggregate(new HashCode(), Add, hash => hash.ToHashCode());
-    }
-
-    private static HashCode Add<TElement>(HashCode hash, TElement element)
-    {
-        hash.Add(element);
-        return hash;
+        return elements.Aggregate(0, HashCode.Combine);
     }
 
     /// <summary>
