@@ -91,13 +91,13 @@ public static class Enumerables
     /// them once upon first emission from an associated <see cref="IEnumerator{T}"/>.
     /// </summary>
     /// <remarks>Note that this method is not semantically equivalent to those that force immediate evaluation (e.g.,
-    /// <see cref="Enumerable.ToList{TSource}(IEnumerable{TSource})"/>) since the elements contained by the new <see
-    /// cref="IEnumerable{T}"/> are still lazily evaluated during an initial enumeration, but are not reevaluated during
-    /// subsequent ones. Caution using this method is advised since it may alter the expected semantics of enumeration.
-    /// Specifically, the effect of adding or removing elements from the data structure that backs this <see
-    /// cref="IEnumerable{T}"/> will not be observed by enumerating the returned <see cref="IEnumerable{T}"/>.
-    /// Additionally, no guarantees are made with respect to the thread safety of the cached <see
-    /// cref="IEnumerable{T}"/>, and concurrent iterations should be externally synchronized.</remarks>
+    /// <see cref="Enumerable.ToList{TSource}(IEnumerable{TSource})">ToList</see>) since the elements contained by the new
+    /// <see cref="IEnumerable{T}"/> are still lazily evaluated during an initial enumeration, but are not reevaluated
+    /// during subsequent ones. Caution using this method is advised since it may alter the expected semantics of
+    /// enumeration. Specifically, the effect of adding or removing elements from the data structure that backs this
+    /// <see cref="IEnumerable{T}"/> will not be observed by enumerating the returned <see cref="IEnumerable{T}"/>.
+    /// Additionally, no guarantees are made with respect to the thread safety of the cached
+    /// <see cref="IEnumerable{T}"/>, and concurrent iterations should be externally synchronized.</remarks>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
@@ -357,8 +357,7 @@ public static class Enumerables
     /// Provides the <see cref="IDictionary{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimage.
     /// </summary>
-    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
-    /// uniqueness.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are distinguished.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
@@ -377,8 +376,7 @@ public static class Enumerables
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
     /// applying the specified <paramref name="valueSelector"/> to its preimage.
     /// </summary>
-    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
-    /// uniqueness.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are distinguished.</typeparam>
     /// <typeparam name="TValue">The type to which each element from this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
@@ -398,8 +396,7 @@ public static class Enumerables
     /// Provides the <see cref="ILookup{TKey,TValue}"/> induced by applying the specified <paramref name="selector"/>
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with its preimages.
     /// </summary>
-    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
-    /// uniqueness.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are distinguished.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <param name="selector">A relation from <typeparamref name="TElement"/> to <typeparamref name="TKey"/>.</param>
@@ -416,8 +413,7 @@ public static class Enumerables
     /// to the elements from this <see cref="IEnumerable{T}"/>, and associating each result with the value obtained by
     /// applying the specified <paramref name="valueSelector"/> to its preimages.
     /// </summary>
-    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are compared for
-    /// uniqueness.</typeparam>
+    /// <typeparam name="TKey">The type over which elements from this <see cref="IEnumerable{T}"/> are distinguished.</typeparam>
     /// <typeparam name="TValue">The type to which each element from this <see cref="IEnumerable{T}"/> is mapped.</typeparam>
     /// <typeparam name="TElement">The type of element held by this <see cref="IEnumerable{T}"/>.</typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
