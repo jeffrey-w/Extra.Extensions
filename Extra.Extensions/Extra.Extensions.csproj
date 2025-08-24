@@ -10,7 +10,7 @@
         <Authors>Jeff Wilgus</Authors>
         <Description>A library that provides additional operations on common types</Description>
         <Copyright>Jeff Wilgus</Copyright>
-        <PackageProjectUrl>https://github.com/jeffrey-w/Extensions</PackageProjectUrl>
+        <PackageProjectUrl>https://jeffrey-w.github.io/Extra.Extensions/</PackageProjectUrl>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
         <RepositoryUrl>https://github.com/jeffrey-w/Extra.Extensions</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
