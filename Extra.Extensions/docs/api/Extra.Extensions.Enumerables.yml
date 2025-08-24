@@ -1,54 +1,54 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Extensions.Enumerables
-  commentId: T:Extensions.Enumerables
+- uid: Extra.Extensions.Enumerables
+  commentId: T:Extra.Extensions.Enumerables
   id: Enumerables
-  parent: Extensions
+  parent: Extra.Extensions
   children:
-  - Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
-  - Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
-  - Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
-  - Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
-  - Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
-  - Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
-  - Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
-  - Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
-  - Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
-  - Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
-  - Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  - Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
-  - Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
-  - Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
-  - Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
-  - Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
-  - Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
-  - Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
-  - Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
-  - Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - Extra.Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  - Extra.Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  - Extra.Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  - Extra.Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  - Extra.Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  - Extra.Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - Extra.Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  - Extra.Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  - Extra.Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  - Extra.Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - Extra.Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  - Extra.Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  - Extra.Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  - Extra.Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  - Extra.Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  - Extra.Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  - Extra.Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  - Extra.Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  - Extra.Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   langs:
   - csharp
   - vb
   name: Enumerables
   nameWithType: Enumerables
-  fullName: Extensions.Enumerables
+  fullName: Extra.Extensions.Enumerables
   type: Class
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Enumerables
     path: ../src/Enumerables.cs
     startLine: 6
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     The <code>Enumerables</code> class provides additional operations on the
 
@@ -67,29 +67,29 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
-  commentId: M:Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+- uid: Extra.Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  commentId: M:Extra.Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
   id: AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: AggregateAsync<TElement, TAccumulate, TResult>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, Task<TAccumulate>>, Func<TAccumulate, TResult>)
   nameWithType: Enumerables.AggregateAsync<TElement, TAccumulate, TResult>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, Task<TAccumulate>>, Func<TAccumulate, TResult>)
-  fullName: Extensions.Enumerables.AggregateAsync<TElement, TAccumulate, TResult>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, System.Threading.Tasks.Task<TAccumulate>>, System.Func<TAccumulate, TResult>)
+  fullName: Extra.Extensions.Enumerables.AggregateAsync<TElement, TAccumulate, TResult>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, System.Threading.Tasks.Task<TAccumulate>>, System.Func<TAccumulate, TResult>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: AggregateAsync
     path: ../src/Enumerables.cs
     startLine: 40
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the element from <code class="typeparamref">TResult</code> obtained by combining
 
@@ -142,33 +142,33 @@ items:
       type: System.Threading.Tasks.Task{{TResult}}
       description: A new <code class="typeparamref">TResult</code> instance.
     content.vb: Public Shared Function AggregateAsync(Of TElement, TAccumulate, TResult)(elements As IEnumerable(Of TElement), seed As TAccumulate, accumulator As Func(Of TAccumulate, TElement, Task(Of TAccumulate)), selector As Func(Of TAccumulate, TResult)) As Task(Of TResult)
-  overload: Extensions.Enumerables.AggregateAsync*
+  overload: Extra.Extensions.Enumerables.AggregateAsync*
   nameWithType.vb: Enumerables.AggregateAsync(Of TElement, TAccumulate, TResult)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, Task(Of TAccumulate)), Func(Of TAccumulate, TResult))
-  fullName.vb: Extensions.Enumerables.AggregateAsync(Of TElement, TAccumulate, TResult)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, System.Threading.Tasks.Task(Of TAccumulate)), System.Func(Of TAccumulate, TResult))
+  fullName.vb: Extra.Extensions.Enumerables.AggregateAsync(Of TElement, TAccumulate, TResult)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, System.Threading.Tasks.Task(Of TAccumulate)), System.Func(Of TAccumulate, TResult))
   name.vb: AggregateAsync(Of TElement, TAccumulate, TResult)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, Task(Of TAccumulate)), Func(Of TAccumulate, TResult))
-- uid: Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
   id: AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: AppendIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
   nameWithType: Enumerables.AppendIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
-  fullName: Extensions.Enumerables.AppendIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
+  fullName: Extra.Extensions.Enumerables.AppendIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: AppendIf
     path: ../src/Enumerables.cs
     startLine: 69
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
@@ -195,33 +195,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function AppendIf(Of TElement)(elements As IEnumerable(Of TElement), element As TElement, predicate As Func(Of TElement, Boolean)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.AppendIf*
+  overload: Extra.Extensions.Enumerables.AppendIf*
   nameWithType.vb: Enumerables.AppendIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
-  fullName.vb: Extensions.Enumerables.AppendIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.AppendIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
   name.vb: AppendIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
-- uid: Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
-  commentId: M:Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+- uid: Extra.Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  commentId: M:Extra.Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
   id: AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: AppendIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
   nameWithType: Enumerables.AppendIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
-  fullName: Extensions.Enumerables.AppendIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
+  fullName: Extra.Extensions.Enumerables.AppendIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: AppendIfNotNull
     path: ../src/Enumerables.cs
     startLine: 89
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
@@ -243,33 +243,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function AppendIfNotNull(Of TElement)(elements As IEnumerable(Of TElement), element As TElement) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.AppendIfNotNull*
+  overload: Extra.Extensions.Enumerables.AppendIfNotNull*
   nameWithType.vb: Enumerables.AppendIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
-  fullName.vb: Extensions.Enumerables.AppendIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
+  fullName.vb: Extra.Extensions.Enumerables.AppendIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
   name.vb: AppendIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
-- uid: Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
   id: PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: PrependIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
   nameWithType: Enumerables.PrependIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
-  fullName: Extensions.Enumerables.PrependIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
+  fullName: Extra.Extensions.Enumerables.PrependIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: PrependIf
     path: ../src/Enumerables.cs
     startLine: 112
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
@@ -296,33 +296,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function PrependIf(Of TElement)(elements As IEnumerable(Of TElement), element As TElement, predicate As Func(Of TElement, Boolean)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.PrependIf*
+  overload: Extra.Extensions.Enumerables.PrependIf*
   nameWithType.vb: Enumerables.PrependIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
-  fullName.vb: Extensions.Enumerables.PrependIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.PrependIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
   name.vb: PrependIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
-- uid: Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
-  commentId: M:Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+- uid: Extra.Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  commentId: M:Extra.Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
   id: PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: PrependIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
   nameWithType: Enumerables.PrependIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
-  fullName: Extensions.Enumerables.PrependIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
+  fullName: Extra.Extensions.Enumerables.PrependIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: PrependIfNotNull
     path: ../src/Enumerables.cs
     startLine: 133
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
@@ -346,33 +346,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function PrependIfNotNull(Of TElement)(elements As IEnumerable(Of TElement), element As TElement) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.PrependIfNotNull*
+  overload: Extra.Extensions.Enumerables.PrependIfNotNull*
   nameWithType.vb: Enumerables.PrependIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
-  fullName.vb: Extensions.Enumerables.PrependIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
+  fullName.vb: Extra.Extensions.Enumerables.PrependIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
   name.vb: PrependIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
-- uid: Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
   id: Cached``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: Cached<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.Cached<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.Cached<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.Cached<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Cached
     path: ../src/Enumerables.cs
     startLine: 164
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the same elements as
 
@@ -417,33 +417,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Cached(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.Cached*
+  overload: Extra.Extensions.Enumerables.Cached*
   nameWithType.vb: Enumerables.Cached(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.Cached(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.Cached(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: Cached(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
-  commentId: M:Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+- uid: Extra.Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extra.Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
   id: ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ConcatSelection<TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TElement>>)
   nameWithType: Enumerables.ConcatSelection<TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TElement>>)
-  fullName: Extensions.Enumerables.ConcatSelection<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TElement>>)
+  fullName: Extra.Extensions.Enumerables.ConcatSelection<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TElement>>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ConcatSelection
     path: ../src/Enumerables.cs
     startLine: 180
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains every element from
 
@@ -467,33 +467,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ConcatSelection(Of TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TElement))) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.ConcatSelection*
+  overload: Extra.Extensions.Enumerables.ConcatSelection*
   nameWithType.vb: Enumerables.ConcatSelection(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TElement)))
-  fullName.vb: Extensions.Enumerables.ConcatSelection(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TElement)))
+  fullName.vb: Extra.Extensions.Enumerables.ConcatSelection(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TElement)))
   name.vb: ConcatSelection(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TElement)))
-- uid: Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
-  commentId: M:Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+- uid: Extra.Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Extra.Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
   id: ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ForEach<TElement>(IEnumerable<TElement>, Action<TElement>)
   nameWithType: Enumerables.ForEach<TElement>(IEnumerable<TElement>, Action<TElement>)
-  fullName: Extensions.Enumerables.ForEach<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Action<TElement>)
+  fullName: Extra.Extensions.Enumerables.ForEach<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Action<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ForEach
     path: ../src/Enumerables.cs
     startLine: 202
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Performs the specified <code class="paramref">action</code> on each element from this
 
@@ -515,33 +515,33 @@ items:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Sub ForEach(Of TElement)(elements As IEnumerable(Of TElement), action As Action(Of TElement))
-  overload: Extensions.Enumerables.ForEach*
+  overload: Extra.Extensions.Enumerables.ForEach*
   nameWithType.vb: Enumerables.ForEach(Of TElement)(IEnumerable(Of TElement), Action(Of TElement))
-  fullName.vb: Extensions.Enumerables.ForEach(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Action(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.ForEach(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Action(Of TElement))
   name.vb: ForEach(Of TElement)(IEnumerable(Of TElement), Action(Of TElement))
-- uid: Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
   id: IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: IsSingleton<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.IsSingleton<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.IsSingleton<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.IsSingleton<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: IsSingleton
     path: ../src/Enumerables.cs
     startLine: 221
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains only one
 
@@ -560,39 +560,37 @@ items:
       type: System.Boolean
       description: <code>true</code> if this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is a singleton.
     content.vb: Public Shared Function IsSingleton(Of TElement)(elements As IEnumerable(Of TElement)) As Boolean
-  overload: Extensions.Enumerables.IsSingleton*
+  overload: Extra.Extensions.Enumerables.IsSingleton*
   nameWithType.vb: Enumerables.IsSingleton(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.IsSingleton(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.IsSingleton(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: IsSingleton(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   id: NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: NotAll<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
   nameWithType: Enumerables.NotAll<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
-  fullName: Extensions.Enumerables.NotAll<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
+  fullName: Extra.Extensions.Enumerables.NotAll<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: NotAll
     path: ../src/Enumerables.cs
-    startLine: 250
+    startLine: 249
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not
 
-    satisfy the specified
-
-    <code class="paramref">predicate</code>.
+    satisfy the specified <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static bool NotAll<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
@@ -613,33 +611,33 @@ items:
 
         does not satisfy the specified <code class="paramref">predicate</code>.
     content.vb: Public Shared Function NotAll(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
-  overload: Extensions.Enumerables.NotAll*
+  overload: Extra.Extensions.Enumerables.NotAll*
   nameWithType.vb: Enumerables.NotAll(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
-  fullName.vb: Extensions.Enumerables.NotAll(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.NotAll(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
   name.vb: NotAll(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
-- uid: Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
   id: NotAny``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: NotAny<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.NotAny<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: NotAny
     path: ../src/Enumerables.cs
-    startLine: 265
+    startLine: 264
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is empty.
   example: []
   syntax:
@@ -655,33 +653,33 @@ items:
       type: System.Boolean
       description: <code>true</code> if this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains no elements.
     content.vb: Public Shared Function NotAny(Of TElement)(elements As IEnumerable(Of TElement)) As Boolean
-  overload: Extensions.Enumerables.NotAny*
+  overload: Extra.Extensions.Enumerables.NotAny*
   nameWithType.vb: Enumerables.NotAny(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: NotAny(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   id: NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: NotAny<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
   nameWithType: Enumerables.NotAny<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
-  fullName: Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
+  fullName: Extra.Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: NotAny
     path: ../src/Enumerables.cs
-    startLine: 285
+    startLine: 284
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether no element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> satisfies
 
@@ -706,33 +704,33 @@ items:
 
         any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function NotAny(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
-  overload: Extensions.Enumerables.NotAny*
+  overload: Extra.Extensions.Enumerables.NotAny*
   nameWithType.vb: Enumerables.NotAny(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
-  fullName.vb: Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
   name.vb: NotAny(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
-- uid: Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
-  commentId: M:Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+- uid: Extra.Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  commentId: M:Extra.Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
   id: SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: SelectAsync<TElement, TResult>(IEnumerable<TElement>, Func<TElement, Task<TResult>>)
   nameWithType: Enumerables.SelectAsync<TElement, TResult>(IEnumerable<TElement>, Func<TElement, Task<TResult>>)
-  fullName: Extensions.Enumerables.SelectAsync<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Threading.Tasks.Task<TResult>>)
+  fullName: Extra.Extensions.Enumerables.SelectAsync<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Threading.Tasks.Task<TResult>>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: SelectAsync
     path: ../src/Enumerables.cs
-    startLine: 307
+    startLine: 306
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified
 
@@ -762,33 +760,33 @@ items:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function SelectAsync(Of TElement, TResult)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, Task(Of TResult))) As Task(Of IEnumerable(Of TResult))
-  overload: Extensions.Enumerables.SelectAsync*
+  overload: Extra.Extensions.Enumerables.SelectAsync*
   nameWithType.vb: Enumerables.SelectAsync(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, Task(Of TResult)))
-  fullName.vb: Extensions.Enumerables.SelectAsync(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Threading.Tasks.Task(Of TResult)))
+  fullName.vb: Extra.Extensions.Enumerables.SelectAsync(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Threading.Tasks.Task(Of TResult)))
   name.vb: SelectAsync(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, Task(Of TResult)))
-- uid: Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
-  commentId: M:Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+- uid: Extra.Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:Extra.Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   id: SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: SelectNotNull<TElement, TResult>(IEnumerable<TElement>, Func<TElement, TResult?>)
   nameWithType: Enumerables.SelectNotNull<TElement, TResult>(IEnumerable<TElement>, Func<TElement, TResult?>)
-  fullName: Extensions.Enumerables.SelectNotNull<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TResult?>)
+  fullName: Extra.Extensions.Enumerables.SelectNotNull<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TResult?>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: SelectNotNull
     path: ../src/Enumerables.cs
-    startLine: 335
+    startLine: 334
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified
 
@@ -820,33 +818,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TResult}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function SelectNotNull(Of TElement, TResult)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, TResult)) As IEnumerable(Of TResult)
-  overload: Extensions.Enumerables.SelectNotNull*
+  overload: Extra.Extensions.Enumerables.SelectNotNull*
   nameWithType.vb: Enumerables.SelectNotNull(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, TResult))
-  fullName.vb: Extensions.Enumerables.SelectNotNull(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TResult))
+  fullName.vb: Extra.Extensions.Enumerables.SelectNotNull(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TResult))
   name.vb: SelectNotNull(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, TResult))
-- uid: Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
   id: SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: SequenceHashCode<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.SequenceHashCode<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.SequenceHashCode<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.SequenceHashCode<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: SequenceHashCode
     path: ../src/Enumerables.cs
-    startLine: 354
+    startLine: 353
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the hash code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, computed over
 
@@ -865,33 +863,33 @@ items:
       type: System.Int32
       description: The has code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function SequenceHashCode(Of TElement)(elements As IEnumerable(Of TElement)) As Integer
-  overload: Extensions.Enumerables.SequenceHashCode*
+  overload: Extra.Extensions.Enumerables.SequenceHashCode*
   nameWithType.vb: Enumerables.SequenceHashCode(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.SequenceHashCode(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.SequenceHashCode(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: SequenceHashCode(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   id: Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: Shuffle<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.Shuffle<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Shuffle
     path: ../src/Enumerables.cs
-    startLine: 368
+    startLine: 367
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random
 
@@ -910,33 +908,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Shuffle(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.Shuffle*
+  overload: Extra.Extensions.Enumerables.Shuffle*
   nameWithType.vb: Enumerables.Shuffle(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: Shuffle(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
-  commentId: M:Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+- uid: Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  commentId: M:Extra.Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
   id: Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: Shuffle<TElement>(IEnumerable<TElement>, Random)
   nameWithType: Enumerables.Shuffle<TElement>(IEnumerable<TElement>, Random)
-  fullName: Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Random)
+  fullName: Extra.Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Random)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Shuffle
     path: ../src/Enumerables.cs
-    startLine: 383
+    startLine: 382
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order
 
@@ -958,33 +956,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function Shuffle(Of TElement)(elements As IEnumerable(Of TElement), random As Random) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.Shuffle*
+  overload: Extra.Extensions.Enumerables.Shuffle*
   nameWithType.vb: Enumerables.Shuffle(Of TElement)(IEnumerable(Of TElement), Random)
-  fullName.vb: Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Random)
+  fullName.vb: Extra.Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Random)
   name.vb: Shuffle(Of TElement)(IEnumerable(Of TElement), Random)
-- uid: Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
   id: TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: TakeWhileAggregate<TElement, TAccumulate>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, TAccumulate>, Func<TAccumulate, TElement, bool>)
   nameWithType: Enumerables.TakeWhileAggregate<TElement, TAccumulate>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, TAccumulate>, Func<TAccumulate, TElement, bool>)
-  fullName: Extensions.Enumerables.TakeWhileAggregate<TElement, TAccumulate>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, TAccumulate>, System.Func<TAccumulate, TElement, bool>)
+  fullName: Extra.Extensions.Enumerables.TakeWhileAggregate<TElement, TAccumulate>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, TAccumulate>, System.Func<TAccumulate, TElement, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: TakeWhileAggregate
     path: ../src/Enumerables.cs
-    startLine: 425
+    startLine: 424
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting the elements
 
@@ -1041,33 +1039,33 @@ items:
 
         <code class="paramref">predicate</code>.
     content.vb: Public Shared Function TakeWhileAggregate(Of TElement, TAccumulate)(elements As IEnumerable(Of TElement), seed As TAccumulate, accumulator As Func(Of TAccumulate, TElement, TAccumulate), predicate As Func(Of TAccumulate, TElement, Boolean)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.TakeWhileAggregate*
+  overload: Extra.Extensions.Enumerables.TakeWhileAggregate*
   nameWithType.vb: Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, TAccumulate), Func(Of TAccumulate, TElement, Boolean))
-  fullName.vb: Extensions.Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, TAccumulate), System.Func(Of TAccumulate, TElement, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, TAccumulate), System.Func(Of TAccumulate, TElement, Boolean))
   name.vb: TakeWhileAggregate(Of TElement, TAccumulate)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, TAccumulate), Func(Of TAccumulate, TElement, Boolean))
-- uid: Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
   id: ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ThrowIfDuplicates<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.ThrowIfDuplicates<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.ThrowIfDuplicates<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.ThrowIfDuplicates<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ThrowIfDuplicates
     path: ../src/Enumerables.cs
-    startLine: 460
+    startLine: 459
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Verifies that no pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
 
@@ -1089,37 +1087,37 @@ items:
 
         pair of them are equal.
     content.vb: Public Shared Function ThrowIfDuplicates(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.ThrowIfDuplicates*
+  overload: Extra.Extensions.Enumerables.ThrowIfDuplicates*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: If any pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are equal.
   nameWithType.vb: Enumerables.ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.ThrowIfDuplicates(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.ThrowIfDuplicates(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
-- uid: Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
-  commentId: M:Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+- uid: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  commentId: M:Extra.Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
   id: ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ThrowIfDuplicatesBy<TKey, TElement>(IEnumerable<TElement>, Func<TElement, TKey>)
   nameWithType: Enumerables.ThrowIfDuplicatesBy<TKey, TElement>(IEnumerable<TElement>, Func<TElement, TKey>)
-  fullName: Extensions.Enumerables.ThrowIfDuplicatesBy<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TKey>)
+  fullName: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TKey>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ThrowIfDuplicatesBy
     path: ../src/Enumerables.cs
-    startLine: 492
+    startLine: 491
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Verifies that the specified <code class="paramref">selector</code> maps every element
 
@@ -1152,11 +1150,11 @@ items:
       description: >-
         A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if
 
-        the specified <code class="paramref">selector</code>
+        the specified <code class="paramref">selector</code> maps every element in it to a unique
 
-        maps every element in it to a unique value from <code class="typeparamref">TKey</code>.
+        value from <code class="typeparamref">TKey</code>.
     content.vb: Public Shared Function ThrowIfDuplicatesBy(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, TKey)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.ThrowIfDuplicatesBy*
+  overload: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
@@ -1167,31 +1165,31 @@ items:
 
       <code class="typeparamref">TKey</code>.
   nameWithType.vb: Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
-  fullName.vb: Extensions.Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TKey))
+  fullName.vb: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TKey))
   name.vb: ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
-- uid: Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
-  commentId: M:Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+- uid: Extra.Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extra.Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
   id: ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ToDictionaryInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
   nameWithType: Enumerables.ToDictionaryInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
-  fullName: Extensions.Enumerables.ToDictionaryInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
+  fullName: Extra.Extensions.Enumerables.ToDictionaryInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ToDictionaryInverse
     path: ../src/Enumerables.cs
-    startLine: 533
+    startLine: 532
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
@@ -1223,7 +1221,7 @@ items:
       type: System.Collections.Generic.IDictionary{{TKey},{TElement}}
       description: A new <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ToDictionaryInverse(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TKey))) As IDictionary(Of TKey, TElement)
-  overload: Extensions.Enumerables.ToDictionaryInverse*
+  overload: Extra.Extensions.Enumerables.ToDictionaryInverse*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
@@ -1234,31 +1232,31 @@ items:
 
       <code class="typeparamref">TElement</code>.
   nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
-  fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
+  fullName.vb: Extra.Extensions.Enumerables.ToDictionaryInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
   name.vb: ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
-- uid: Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
-  commentId: M:Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+- uid: Extra.Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  commentId: M:Extra.Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
   id: ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ToDictionaryInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
   nameWithType: Enumerables.ToDictionaryInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
-  fullName: Extensions.Enumerables.ToDictionaryInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
+  fullName: Extra.Extensions.Enumerables.ToDictionaryInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ToDictionaryInverse
     path: ../src/Enumerables.cs
-    startLine: 575
+    startLine: 574
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
@@ -1305,7 +1303,7 @@ items:
       type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
       description: A new <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ToDictionaryInverse(Of TKey, TValue, TElement)(elements As IEnumerable(Of TElement), keySelector As Func(Of TElement, IEnumerable(Of TKey)), valueSelector As Func(Of TElement, TValue)) As IDictionary(Of TKey, TValue)
-  overload: Extensions.Enumerables.ToDictionaryInverse*
+  overload: Extra.Extensions.Enumerables.ToDictionaryInverse*
   exceptions:
   - type: System.ArgumentException
     commentId: T:System.ArgumentException
@@ -1316,31 +1314,31 @@ items:
 
       <code class="typeparamref">TValue</code>.
   nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
-  fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
+  fullName.vb: Extra.Extensions.Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
   name.vb: ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
-- uid: Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
-  commentId: M:Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+- uid: Extra.Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extra.Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
   id: ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ToLookupInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
   nameWithType: Enumerables.ToLookupInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
-  fullName: Extensions.Enumerables.ToLookupInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
+  fullName: Extra.Extensions.Enumerables.ToLookupInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ToLookupInverse
     path: ../src/Enumerables.cs
-    startLine: 603
+    startLine: 602
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
@@ -1372,33 +1370,33 @@ items:
       type: System.Linq.ILookup{{TKey},{TElement}}
       description: A new <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ToLookupInverse(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TKey))) As ILookup(Of TKey, TElement)
-  overload: Extensions.Enumerables.ToLookupInverse*
+  overload: Extra.Extensions.Enumerables.ToLookupInverse*
   nameWithType.vb: Enumerables.ToLookupInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
-  fullName.vb: Extensions.Enumerables.ToLookupInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
+  fullName.vb: Extra.Extensions.Enumerables.ToLookupInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
   name.vb: ToLookupInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
-- uid: Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
-  commentId: M:Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+- uid: Extra.Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  commentId: M:Extra.Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
   id: ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: ToLookupInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
   nameWithType: Enumerables.ToLookupInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
-  fullName: Extensions.Enumerables.ToLookupInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
+  fullName: Extra.Extensions.Enumerables.ToLookupInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: ToLookupInverse
     path: ../src/Enumerables.cs
-    startLine: 640
+    startLine: 639
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
@@ -1445,33 +1443,33 @@ items:
       type: System.Linq.ILookup{{TKey},{TValue}}
       description: A new <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function ToLookupInverse(Of TKey, TValue, TElement)(elements As IEnumerable(Of TElement), keySelector As Func(Of TElement, IEnumerable(Of TKey)), valueSelector As Func(Of TElement, TValue)) As ILookup(Of TKey, TValue)
-  overload: Extensions.Enumerables.ToLookupInverse*
+  overload: Extra.Extensions.Enumerables.ToLookupInverse*
   nameWithType.vb: Enumerables.ToLookupInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
-  fullName.vb: Extensions.Enumerables.ToLookupInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
+  fullName.vb: Extra.Extensions.Enumerables.ToLookupInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
   name.vb: ToLookupInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
-- uid: Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
-  commentId: M:Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+- uid: Extra.Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extra.Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   id: WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: WhereNot<TElements>(IEnumerable<TElements>, Func<TElements, bool>)
   nameWithType: Enumerables.WhereNot<TElements>(IEnumerable<TElements>, Func<TElements, bool>)
-  fullName: Extensions.Enumerables.WhereNot<TElements>(System.Collections.Generic.IEnumerable<TElements>, System.Func<TElements, bool>)
+  fullName: Extra.Extensions.Enumerables.WhereNot<TElements>(System.Collections.Generic.IEnumerable<TElements>, System.Func<TElements, bool>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: WhereNot
     path: ../src/Enumerables.cs
-    startLine: 669
+    startLine: 668
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements
 
@@ -1493,33 +1491,33 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElements}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function WhereNot(Of TElements)(elements As IEnumerable(Of TElements), predicate As Func(Of TElements, Boolean)) As IEnumerable(Of TElements)
-  overload: Extensions.Enumerables.WhereNot*
+  overload: Extra.Extensions.Enumerables.WhereNot*
   nameWithType.vb: Enumerables.WhereNot(Of TElements)(IEnumerable(Of TElements), Func(Of TElements, Boolean))
-  fullName.vb: Extensions.Enumerables.WhereNot(Of TElements)(System.Collections.Generic.IEnumerable(Of TElements), System.Func(Of TElements, Boolean))
+  fullName.vb: Extra.Extensions.Enumerables.WhereNot(Of TElements)(System.Collections.Generic.IEnumerable(Of TElements), System.Func(Of TElements, Boolean))
   name.vb: WhereNot(Of TElements)(IEnumerable(Of TElements), Func(Of TElements, Boolean))
-- uid: Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
-  commentId: M:Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+- uid: Extra.Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extra.Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
   id: WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
   isExtensionMethod: true
-  parent: Extensions.Enumerables
+  parent: Extra.Extensions.Enumerables
   langs:
   - csharp
   - vb
   name: WhereNotNull<TElement>(IEnumerable<TElement>)
   nameWithType: Enumerables.WhereNotNull<TElement>(IEnumerable<TElement>)
-  fullName: Extensions.Enumerables.WhereNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  fullName: Extra.Extensions.Enumerables.WhereNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>)
   type: Method
   source:
     remote:
-      path: Extensions/src/Enumerables.cs
+      path: Extra.Extensions/src/Enumerables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: WhereNotNull
     path: ../src/Enumerables.cs
-    startLine: 685
+    startLine: 684
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements
 
@@ -1538,9 +1536,9 @@ items:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function WhereNotNull(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
-  overload: Extensions.Enumerables.WhereNotNull*
+  overload: Extra.Extensions.Enumerables.WhereNotNull*
   nameWithType.vb: Enumerables.WhereNotNull(Of TElement)(IEnumerable(Of TElement))
-  fullName.vb: Extensions.Enumerables.WhereNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  fullName.vb: Extra.Extensions.Enumerables.WhereNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: WhereNotNull(Of TElement)(IEnumerable(Of TElement))
 references:
 - uid: System.Collections.Generic.IEnumerable`1
@@ -1571,12 +1569,28 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Extensions
-  commentId: N:Extensions
-  href: Extensions.html
-  name: Extensions
-  nameWithType: Extensions
-  fullName: Extensions
+- uid: Extra.Extensions
+  commentId: N:Extra.Extensions
+  href: Extra.html
+  name: Extra.Extensions
+  nameWithType: Extra.Extensions
+  fullName: Extra.Extensions
+  spec.csharp:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
+  spec.vb:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -1814,12 +1828,12 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Extensions.Enumerables.AggregateAsync*
-  commentId: Overload:Extensions.Enumerables.AggregateAsync
-  href: Extensions.Enumerables.html#Extensions_Enumerables_AggregateAsync__3_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0_System_Threading_Tasks_Task___1___System_Func___1___2__
+- uid: Extra.Extensions.Enumerables.AggregateAsync*
+  commentId: Overload:Extra.Extensions.Enumerables.AggregateAsync
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_AggregateAsync__3_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0_System_Threading_Tasks_Task___1___System_Func___1___2__
   name: AggregateAsync
   nameWithType: Enumerables.AggregateAsync
-  fullName: Extensions.Enumerables.AggregateAsync
+  fullName: Extra.Extensions.Enumerables.AggregateAsync
 - uid: System.Collections.Generic.IEnumerable{{TElement}}
   commentId: T:System.Collections.Generic.IEnumerable{``0}
   parent: System.Collections.Generic
@@ -2165,12 +2179,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Extensions.Enumerables.AppendIf*
-  commentId: Overload:Extensions.Enumerables.AppendIf
-  href: Extensions.Enumerables.html#Extensions_Enumerables_AppendIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
+- uid: Extra.Extensions.Enumerables.AppendIf*
+  commentId: Overload:Extra.Extensions.Enumerables.AppendIf
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_AppendIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
   name: AppendIf
   nameWithType: Enumerables.AppendIf
-  fullName: Extensions.Enumerables.AppendIf
+  fullName: Extra.Extensions.Enumerables.AppendIf
 - uid: '{TElement}'
   commentId: '!:TElement'
   definition: TElement
@@ -2222,24 +2236,24 @@ references:
   name: TElement
   nameWithType: TElement
   fullName: TElement
-- uid: Extensions.Enumerables.AppendIfNotNull*
-  commentId: Overload:Extensions.Enumerables.AppendIfNotNull
-  href: Extensions.Enumerables.html#Extensions_Enumerables_AppendIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
+- uid: Extra.Extensions.Enumerables.AppendIfNotNull*
+  commentId: Overload:Extra.Extensions.Enumerables.AppendIfNotNull
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_AppendIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
   name: AppendIfNotNull
   nameWithType: Enumerables.AppendIfNotNull
-  fullName: Extensions.Enumerables.AppendIfNotNull
-- uid: Extensions.Enumerables.PrependIf*
-  commentId: Overload:Extensions.Enumerables.PrependIf
-  href: Extensions.Enumerables.html#Extensions_Enumerables_PrependIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
+  fullName: Extra.Extensions.Enumerables.AppendIfNotNull
+- uid: Extra.Extensions.Enumerables.PrependIf*
+  commentId: Overload:Extra.Extensions.Enumerables.PrependIf
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_PrependIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
   name: PrependIf
   nameWithType: Enumerables.PrependIf
-  fullName: Extensions.Enumerables.PrependIf
-- uid: Extensions.Enumerables.PrependIfNotNull*
-  commentId: Overload:Extensions.Enumerables.PrependIfNotNull
-  href: Extensions.Enumerables.html#Extensions_Enumerables_PrependIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
+  fullName: Extra.Extensions.Enumerables.PrependIf
+- uid: Extra.Extensions.Enumerables.PrependIfNotNull*
+  commentId: Overload:Extra.Extensions.Enumerables.PrependIfNotNull
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_PrependIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
   name: PrependIfNotNull
   nameWithType: Enumerables.PrependIfNotNull
-  fullName: Extensions.Enumerables.PrependIfNotNull
+  fullName: Extra.Extensions.Enumerables.PrependIfNotNull
 - uid: System.Collections.Generic.IEnumerator`1
   commentId: T:System.Collections.Generic.IEnumerator`1
   isExternal: true
@@ -2316,18 +2330,18 @@ references:
   - name: TSource
   - name: )
   - name: )
-- uid: Extensions.Enumerables.Cached*
-  commentId: Overload:Extensions.Enumerables.Cached
-  href: Extensions.Enumerables.html#Extensions_Enumerables_Cached__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.Cached*
+  commentId: Overload:Extra.Extensions.Enumerables.Cached
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_Cached__1_System_Collections_Generic_IEnumerable___0__
   name: Cached
   nameWithType: Enumerables.Cached
-  fullName: Extensions.Enumerables.Cached
-- uid: Extensions.Enumerables.ConcatSelection*
-  commentId: Overload:Extensions.Enumerables.ConcatSelection
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ConcatSelection__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___0___
+  fullName: Extra.Extensions.Enumerables.Cached
+- uid: Extra.Extensions.Enumerables.ConcatSelection*
+  commentId: Overload:Extra.Extensions.Enumerables.ConcatSelection
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ConcatSelection__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___0___
   name: ConcatSelection
   nameWithType: Enumerables.ConcatSelection
-  fullName: Extensions.Enumerables.ConcatSelection
+  fullName: Extra.Extensions.Enumerables.ConcatSelection
 - uid: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TElement}}}
   commentId: T:System.Func{``0,System.Collections.Generic.IEnumerable{``0}}
   parent: System
@@ -2377,12 +2391,12 @@ references:
   - name: TElement
   - name: )
   - name: )
-- uid: Extensions.Enumerables.ForEach*
-  commentId: Overload:Extensions.Enumerables.ForEach
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+- uid: Extra.Extensions.Enumerables.ForEach*
+  commentId: Overload:Extra.Extensions.Enumerables.ForEach
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
   name: ForEach
   nameWithType: Enumerables.ForEach
-  fullName: Extensions.Enumerables.ForEach
+  fullName: Extra.Extensions.Enumerables.ForEach
 - uid: System.Action{{TElement}}
   commentId: T:System.Action{``0}
   parent: System
@@ -2440,30 +2454,30 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Extensions.Enumerables.IsSingleton*
-  commentId: Overload:Extensions.Enumerables.IsSingleton
-  href: Extensions.Enumerables.html#Extensions_Enumerables_IsSingleton__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.IsSingleton*
+  commentId: Overload:Extra.Extensions.Enumerables.IsSingleton
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_IsSingleton__1_System_Collections_Generic_IEnumerable___0__
   name: IsSingleton
   nameWithType: Enumerables.IsSingleton
-  fullName: Extensions.Enumerables.IsSingleton
-- uid: Extensions.Enumerables.NotAll*
-  commentId: Overload:Extensions.Enumerables.NotAll
-  href: Extensions.Enumerables.html#Extensions_Enumerables_NotAll__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  fullName: Extra.Extensions.Enumerables.IsSingleton
+- uid: Extra.Extensions.Enumerables.NotAll*
+  commentId: Overload:Extra.Extensions.Enumerables.NotAll
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_NotAll__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
   name: NotAll
   nameWithType: Enumerables.NotAll
-  fullName: Extensions.Enumerables.NotAll
-- uid: Extensions.Enumerables.NotAny*
-  commentId: Overload:Extensions.Enumerables.NotAny
-  href: Extensions.Enumerables.html#Extensions_Enumerables_NotAny__1_System_Collections_Generic_IEnumerable___0__
+  fullName: Extra.Extensions.Enumerables.NotAll
+- uid: Extra.Extensions.Enumerables.NotAny*
+  commentId: Overload:Extra.Extensions.Enumerables.NotAny
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_NotAny__1_System_Collections_Generic_IEnumerable___0__
   name: NotAny
   nameWithType: Enumerables.NotAny
-  fullName: Extensions.Enumerables.NotAny
-- uid: Extensions.Enumerables.SelectAsync*
-  commentId: Overload:Extensions.Enumerables.SelectAsync
-  href: Extensions.Enumerables.html#Extensions_Enumerables_SelectAsync__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task___1___
+  fullName: Extra.Extensions.Enumerables.NotAny
+- uid: Extra.Extensions.Enumerables.SelectAsync*
+  commentId: Overload:Extra.Extensions.Enumerables.SelectAsync
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_SelectAsync__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task___1___
   name: SelectAsync
   nameWithType: Enumerables.SelectAsync
-  fullName: Extensions.Enumerables.SelectAsync
+  fullName: Extra.Extensions.Enumerables.SelectAsync
 - uid: System.Func{{TElement},System.Threading.Tasks.Task{{TResult}}}
   commentId: T:System.Func{``0,System.Threading.Tasks.Task{``1}}
   parent: System
@@ -2556,12 +2570,12 @@ references:
   - name: TResult
   - name: )
   - name: )
-- uid: Extensions.Enumerables.SelectNotNull*
-  commentId: Overload:Extensions.Enumerables.SelectNotNull
-  href: Extensions.Enumerables.html#Extensions_Enumerables_SelectNotNull__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+- uid: Extra.Extensions.Enumerables.SelectNotNull*
+  commentId: Overload:Extra.Extensions.Enumerables.SelectNotNull
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_SelectNotNull__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
   name: SelectNotNull
   nameWithType: Enumerables.SelectNotNull
-  fullName: Extensions.Enumerables.SelectNotNull
+  fullName: Extra.Extensions.Enumerables.SelectNotNull
 - uid: System.Func{{TElement},{TResult}}
   commentId: T:System.Func{``0,``1}
   parent: System
@@ -2626,12 +2640,12 @@ references:
   - name: " "
   - name: TResult
   - name: )
-- uid: Extensions.Enumerables.SequenceHashCode*
-  commentId: Overload:Extensions.Enumerables.SequenceHashCode
-  href: Extensions.Enumerables.html#Extensions_Enumerables_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.SequenceHashCode*
+  commentId: Overload:Extra.Extensions.Enumerables.SequenceHashCode
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__
   name: SequenceHashCode
   nameWithType: Enumerables.SequenceHashCode
-  fullName: Extensions.Enumerables.SequenceHashCode
+  fullName: Extra.Extensions.Enumerables.SequenceHashCode
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -2643,12 +2657,12 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
-- uid: Extensions.Enumerables.Shuffle*
-  commentId: Overload:Extensions.Enumerables.Shuffle
-  href: Extensions.Enumerables.html#Extensions_Enumerables_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.Shuffle*
+  commentId: Overload:Extra.Extensions.Enumerables.Shuffle
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_Shuffle__1_System_Collections_Generic_IEnumerable___0__
   name: Shuffle
   nameWithType: Enumerables.Shuffle
-  fullName: Extensions.Enumerables.Shuffle
+  fullName: Extra.Extensions.Enumerables.Shuffle
 - uid: System.Random
   commentId: T:System.Random
   parent: System
@@ -2657,12 +2671,12 @@ references:
   name: Random
   nameWithType: Random
   fullName: System.Random
-- uid: Extensions.Enumerables.TakeWhileAggregate*
-  commentId: Overload:Extensions.Enumerables.TakeWhileAggregate
-  href: Extensions.Enumerables.html#Extensions_Enumerables_TakeWhileAggregate__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__System_Func___1___0_System_Boolean__
+- uid: Extra.Extensions.Enumerables.TakeWhileAggregate*
+  commentId: Overload:Extra.Extensions.Enumerables.TakeWhileAggregate
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_TakeWhileAggregate__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__System_Func___1___0_System_Boolean__
   name: TakeWhileAggregate
   nameWithType: Enumerables.TakeWhileAggregate
-  fullName: Extensions.Enumerables.TakeWhileAggregate
+  fullName: Extra.Extensions.Enumerables.TakeWhileAggregate
 - uid: System.Func{{TAccumulate},{TElement},{TAccumulate}}
   commentId: T:System.Func{``1,``0,``1}
   parent: System
@@ -2758,18 +2772,18 @@ references:
   name: InvalidOperationException
   nameWithType: InvalidOperationException
   fullName: System.InvalidOperationException
-- uid: Extensions.Enumerables.ThrowIfDuplicates*
-  commentId: Overload:Extensions.Enumerables.ThrowIfDuplicates
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ThrowIfDuplicates__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.ThrowIfDuplicates*
+  commentId: Overload:Extra.Extensions.Enumerables.ThrowIfDuplicates
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ThrowIfDuplicates__1_System_Collections_Generic_IEnumerable___0__
   name: ThrowIfDuplicates
   nameWithType: Enumerables.ThrowIfDuplicates
-  fullName: Extensions.Enumerables.ThrowIfDuplicates
-- uid: Extensions.Enumerables.ThrowIfDuplicatesBy*
-  commentId: Overload:Extensions.Enumerables.ThrowIfDuplicatesBy
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ThrowIfDuplicatesBy__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__
+  fullName: Extra.Extensions.Enumerables.ThrowIfDuplicates
+- uid: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy*
+  commentId: Overload:Extra.Extensions.Enumerables.ThrowIfDuplicatesBy
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ThrowIfDuplicatesBy__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__
   name: ThrowIfDuplicatesBy
   nameWithType: Enumerables.ThrowIfDuplicatesBy
-  fullName: Extensions.Enumerables.ThrowIfDuplicatesBy
+  fullName: Extra.Extensions.Enumerables.ThrowIfDuplicatesBy
 - uid: System.Func{{TElement},{TKey}}
   commentId: T:System.Func{``1,``0}
   parent: System
@@ -2846,12 +2860,12 @@ references:
   name: ArgumentException
   nameWithType: ArgumentException
   fullName: System.ArgumentException
-- uid: Extensions.Enumerables.ToDictionaryInverse*
-  commentId: Overload:Extensions.Enumerables.ToDictionaryInverse
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ToDictionaryInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
+- uid: Extra.Extensions.Enumerables.ToDictionaryInverse*
+  commentId: Overload:Extra.Extensions.Enumerables.ToDictionaryInverse
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ToDictionaryInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
   name: ToDictionaryInverse
   nameWithType: Enumerables.ToDictionaryInverse
-  fullName: Extensions.Enumerables.ToDictionaryInverse
+  fullName: Extra.Extensions.Enumerables.ToDictionaryInverse
 - uid: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
   commentId: T:System.Func{``1,System.Collections.Generic.IEnumerable{``0}}
   parent: System
@@ -3040,12 +3054,12 @@ references:
   - name: " "
   - name: TElement
   - name: )
-- uid: Extensions.Enumerables.ToLookupInverse*
-  commentId: Overload:Extensions.Enumerables.ToLookupInverse
-  href: Extensions.Enumerables.html#Extensions_Enumerables_ToLookupInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
+- uid: Extra.Extensions.Enumerables.ToLookupInverse*
+  commentId: Overload:Extra.Extensions.Enumerables.ToLookupInverse
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_ToLookupInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
   name: ToLookupInverse
   nameWithType: Enumerables.ToLookupInverse
-  fullName: Extensions.Enumerables.ToLookupInverse
+  fullName: Extra.Extensions.Enumerables.ToLookupInverse
 - uid: System.Linq.ILookup{{TKey},{TElement}}
   commentId: T:System.Linq.ILookup{``0,``1}
   parent: System.Linq
@@ -3143,12 +3157,12 @@ references:
   - name: " "
   - name: TValue
   - name: )
-- uid: Extensions.Enumerables.WhereNot*
-  commentId: Overload:Extensions.Enumerables.WhereNot
-  href: Extensions.Enumerables.html#Extensions_Enumerables_WhereNot__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+- uid: Extra.Extensions.Enumerables.WhereNot*
+  commentId: Overload:Extra.Extensions.Enumerables.WhereNot
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_WhereNot__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
   name: WhereNot
   nameWithType: Enumerables.WhereNot
-  fullName: Extensions.Enumerables.WhereNot
+  fullName: Extra.Extensions.Enumerables.WhereNot
 - uid: System.Collections.Generic.IEnumerable{{TElements}}
   commentId: T:System.Collections.Generic.IEnumerable{``0}
   parent: System.Collections.Generic
@@ -3219,9 +3233,9 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
-- uid: Extensions.Enumerables.WhereNotNull*
-  commentId: Overload:Extensions.Enumerables.WhereNotNull
-  href: Extensions.Enumerables.html#Extensions_Enumerables_WhereNotNull__1_System_Collections_Generic_IEnumerable___0__
+- uid: Extra.Extensions.Enumerables.WhereNotNull*
+  commentId: Overload:Extra.Extensions.Enumerables.WhereNotNull
+  href: Extra.Extensions.Enumerables.html#Extra_Extensions_Enumerables_WhereNotNull__1_System_Collections_Generic_IEnumerable___0__
   name: WhereNotNull
   nameWithType: Enumerables.WhereNotNull
-  fullName: Extensions.Enumerables.WhereNotNull
+  fullName: Extra.Extensions.Enumerables.WhereNotNull

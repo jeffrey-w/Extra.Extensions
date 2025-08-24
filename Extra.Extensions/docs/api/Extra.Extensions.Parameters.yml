@@ -1,37 +1,37 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Extensions.Integers
-  commentId: T:Extensions.Integers
-  id: Integers
-  parent: Extensions
+- uid: Extra.Extensions.Parameters
+  commentId: T:Extra.Extensions.Parameters
+  id: Parameters
+  parent: Extra.Extensions
   children:
-  - Extensions.Integers.IsSuccessor(System.Int32,System.Int32)
+  - Extra.Extensions.Parameters.HasCustomAttribute``1(System.Reflection.ParameterInfo)
   langs:
   - csharp
   - vb
-  name: Integers
-  nameWithType: Integers
-  fullName: Extensions.Integers
+  name: Parameters
+  nameWithType: Parameters
+  fullName: Extra.Extensions.Parameters
   type: Class
   source:
     remote:
-      path: Extensions/src/Integers.cs
+      path: Extra.Extensions/src/Parameters.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
-    id: Integers
-    path: ../src/Integers.cs
-    startLine: 6
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
+    id: Parameters
+    path: ../src/Parameters.cs
+    startLine: 8
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
-    The <code>Integers</code> class provides additional operations on the
+    The <code>Parameters</code> class provides additional operations on the
 
-    <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> type.
+    <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> type.
   example: []
   syntax:
-    content: public static class Integers
-    content.vb: Public Module Integers
+    content: public static class Parameters
+    content.vb: Public Module Parameters
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,72 +42,88 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Extensions.Integers.IsSuccessor(System.Int32,System.Int32)
-  commentId: M:Extensions.Integers.IsSuccessor(System.Int32,System.Int32)
-  id: IsSuccessor(System.Int32,System.Int32)
+- uid: Extra.Extensions.Parameters.HasCustomAttribute``1(System.Reflection.ParameterInfo)
+  commentId: M:Extra.Extensions.Parameters.HasCustomAttribute``1(System.Reflection.ParameterInfo)
+  id: HasCustomAttribute``1(System.Reflection.ParameterInfo)
   isExtensionMethod: true
-  parent: Extensions.Integers
+  parent: Extra.Extensions.Parameters
   langs:
   - csharp
   - vb
-  name: IsSuccessor(int, int)
-  nameWithType: Integers.IsSuccessor(int, int)
-  fullName: Extensions.Integers.IsSuccessor(int, int)
+  name: HasCustomAttribute<TAttribute>(ParameterInfo)
+  nameWithType: Parameters.HasCustomAttribute<TAttribute>(ParameterInfo)
+  fullName: Extra.Extensions.Parameters.HasCustomAttribute<TAttribute>(System.Reflection.ParameterInfo)
   type: Method
   source:
     remote:
-      path: Extensions/src/Integers.cs
+      path: Extra.Extensions/src/Parameters.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
-    id: IsSuccessor
-    path: ../src/Integers.cs
-    startLine: 18
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
+    id: HasCustomAttribute
+    path: ../src/Parameters.cs
+    startLine: 23
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
-    Determines whether this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater the
+    Determines whether this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified
 
-    <code class="paramref">other</code> one.
+    <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>, <code class="typeparamref">TAttribute</code>.
   example: []
   syntax:
-    content: public static bool IsSuccessor(this int i, int other)
+    content: 'public static bool HasCustomAttribute<TAttribute>(this ParameterInfo parameter) where TAttribute : Attribute'
     parameters:
-    - id: i
-      type: System.Int32
-      description: This <xref href="System.Int32" data-throw-if-not-resolved="false"></xref>.
-    - id: other
-      type: System.Int32
-      description: The <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> to compare against this one
+    - id: parameter
+      type: System.Reflection.ParameterInfo
+      description: This <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TAttribute
+      description: >-
+        The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of attribute that this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> is
+
+        being queried for.
     return:
       type: System.Boolean
       description: >-
-        <code>true</code> if this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater than the
+        <code>true</code> if this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified
 
-        <code class="paramref">other</code> one.
-    content.vb: Public Shared Function IsSuccessor(i As Integer, other As Integer) As Boolean
-  overload: Extensions.Integers.IsSuccessor*
-  nameWithType.vb: Integers.IsSuccessor(Integer, Integer)
-  fullName.vb: Extensions.Integers.IsSuccessor(Integer, Integer)
-  name.vb: IsSuccessor(Integer, Integer)
+        <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function HasCustomAttribute(Of TAttribute As Attribute)(parameter As ParameterInfo) As Boolean
+  overload: Extra.Extensions.Parameters.HasCustomAttribute*
+  nameWithType.vb: Parameters.HasCustomAttribute(Of TAttribute)(ParameterInfo)
+  fullName.vb: Extra.Extensions.Parameters.HasCustomAttribute(Of TAttribute)(System.Reflection.ParameterInfo)
+  name.vb: HasCustomAttribute(Of TAttribute)(ParameterInfo)
 references:
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
+- uid: System.Reflection.ParameterInfo
+  commentId: T:System.Reflection.ParameterInfo
+  parent: System.Reflection
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: Extensions
-  commentId: N:Extensions
-  href: Extensions.html
-  name: Extensions
-  nameWithType: Extensions
-  fullName: Extensions
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.parameterinfo
+  name: ParameterInfo
+  nameWithType: ParameterInfo
+  fullName: System.Reflection.ParameterInfo
+- uid: Extra.Extensions
+  commentId: N:Extra.Extensions
+  href: Extra.html
+  name: Extra.Extensions
+  nameWithType: Extra.Extensions
+  fullName: Extra.Extensions
+  spec.csharp:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
+  spec.vb:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -338,6 +354,33 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
 - uid: System
   commentId: N:System
   isExternal: true
@@ -345,12 +388,27 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Extensions.Integers.IsSuccessor*
-  commentId: Overload:Extensions.Integers.IsSuccessor
-  href: Extensions.Integers.html#Extensions_Integers_IsSuccessor_System_Int32_System_Int32_
-  name: IsSuccessor
-  nameWithType: Integers.IsSuccessor
-  fullName: Extensions.Integers.IsSuccessor
+- uid: System.Attribute
+  commentId: T:System.Attribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.attribute
+  name: Attribute
+  nameWithType: Attribute
+  fullName: System.Attribute
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Extra.Extensions.Parameters.HasCustomAttribute*
+  commentId: Overload:Extra.Extensions.Parameters.HasCustomAttribute
+  href: Extra.Extensions.Parameters.html#Extra_Extensions_Parameters_HasCustomAttribute__1_System_Reflection_ParameterInfo_
+  name: HasCustomAttribute
+  nameWithType: Parameters.HasCustomAttribute
+  fullName: Extra.Extensions.Parameters.HasCustomAttribute
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

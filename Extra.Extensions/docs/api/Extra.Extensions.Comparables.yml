@@ -1,32 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Extensions.Comparables
-  commentId: T:Extensions.Comparables
+- uid: Extra.Extensions.Comparables
+  commentId: T:Extra.Extensions.Comparables
   id: Comparables
-  parent: Extensions
+  parent: Extra.Extensions
   children:
-  - Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
-  - Extensions.Comparables.IsGreaterThan``1(``0,``0)
-  - Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
-  - Extensions.Comparables.IsLessThan``1(``0,``0)
+  - Extra.Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
+  - Extra.Extensions.Comparables.IsGreaterThan``1(``0,``0)
+  - Extra.Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
+  - Extra.Extensions.Comparables.IsLessThan``1(``0,``0)
   langs:
   - csharp
   - vb
   name: Comparables
   nameWithType: Comparables
-  fullName: Extensions.Comparables
+  fullName: Extra.Extensions.Comparables
   type: Class
   source:
     remote:
-      path: Extensions/src/Comparables.cs
+      path: Extra.Extensions/src/Comparables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Comparables
     path: ../src/Comparables.cs
     startLine: 6
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     The <code>Comparables</code> class provides additional operations on the
 
@@ -45,29 +45,29 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Extensions.Comparables.IsLessThan``1(``0,``0)
-  commentId: M:Extensions.Comparables.IsLessThan``1(``0,``0)
+- uid: Extra.Extensions.Comparables.IsLessThan``1(``0,``0)
+  commentId: M:Extra.Extensions.Comparables.IsLessThan``1(``0,``0)
   id: IsLessThan``1(``0,``0)
   isExtensionMethod: true
-  parent: Extensions.Comparables
+  parent: Extra.Extensions.Comparables
   langs:
   - csharp
   - vb
   name: IsLessThan<T>(T, T)
   nameWithType: Comparables.IsLessThan<T>(T, T)
-  fullName: Extensions.Comparables.IsLessThan<T>(T, T)
+  fullName: Extra.Extensions.Comparables.IsLessThan<T>(T, T)
   type: Method
   source:
     remote:
-      path: Extensions/src/Comparables.cs
+      path: Extra.Extensions/src/Comparables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: IsLessThan
     path: ../src/Comparables.cs
     startLine: 23
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> precedes the
 
@@ -92,33 +92,33 @@ items:
 
         <code class="paramref">other</code>.
     content.vb: Public Shared Function IsLessThan(Of T As IComparable(Of T))(comparable As T, other As T) As Boolean
-  overload: Extensions.Comparables.IsLessThan*
+  overload: Extra.Extensions.Comparables.IsLessThan*
   nameWithType.vb: Comparables.IsLessThan(Of T)(T, T)
-  fullName.vb: Extensions.Comparables.IsLessThan(Of T)(T, T)
+  fullName.vb: Extra.Extensions.Comparables.IsLessThan(Of T)(T, T)
   name.vb: IsLessThan(Of T)(T, T)
-- uid: Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
-  commentId: M:Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
+- uid: Extra.Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
+  commentId: M:Extra.Extensions.Comparables.IsLessThanOrEqual``1(``0,``0)
   id: IsLessThanOrEqual``1(``0,``0)
   isExtensionMethod: true
-  parent: Extensions.Comparables
+  parent: Extra.Extensions.Comparables
   langs:
   - csharp
   - vb
   name: IsLessThanOrEqual<T>(T, T)
   nameWithType: Comparables.IsLessThanOrEqual<T>(T, T)
-  fullName: Extensions.Comparables.IsLessThanOrEqual<T>(T, T)
+  fullName: Extra.Extensions.Comparables.IsLessThanOrEqual<T>(T, T)
   type: Method
   source:
     remote:
-      path: Extensions/src/Comparables.cs
+      path: Extra.Extensions/src/Comparables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: IsLessThanOrEqual
     path: ../src/Comparables.cs
     startLine: 43
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> precedes the
 
@@ -143,33 +143,33 @@ items:
 
         <code class="paramref">other</code>, or is equal to it.
     content.vb: Public Shared Function IsLessThanOrEqual(Of T As IComparable(Of T))(comparable As T, other As T) As Boolean
-  overload: Extensions.Comparables.IsLessThanOrEqual*
+  overload: Extra.Extensions.Comparables.IsLessThanOrEqual*
   nameWithType.vb: Comparables.IsLessThanOrEqual(Of T)(T, T)
-  fullName.vb: Extensions.Comparables.IsLessThanOrEqual(Of T)(T, T)
+  fullName.vb: Extra.Extensions.Comparables.IsLessThanOrEqual(Of T)(T, T)
   name.vb: IsLessThanOrEqual(Of T)(T, T)
-- uid: Extensions.Comparables.IsGreaterThan``1(``0,``0)
-  commentId: M:Extensions.Comparables.IsGreaterThan``1(``0,``0)
+- uid: Extra.Extensions.Comparables.IsGreaterThan``1(``0,``0)
+  commentId: M:Extra.Extensions.Comparables.IsGreaterThan``1(``0,``0)
   id: IsGreaterThan``1(``0,``0)
   isExtensionMethod: true
-  parent: Extensions.Comparables
+  parent: Extra.Extensions.Comparables
   langs:
   - csharp
   - vb
   name: IsGreaterThan<T>(T, T)
   nameWithType: Comparables.IsGreaterThan<T>(T, T)
-  fullName: Extensions.Comparables.IsGreaterThan<T>(T, T)
+  fullName: Extra.Extensions.Comparables.IsGreaterThan<T>(T, T)
   type: Method
   source:
     remote:
-      path: Extensions/src/Comparables.cs
+      path: Extra.Extensions/src/Comparables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: IsGreaterThan
     path: ../src/Comparables.cs
     startLine: 63
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> succeeds the
 
@@ -194,33 +194,33 @@ items:
 
         <code class="paramref">other</code>.
     content.vb: Public Shared Function IsGreaterThan(Of T As IComparable(Of T))(comparable As T, other As T) As Boolean
-  overload: Extensions.Comparables.IsGreaterThan*
+  overload: Extra.Extensions.Comparables.IsGreaterThan*
   nameWithType.vb: Comparables.IsGreaterThan(Of T)(T, T)
-  fullName.vb: Extensions.Comparables.IsGreaterThan(Of T)(T, T)
+  fullName.vb: Extra.Extensions.Comparables.IsGreaterThan(Of T)(T, T)
   name.vb: IsGreaterThan(Of T)(T, T)
-- uid: Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
-  commentId: M:Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
+- uid: Extra.Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
+  commentId: M:Extra.Extensions.Comparables.IsGreaterThanOrEqual``1(``0,``0)
   id: IsGreaterThanOrEqual``1(``0,``0)
   isExtensionMethod: true
-  parent: Extensions.Comparables
+  parent: Extra.Extensions.Comparables
   langs:
   - csharp
   - vb
   name: IsGreaterThanOrEqual<T>(T, T)
   nameWithType: Comparables.IsGreaterThanOrEqual<T>(T, T)
-  fullName: Extensions.Comparables.IsGreaterThanOrEqual<T>(T, T)
+  fullName: Extra.Extensions.Comparables.IsGreaterThanOrEqual<T>(T, T)
   type: Method
   source:
     remote:
-      path: Extensions/src/Comparables.cs
+      path: Extra.Extensions/src/Comparables.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: IsGreaterThanOrEqual
     path: ../src/Comparables.cs
     startLine: 83
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.IComparable%601" data-throw-if-not-resolved="false"></xref> succeeds the
 
@@ -245,9 +245,9 @@ items:
 
         <code class="paramref">other</code>, or is equal to it.
     content.vb: Public Shared Function IsGreaterThanOrEqual(Of T As IComparable(Of T))(comparable As T, other As T) As Boolean
-  overload: Extensions.Comparables.IsGreaterThanOrEqual*
+  overload: Extra.Extensions.Comparables.IsGreaterThanOrEqual*
   nameWithType.vb: Comparables.IsGreaterThanOrEqual(Of T)(T, T)
-  fullName.vb: Extensions.Comparables.IsGreaterThanOrEqual(Of T)(T, T)
+  fullName.vb: Extra.Extensions.Comparables.IsGreaterThanOrEqual(Of T)(T, T)
   name.vb: IsGreaterThanOrEqual(Of T)(T, T)
 references:
 - uid: System.IComparable`1
@@ -278,12 +278,28 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Extensions
-  commentId: N:Extensions
-  href: Extensions.html
-  name: Extensions
-  nameWithType: Extensions
-  fullName: Extensions
+- uid: Extra.Extensions
+  commentId: N:Extra.Extensions
+  href: Extra.html
+  name: Extra.Extensions
+  nameWithType: Extra.Extensions
+  fullName: Extra.Extensions
+  spec.csharp:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
+  spec.vb:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -557,12 +573,12 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: Extensions.Comparables.IsLessThan*
-  commentId: Overload:Extensions.Comparables.IsLessThan
-  href: Extensions.Comparables.html#Extensions_Comparables_IsLessThan__1___0___0_
+- uid: Extra.Extensions.Comparables.IsLessThan*
+  commentId: Overload:Extra.Extensions.Comparables.IsLessThan
+  href: Extra.Extensions.Comparables.html#Extra_Extensions_Comparables_IsLessThan__1___0___0_
   name: IsLessThan
   nameWithType: Comparables.IsLessThan
-  fullName: Extensions.Comparables.IsLessThan
+  fullName: Extra.Extensions.Comparables.IsLessThan
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -584,21 +600,21 @@ references:
   name: T
   nameWithType: T
   fullName: T
-- uid: Extensions.Comparables.IsLessThanOrEqual*
-  commentId: Overload:Extensions.Comparables.IsLessThanOrEqual
-  href: Extensions.Comparables.html#Extensions_Comparables_IsLessThanOrEqual__1___0___0_
+- uid: Extra.Extensions.Comparables.IsLessThanOrEqual*
+  commentId: Overload:Extra.Extensions.Comparables.IsLessThanOrEqual
+  href: Extra.Extensions.Comparables.html#Extra_Extensions_Comparables_IsLessThanOrEqual__1___0___0_
   name: IsLessThanOrEqual
   nameWithType: Comparables.IsLessThanOrEqual
-  fullName: Extensions.Comparables.IsLessThanOrEqual
-- uid: Extensions.Comparables.IsGreaterThan*
-  commentId: Overload:Extensions.Comparables.IsGreaterThan
-  href: Extensions.Comparables.html#Extensions_Comparables_IsGreaterThan__1___0___0_
+  fullName: Extra.Extensions.Comparables.IsLessThanOrEqual
+- uid: Extra.Extensions.Comparables.IsGreaterThan*
+  commentId: Overload:Extra.Extensions.Comparables.IsGreaterThan
+  href: Extra.Extensions.Comparables.html#Extra_Extensions_Comparables_IsGreaterThan__1___0___0_
   name: IsGreaterThan
   nameWithType: Comparables.IsGreaterThan
-  fullName: Extensions.Comparables.IsGreaterThan
-- uid: Extensions.Comparables.IsGreaterThanOrEqual*
-  commentId: Overload:Extensions.Comparables.IsGreaterThanOrEqual
-  href: Extensions.Comparables.html#Extensions_Comparables_IsGreaterThanOrEqual__1___0___0_
+  fullName: Extra.Extensions.Comparables.IsGreaterThan
+- uid: Extra.Extensions.Comparables.IsGreaterThanOrEqual*
+  commentId: Overload:Extra.Extensions.Comparables.IsGreaterThanOrEqual
+  href: Extra.Extensions.Comparables.html#Extra_Extensions_Comparables_IsGreaterThanOrEqual__1___0___0_
   name: IsGreaterThanOrEqual
   nameWithType: Comparables.IsGreaterThanOrEqual
-  fullName: Extensions.Comparables.IsGreaterThanOrEqual
+  fullName: Extra.Extensions.Comparables.IsGreaterThanOrEqual

@@ -1,31 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Extensions.Members
-  commentId: T:Extensions.Members
+- uid: Extra.Extensions.Members
+  commentId: T:Extra.Extensions.Members
   id: Members
-  parent: Extensions
+  parent: Extra.Extensions
   children:
-  - Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
+  - Extra.Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
   langs:
   - csharp
   - vb
   name: Members
   nameWithType: Members
-  fullName: Extensions.Members
+  fullName: Extra.Extensions.Members
   type: Class
   source:
     remote:
-      path: Extensions/src/Members.cs
+      path: Extra.Extensions/src/Members.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: Members
     path: ../src/Members.cs
     startLine: 8
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
-    The <code>MemberInfo</code> class provides additional operations on the
+    The <code>Members</code> class provides additional operations on the
 
     <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref> type.
   example: []
@@ -42,29 +42,29 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
-  commentId: M:Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
+- uid: Extra.Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
+  commentId: M:Extra.Extensions.Members.HasCustomAttribute``1(System.Reflection.MemberInfo)
   id: HasCustomAttribute``1(System.Reflection.MemberInfo)
   isExtensionMethod: true
-  parent: Extensions.Members
+  parent: Extra.Extensions.Members
   langs:
   - csharp
   - vb
   name: HasCustomAttribute<TAttribute>(MemberInfo)
   nameWithType: Members.HasCustomAttribute<TAttribute>(MemberInfo)
-  fullName: Extensions.Members.HasCustomAttribute<TAttribute>(System.Reflection.MemberInfo)
+  fullName: Extra.Extensions.Members.HasCustomAttribute<TAttribute>(System.Reflection.MemberInfo)
   type: Method
   source:
     remote:
-      path: Extensions/src/Members.cs
+      path: Extra.Extensions/src/Members.cs
       branch: main
-      repo: git@github.com:jeffrey-w/Extensions.git
+      repo: git@github.com:jeffrey-w/Extra.Extensions.git
     id: HasCustomAttribute
     path: ../src/Members.cs
     startLine: 23
   assemblies:
-  - Extensions
-  namespace: Extensions
+  - Extra.Extensions
+  namespace: Extra.Extensions
   summary: >-
     Determines whether this <xref href="System.Reflection.MemberInfo" data-throw-if-not-resolved="false"></xref> has the specified
 
@@ -89,9 +89,9 @@ items:
 
         <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function HasCustomAttribute(Of TAttribute As Attribute)(member As MemberInfo) As Boolean
-  overload: Extensions.Members.HasCustomAttribute*
+  overload: Extra.Extensions.Members.HasCustomAttribute*
   nameWithType.vb: Members.HasCustomAttribute(Of TAttribute)(MemberInfo)
-  fullName.vb: Extensions.Members.HasCustomAttribute(Of TAttribute)(System.Reflection.MemberInfo)
+  fullName.vb: Extra.Extensions.Members.HasCustomAttribute(Of TAttribute)(System.Reflection.MemberInfo)
   name.vb: HasCustomAttribute(Of TAttribute)(MemberInfo)
 references:
 - uid: System.Reflection.MemberInfo
@@ -102,12 +102,28 @@ references:
   name: MemberInfo
   nameWithType: MemberInfo
   fullName: System.Reflection.MemberInfo
-- uid: Extensions
-  commentId: N:Extensions
-  href: Extensions.html
-  name: Extensions
-  nameWithType: Extensions
-  fullName: Extensions
+- uid: Extra.Extensions
+  commentId: N:Extra.Extensions
+  href: Extra.html
+  name: Extra.Extensions
+  nameWithType: Extra.Extensions
+  fullName: Extra.Extensions
+  spec.csharp:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
+  spec.vb:
+  - uid: Extra
+    name: Extra
+    href: Extra.html
+  - name: .
+  - uid: Extra.Extensions
+    name: Extensions
+    href: Extra.Extensions.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -387,12 +403,12 @@ references:
   name: Type
   nameWithType: Type
   fullName: System.Type
-- uid: Extensions.Members.HasCustomAttribute*
-  commentId: Overload:Extensions.Members.HasCustomAttribute
-  href: Extensions.Members.html#Extensions_Members_HasCustomAttribute__1_System_Reflection_MemberInfo_
+- uid: Extra.Extensions.Members.HasCustomAttribute*
+  commentId: Overload:Extra.Extensions.Members.HasCustomAttribute
+  href: Extra.Extensions.Members.html#Extra_Extensions_Members_HasCustomAttribute__1_System_Reflection_MemberInfo_
   name: HasCustomAttribute
   nameWithType: Members.HasCustomAttribute
-  fullName: Extensions.Members.HasCustomAttribute
+  fullName: Extra.Extensions.Members.HasCustomAttribute
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

@@ -12,7 +12,7 @@
         <Copyright>Jeff Wilgus</Copyright>
         <PackageProjectUrl>https://github.com/jeffrey-w/Extensions</PackageProjectUrl>
         <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-        <RepositoryUrl>https://github.com/jeffrey-w/Extensions</RepositoryUrl>
+        <RepositoryUrl>https://github.com/jeffrey-w/Extra.Extensions</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageIcon>logo.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>

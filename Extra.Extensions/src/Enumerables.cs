@@ -1,4 +1,4 @@
-namespace Extensions;
+namespace Extra.Extensions;
 
 /// <summary>
 /// The <c>Enumerables</c> class provides additional operations on the
@@ -234,8 +234,7 @@ public static class Enumerables
 
     /// <summary>
     /// Determines whether any element from this <see cref="IEnumerable{T}" /> does not
-    /// satisfy the specified
-    /// <paramref name="predicate" />.
+    /// satisfy the specified <paramref name="predicate" />.
     /// </summary>
     /// <typeparam name="TElement">
     /// The type of element held by this <see cref="IEnumerable{T}" />.
@@ -482,8 +481,8 @@ public static class Enumerables
     /// </param>
     /// <returns>
     /// A new <see cref="IEnumerable{T}" /> containing the elements from this one if
-    /// the specified <paramref name="selector" />
-    /// maps every element in it to a unique value from <typeparamref name="TKey" />.
+    /// the specified <paramref name="selector" /> maps every element in it to a unique
+    /// value from <typeparamref name="TKey" />.
     /// </returns>
     /// <exception cref="InvalidOperationException">
     /// If the specified <paramref name="selector" /> does not map every element from

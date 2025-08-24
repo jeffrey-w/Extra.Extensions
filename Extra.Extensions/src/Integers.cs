@@ -1,4 +1,4 @@
-namespace Extensions;
+namespace Extra.Extensions;
 
 /// <summary>
 /// The <c>Integers</c> class provides additional operations on the

@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Extensions;
+namespace Extra.Extensions;
 
 /// <summary>
 /// The <c>Members</c> class provides additional operations on the

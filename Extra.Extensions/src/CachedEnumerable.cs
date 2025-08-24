@@ -1,6 +1,6 @@
 using System.Collections;
 
-namespace Extensions;
+namespace Extra.Extensions;
 
 internal sealed class CachedEnumerable<TElement>(IEnumerable<TElement> elements) : IEnumerable<TElement>
 {

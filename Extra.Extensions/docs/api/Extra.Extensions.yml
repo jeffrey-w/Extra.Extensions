@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Extra.Extensions
+  commentId: N:Extra.Extensions
+  id: Extra.Extensions
+  children:
+  - Extra.Extensions.Comparables
+  - Extra.Extensions.Enumerables
+  - Extra.Extensions.Integers
+  - Extra.Extensions.Members
+  - Extra.Extensions.Objects
+  - Extra.Extensions.Parameters
+  - Extra.Extensions.Types
+  langs:
+  - csharp
+  - vb
+  name: Extra.Extensions
+  nameWithType: Extra.Extensions
+  fullName: Extra.Extensions
+  type: Namespace
+  assemblies:
+  - Extra.Extensions
+references:
+- uid: Extra.Extensions.Comparables
+  commentId: T:Extra.Extensions.Comparables
+  href: Extra.Extensions.Comparables.html
+  name: Comparables
+  nameWithType: Comparables
+  fullName: Extra.Extensions.Comparables
+- uid: Extra.Extensions.Enumerables
+  commentId: T:Extra.Extensions.Enumerables
+  href: Extra.Extensions.Enumerables.html
+  name: Enumerables
+  nameWithType: Enumerables
+  fullName: Extra.Extensions.Enumerables
+- uid: Extra.Extensions.Integers
+  commentId: T:Extra.Extensions.Integers
+  href: Extra.Extensions.Integers.html
+  name: Integers
+  nameWithType: Integers
+  fullName: Extra.Extensions.Integers
+- uid: Extra.Extensions.Members
+  commentId: T:Extra.Extensions.Members
+  href: Extra.Extensions.Members.html
+  name: Members
+  nameWithType: Members
+  fullName: Extra.Extensions.Members
+- uid: Extra.Extensions.Objects
+  commentId: T:Extra.Extensions.Objects
+  href: Extra.Extensions.Objects.html
+  name: Objects
+  nameWithType: Objects
+  fullName: Extra.Extensions.Objects
+- uid: Extra.Extensions.Parameters
+  commentId: T:Extra.Extensions.Parameters
+  href: Extra.Extensions.Parameters.html
+  name: Parameters
+  nameWithType: Parameters
+  fullName: Extra.Extensions.Parameters
+- uid: Extra.Extensions.Types
+  commentId: T:Extra.Extensions.Types
+  href: Extra.Extensions.Types.html
+  name: Types
+  nameWithType: Types
+  fullName: Extra.Extensions.Types
