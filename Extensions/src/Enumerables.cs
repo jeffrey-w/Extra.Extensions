@@ -152,7 +152,7 @@ public static class Enumerables
                 return false;
             }
         }
-        return true;
+        return count == 1;
     }
 
     /// <summary>
