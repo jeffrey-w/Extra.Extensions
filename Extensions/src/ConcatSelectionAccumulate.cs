@@ -1,6 +1,6 @@
 namespace Extensions;
 
-internal static class ConcatSelectionAggregator
+internal static class ConcatSelectionAccumulate
 {
     public static ConcatSelectionAggregator<TElement> Empty<TElement>()
     {
