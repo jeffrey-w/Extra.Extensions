@@ -28,7 +28,7 @@ jobs:
       - name: Install DocFX
         run: dotnet tool install -g docfx
       - name: Build docs with DocFX
-        working-directory: docs
+        working-directory: docs/
         shell: bash
         run: docfx docfx.json
       - name: Upload Pages artifact
