@@ -183,9 +183,9 @@ public static class Enumerables
         Func<TElement, IEnumerable<TElement>> selector)
     {
         return elements.Aggregate(
-            ConcatSelectionAccumulate.Empty<TElement>(),
-            (aggregator, element) => aggregator.Add(element, selector),
-            aggregator => aggregator.ToEnumerable());
+            ConcatSelectionAccumulate.Empty(selector),
+            (accumulate, element) => accumulate.Add(element),
+            accumulate => accumulate.ToEnumerable());
     }
 
     /// <summary>
