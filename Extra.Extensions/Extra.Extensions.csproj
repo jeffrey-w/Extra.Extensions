@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>Extensions</Title>
+        <Title>Extra.Extensions</Title>
         <Authors>Jeff Wilgus</Authors>
         <Description>A library that provides additional operations on common types</Description>
         <Copyright>Jeff Wilgus</Copyright>
@@ -16,6 +16,7 @@
         <RepositoryType>git</RepositoryType>
         <PackageIcon>logo.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
