@@ -5,6 +5,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Extensions</Title>
+    <Authors>Jeff Wilgus</Authors>
+    <Description>A library that provides additional operations on common types</Description>
+    <Copyright>Jeff Wilgus</Copyright>
+    <PackageProjectUrl>https://github.com/jeffrey-w/Extensions</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/jeffrey-w/Extensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+      <None Include="../LICENSE.md" Pack="true" PackagePath="" />
+      <None Include="../README.md" Pack="true" PackagePath="" />
+      <None Include="../logo.png" Pack="true" PackagePath="" />
+  </ItemGroup>
 
 </Project>

@@ -1,0 +1,31 @@
+### YamlMime:TableOfContent
+items:
+- uid: Extensions
+  name: Extensions
+  type: Namespace
+  items:
+  - uid: Extensions.Comparables
+    name: Comparables
+    type: Class
+  - uid: Extensions.Enumerables
+    name: Enumerables
+    type: Class
+  - uid: Extensions.IdentityFunction
+    name: IdentityFunction
+    type: Class
+  - uid: Extensions.Integers
+    name: Integers
+    type: Class
+  - uid: Extensions.Members
+    name: Members
+    type: Class
+  - uid: Extensions.Objects
+    name: Objects
+    type: Class
+  - uid: Extensions.Parameters
+    name: Parameters
+    type: Class
+  - uid: Extensions.Types
+    name: Types
+    type: Class
+memberLayout: SamePage

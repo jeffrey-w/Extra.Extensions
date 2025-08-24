@@ -1,0 +1,3051 @@
+### YamlMime:ManagedReference
+items:
+- uid: Extensions.Enumerables
+  commentId: T:Extensions.Enumerables
+  id: Enumerables
+  parent: Extensions
+  children:
+  - Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  - Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  - Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  - Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  - Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  - Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  - Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  - Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  - Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  - Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  - Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  - Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  - Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  - Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  - Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  - Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  - Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  - Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  langs:
+  - csharp
+  - vb
+  name: Enumerables
+  nameWithType: Enumerables
+  fullName: Extensions.Enumerables
+  type: Class
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: Enumerables
+    path: ../src/Enumerables.cs
+    startLine: 5
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: The <code>Enumerables</code> class provides additional operations on the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> type.
+  example: []
+  syntax:
+    content: public static class Enumerables
+    content.vb: Public Module Enumerables
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  commentId: M:Extensions.Enumerables.AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  id: AggregateAsync``3(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,System.Threading.Tasks.Task{``1}},System.Func{``1,``2})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: AggregateAsync<TElement, TAccumulate, TResult>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, Task<TAccumulate>>, Func<TAccumulate, TResult>)
+  nameWithType: Enumerables.AggregateAsync<TElement, TAccumulate, TResult>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, Task<TAccumulate>>, Func<TAccumulate, TResult>)
+  fullName: Extensions.Enumerables.AggregateAsync<TElement, TAccumulate, TResult>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, System.Threading.Tasks.Task<TAccumulate>>, System.Func<TAccumulate, TResult>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: AggregateAsync
+    path: ../src/Enumerables.cs
+    startLine: 22
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the element from <code class="typeparamref">TResult</code> obtained by combining the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+
+    into an element from <code class="typeparamref">TAccumulate</code>, initialized by the specified <code class="paramref">seed</code>, and
+
+    then applying the specified <code class="paramref">selector</code> to the result.
+  example: []
+  syntax:
+    content: public static Task<TResult> AggregateAsync<TElement, TAccumulate, TResult>(this IEnumerable<TElement> elements, TAccumulate seed, Func<TAccumulate, TElement, Task<TAccumulate>> accumulator, Func<TAccumulate, TResult> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: seed
+      type: '{TAccumulate}'
+      description: The value from which combination of elements in this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> initiates.
+    - id: accumulator
+      type: System.Func{{TAccumulate},{TElement},System.Threading.Tasks.Task{{TAccumulate}}}
+      description: >-
+        An asynchronous function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code>
+            pairs to <code class="typeparamref">TAccumulate</code>.
+    - id: selector
+      type: System.Func{{TAccumulate},{TResult}}
+      description: A function from <code class="typeparamref">TAccumulate</code> to <code class="typeparamref">TResult</code>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: TAccumulate
+      description: The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined.
+    - id: TResult
+      description: The type that the specified <code class="paramref">selector</code> projects members of <code class="typeparamref">TAccumulate</code> to.
+    return:
+      type: System.Threading.Tasks.Task{{TResult}}
+      description: A new <code class="typeparamref">TResult</code> instance.
+    content.vb: Public Shared Function AggregateAsync(Of TElement, TAccumulate, TResult)(elements As IEnumerable(Of TElement), seed As TAccumulate, accumulator As Func(Of TAccumulate, TElement, Task(Of TAccumulate)), selector As Func(Of TAccumulate, TResult)) As Task(Of TResult)
+  overload: Extensions.Enumerables.AggregateAsync*
+  nameWithType.vb: Enumerables.AggregateAsync(Of TElement, TAccumulate, TResult)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, Task(Of TAccumulate)), Func(Of TAccumulate, TResult))
+  fullName.vb: Extensions.Enumerables.AggregateAsync(Of TElement, TAccumulate, TResult)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, System.Threading.Tasks.Task(Of TAccumulate)), System.Func(Of TAccumulate, TResult))
+  name.vb: AggregateAsync(Of TElement, TAccumulate, TResult)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, Task(Of TAccumulate)), Func(Of TAccumulate, TResult))
+- uid: Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  id: AppendIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: AppendIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
+  nameWithType: Enumerables.AppendIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
+  fullName: Extensions.Enumerables.AppendIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: AppendIf
+    path: ../src/Enumerables.cs
+    startLine: 43
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+
+    end of this one, if it satisfies the specified <code class="paramref">predicate</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> AppendIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: element
+      type: '{TElement}'
+      description: The item to include in the new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: predicate
+      type: System.Func{{TElement},System.Boolean}
+      description: A function from <code class="typeparamref">TElement</code> to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function AppendIf(Of TElement)(elements As IEnumerable(Of TElement), element As TElement, predicate As Func(Of TElement, Boolean)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.AppendIf*
+  nameWithType.vb: Enumerables.AppendIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
+  fullName.vb: Extensions.Enumerables.AppendIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
+  name.vb: AppendIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
+- uid: Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  commentId: M:Extensions.Enumerables.AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  id: AppendIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: AppendIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
+  nameWithType: Enumerables.AppendIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
+  fullName: Extensions.Enumerables.AppendIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: AppendIfNotNull
+    path: ../src/Enumerables.cs
+    startLine: 56
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+
+    end of this one, if it is not <code>null</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> AppendIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: element
+      type: '{TElement}'
+      description: The item to include in the new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function AppendIfNotNull(Of TElement)(elements As IEnumerable(Of TElement), element As TElement) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.AppendIfNotNull*
+  nameWithType.vb: Enumerables.AppendIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
+  fullName.vb: Extensions.Enumerables.AppendIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
+  name.vb: AppendIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
+- uid: Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  id: PrependIf``1(System.Collections.Generic.IEnumerable{``0},``0,System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: PrependIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
+  nameWithType: Enumerables.PrependIf<TElement>(IEnumerable<TElement>, TElement, Func<TElement, bool>)
+  fullName: Extensions.Enumerables.PrependIf<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement, System.Func<TElement, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: PrependIf
+    path: ../src/Enumerables.cs
+    startLine: 70
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+
+    beginning of this one, if it satisfies the specified <code class="paramref">predicate</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> PrependIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: element
+      type: '{TElement}'
+      description: The item to include in the new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: predicate
+      type: System.Func{{TElement},System.Boolean}
+      description: A function from <code class="typeparamref">TElement</code> to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function PrependIf(Of TElement)(elements As IEnumerable(Of TElement), element As TElement, predicate As Func(Of TElement, Boolean)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.PrependIf*
+  nameWithType.vb: Enumerables.PrependIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
+  fullName.vb: Extensions.Enumerables.PrependIf(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement, System.Func(Of TElement, Boolean))
+  name.vb: PrependIf(Of TElement)(IEnumerable(Of TElement), TElement, Func(Of TElement, Boolean))
+- uid: Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  commentId: M:Extensions.Enumerables.PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  id: PrependIfNotNull``1(System.Collections.Generic.IEnumerable{``0},``0)
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: PrependIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
+  nameWithType: Enumerables.PrependIfNotNull<TElement>(IEnumerable<TElement>, TElement?)
+  fullName: Extensions.Enumerables.PrependIfNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>, TElement?)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: PrependIfNotNull
+    path: ../src/Enumerables.cs
+    startLine: 83
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+
+    beginning of this one, if it is not <code>null</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> PrependIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: element
+      type: '{TElement}'
+      description: The item to include in the new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function PrependIfNotNull(Of TElement)(elements As IEnumerable(Of TElement), element As TElement) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.PrependIfNotNull*
+  nameWithType.vb: Enumerables.PrependIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
+  fullName.vb: Extensions.Enumerables.PrependIfNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), TElement)
+  name.vb: PrependIfNotNull(Of TElement)(IEnumerable(Of TElement), TElement)
+- uid: Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.Cached``1(System.Collections.Generic.IEnumerable{``0})
+  id: Cached``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: Cached<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.Cached<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.Cached<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: Cached
+    path: ../src/Enumerables.cs
+    startLine: 103
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the same elements as this one, but that only evaluates
+
+    them once upon first emission from an associated <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    Note that this method is not semantically equivalent to those that force immediate evaluation (e.g.,
+        <xref href="System.Linq.Enumerable.ToList%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d)?text=ToList" data-throw-if-not-resolved="false"></xref>) since the elements contained by the new
+        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are still lazily evaluated during an initial enumeration, but are not reevaluated
+        during subsequent ones. Caution using this method is advised since it may alter the expected semantics of
+        enumeration. Specifically, the effect of adding or removing elements from the data structure that backs this
+        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> will not be observed by enumerating the returned <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+        Additionally, no guarantees are made with respect to the thread safety of the cached
+        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and concurrent iterations should be externally synchronized.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> Cached<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Cached(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.Cached*
+  nameWithType.vb: Enumerables.Cached(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.Cached(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: Cached(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extensions.Enumerables.ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  id: ConcatSelection``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Collections.Generic.IEnumerable{``0}})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ConcatSelection<TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TElement>>)
+  nameWithType: Enumerables.ConcatSelection<TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TElement>>)
+  fullName: Extensions.Enumerables.ConcatSelection<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TElement>>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ConcatSelection
+    path: ../src/Enumerables.cs
+    startLine: 116
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains every element from this one, and those induced by
+
+    applying the specified <code class="paramref">selector</code> to them.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> ConcatSelection<TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TElement>> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TElement}}}
+      description: A relation over <code class="typeparamref">TElement</code>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ConcatSelection(Of TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TElement))) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.ConcatSelection*
+  nameWithType.vb: Enumerables.ConcatSelection(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TElement)))
+  fullName.vb: Extensions.Enumerables.ConcatSelection(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TElement)))
+  name.vb: ConcatSelection(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TElement)))
+- uid: Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  commentId: M:Extensions.Enumerables.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  id: ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ForEach<TElement>(IEnumerable<TElement>, Action<TElement>)
+  nameWithType: Enumerables.ForEach<TElement>(IEnumerable<TElement>, Action<TElement>)
+  fullName: Extensions.Enumerables.ForEach<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Action<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ForEach
+    path: ../src/Enumerables.cs
+    startLine: 130
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Performs the specified <code class="paramref">action</code> on each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void ForEach<TElement>(this IEnumerable<TElement> elements, Action<TElement> action)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: action
+      type: System.Action{{TElement}}
+      description: The logic to execute against each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Sub ForEach(Of TElement)(elements As IEnumerable(Of TElement), action As Action(Of TElement))
+  overload: Extensions.Enumerables.ForEach*
+  nameWithType.vb: Enumerables.ForEach(Of TElement)(IEnumerable(Of TElement), Action(Of TElement))
+  fullName.vb: Extensions.Enumerables.ForEach(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Action(Of TElement))
+  name.vb: ForEach(Of TElement)(IEnumerable(Of TElement), Action(Of TElement))
+- uid: Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  id: IsSingleton``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: IsSingleton<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.IsSingleton<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.IsSingleton<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: IsSingleton
+    path: ../src/Enumerables.cs
+    startLine: 144
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains only one element.
+  example: []
+  syntax:
+    content: public static bool IsSingleton<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is a singleton.
+    content.vb: Public Shared Function IsSingleton(Of TElement)(elements As IEnumerable(Of TElement)) As Boolean
+  overload: Extensions.Enumerables.IsSingleton*
+  nameWithType.vb: Enumerables.IsSingleton(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.IsSingleton(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: IsSingleton(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  id: NotAll``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: NotAll<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
+  nameWithType: Enumerables.NotAll<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
+  fullName: Extensions.Enumerables.NotAll<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: NotAll
+    path: ../src/Enumerables.cs
+    startLine: 166
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Determines whether any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not satisfy the specified <code class="paramref">predicate</code>.
+  example: []
+  syntax:
+    content: public static bool NotAll<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: predicate
+      type: System.Func{{TElement},System.Boolean}
+      description: A function from <code class="typeparamref">TElement</code> to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: >-
+        <code>true</code> if at least one element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not satisfy the
+            specified <code class="paramref">predicate</code>.
+    content.vb: Public Shared Function NotAll(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
+  overload: Extensions.Enumerables.NotAll*
+  nameWithType.vb: Enumerables.NotAll(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
+  fullName.vb: Extensions.Enumerables.NotAll(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
+  name.vb: NotAll(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
+- uid: Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  id: NotAny``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: NotAny<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.NotAny<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: NotAny
+    path: ../src/Enumerables.cs
+    startLine: 177
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is empty.
+  example: []
+  syntax:
+    content: public static bool NotAny<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains no elements.
+    content.vb: Public Shared Function NotAny(Of TElement)(elements As IEnumerable(Of TElement)) As Boolean
+  overload: Extensions.Enumerables.NotAny*
+  nameWithType.vb: Enumerables.NotAny(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: NotAny(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  id: NotAny``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: NotAny<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
+  nameWithType: Enumerables.NotAny<TElement>(IEnumerable<TElement>, Func<TElement, bool>)
+  fullName: Extensions.Enumerables.NotAny<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: NotAny
+    path: ../src/Enumerables.cs
+    startLine: 191
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Determines whether no element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> satisfies the specified <code class="paramref">predicate</code>.
+  example: []
+  syntax:
+    content: public static bool NotAny<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: predicate
+      type: System.Func{{TElement},System.Boolean}
+      description: A function from <code class="typeparamref">TElement</code> to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the specified <code class="paramref">predicate</code> is not satisfied by any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function NotAny(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
+  overload: Extensions.Enumerables.NotAny*
+  nameWithType.vb: Enumerables.NotAny(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
+  fullName.vb: Extensions.Enumerables.NotAny(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, Boolean))
+  name.vb: NotAny(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
+- uid: Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  commentId: M:Extensions.Enumerables.SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  id: SelectAsync``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Threading.Tasks.Task{``1}})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: SelectAsync<TElement, TResult>(IEnumerable<TElement>, Func<TElement, Task<TResult>>)
+  nameWithType: Enumerables.SelectAsync<TElement, TResult>(IEnumerable<TElement>, Func<TElement, Task<TResult>>)
+  fullName: Extensions.Enumerables.SelectAsync<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Threading.Tasks.Task<TResult>>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: SelectAsync
+    path: ../src/Enumerables.cs
+    startLine: 206
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code> to each
+
+    element in this one.
+  example: []
+  syntax:
+    content: public static Task<IEnumerable<TResult>> SelectAsync<TElement, TResult>(this IEnumerable<TElement> elements, Func<TElement, Task<TResult>> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},System.Threading.Tasks.Task{{TResult}}}
+      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TResult</code>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: TResult
+      description: The type that the specified <code class="paramref">selector</code> projects elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function SelectAsync(Of TElement, TResult)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, Task(Of TResult))) As Task(Of IEnumerable(Of TResult))
+  overload: Extensions.Enumerables.SelectAsync*
+  nameWithType.vb: Enumerables.SelectAsync(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, Task(Of TResult)))
+  fullName.vb: Extensions.Enumerables.SelectAsync(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Threading.Tasks.Task(Of TResult)))
+  name.vb: SelectAsync(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, Task(Of TResult)))
+- uid: Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:Extensions.Enumerables.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: SelectNotNull<TElement, TResult>(IEnumerable<TElement>, Func<TElement, TResult?>)
+  nameWithType: Enumerables.SelectNotNull<TElement, TResult>(IEnumerable<TElement>, Func<TElement, TResult?>)
+  fullName: Extensions.Enumerables.SelectNotNull<TElement, TResult>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TResult?>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: SelectNotNull
+    path: ../src/Enumerables.cs
+    startLine: 224
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code> to the
+
+    elements from this one, retaining only those projections that are not <code>null</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TResult> SelectNotNull<TElement, TResult>(this IEnumerable<TElement> elements, Func<TElement, TResult?> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},{TResult}}
+      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TResult</code>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: TResult
+      description: The type that the specified <code class="paramref">selector</code> projects elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TResult}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function SelectNotNull(Of TElement, TResult)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, TResult)) As IEnumerable(Of TResult)
+  overload: Extensions.Enumerables.SelectNotNull*
+  nameWithType.vb: Enumerables.SelectNotNull(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, TResult))
+  fullName.vb: Extensions.Enumerables.SelectNotNull(Of TElement, TResult)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TResult))
+  name.vb: SelectNotNull(Of TElement, TResult)(IEnumerable(Of TElement), Func(Of TElement, TResult))
+- uid: Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  id: SequenceHashCode``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: SequenceHashCode<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.SequenceHashCode<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.SequenceHashCode<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: SequenceHashCode
+    path: ../src/Enumerables.cs
+    startLine: 237
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Provides the hash code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, computed over the elements it contains.
+  example: []
+  syntax:
+    content: public static int SequenceHashCode<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Int32
+      description: The has code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function SequenceHashCode(Of TElement)(elements As IEnumerable(Of TElement)) As Integer
+  overload: Extensions.Enumerables.SequenceHashCode*
+  nameWithType.vb: Enumerables.SequenceHashCode(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.SequenceHashCode(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: SequenceHashCode(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  id: Shuffle``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.Shuffle<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: Shuffle
+    path: ../src/Enumerables.cs
+    startLine: 248
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Shuffle(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.Shuffle*
+  nameWithType.vb: Enumerables.Shuffle(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: Shuffle(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  commentId: M:Extensions.Enumerables.Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  id: Shuffle``1(System.Collections.Generic.IEnumerable{``0},System.Random)
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: Shuffle<TElement>(IEnumerable<TElement>, Random)
+  nameWithType: Enumerables.Shuffle<TElement>(IEnumerable<TElement>, Random)
+  fullName: Extensions.Enumerables.Shuffle<TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Random)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: Shuffle
+    path: ../src/Enumerables.cs
+    startLine: 261
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order induced by the specified <code class="paramref">random</code> number generator.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements, Random random)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: random
+      type: System.Random
+      description: A source of randomness.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Shuffle(Of TElement)(elements As IEnumerable(Of TElement), random As Random) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.Shuffle*
+  nameWithType.vb: Enumerables.Shuffle(Of TElement)(IEnumerable(Of TElement), Random)
+  fullName.vb: Extensions.Enumerables.Shuffle(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Random)
+  name.vb: Shuffle(Of TElement)(IEnumerable(Of TElement), Random)
+- uid: Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  id: TakeWhileAggregate``2(System.Collections.Generic.IEnumerable{``0},``1,System.Func{``1,``0,``1},System.Func{``1,``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: TakeWhileAggregate<TElement, TAccumulate>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, TAccumulate>, Func<TAccumulate, TElement, bool>)
+  nameWithType: Enumerables.TakeWhileAggregate<TElement, TAccumulate>(IEnumerable<TElement>, TAccumulate, Func<TAccumulate, TElement, TAccumulate>, Func<TAccumulate, TElement, bool>)
+  fullName: Extensions.Enumerables.TakeWhileAggregate<TElement, TAccumulate>(System.Collections.Generic.IEnumerable<TElement>, TAccumulate, System.Func<TAccumulate, TElement, TAccumulate>, System.Func<TAccumulate, TElement, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: TakeWhileAggregate
+    path: ../src/Enumerables.cs
+    startLine: 287
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting the elements emitted by this one that satisfy the
+
+    specified <code class="paramref">predicate</code> when combined by the specified <code class="paramref">accumulator</code>. The
+
+    combination against which the specified <code class="paramref">predicate</code> is evaluated is initialized by the
+
+    specified <code class="paramref">seed</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> TakeWhileAggregate<TElement, TAccumulate>(this IEnumerable<TElement> elements, TAccumulate seed, Func<TAccumulate, TElement, TAccumulate> accumulator, Func<TAccumulate, TElement, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: seed
+      type: '{TAccumulate}'
+      description: The initial value from <code class="typeparamref">TAccumulate</code> with which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined.
+    - id: accumulator
+      type: System.Func{{TAccumulate},{TElement},{TAccumulate}}
+      description: >-
+        A function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code>
+            pairs to <code class="typeparamref">TAccumulate</code>.
+    - id: predicate
+      type: System.Func{{TAccumulate},{TElement},System.Boolean}
+      description: >-
+        A function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code> pairs
+            to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: TAccumulate
+      description: >-
+        The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined,
+            and against which the specified <code class="paramref">predicate</code> is evaluated.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: >-
+        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the elements emitted by the enumerator for this one
+            until their combination, induced by the specified <code class="paramref">accumulator</code>, no longer satisfies the
+            specified <code class="paramref">predicate</code>.
+    content.vb: Public Shared Function TakeWhileAggregate(Of TElement, TAccumulate)(elements As IEnumerable(Of TElement), seed As TAccumulate, accumulator As Func(Of TAccumulate, TElement, TAccumulate), predicate As Func(Of TAccumulate, TElement, Boolean)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.TakeWhileAggregate*
+  nameWithType.vb: Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, TAccumulate), Func(Of TAccumulate, TElement, Boolean))
+  fullName.vb: Extensions.Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(System.Collections.Generic.IEnumerable(Of TElement), TAccumulate, System.Func(Of TAccumulate, TElement, TAccumulate), System.Func(Of TAccumulate, TElement, Boolean))
+  name.vb: TakeWhileAggregate(Of TElement, TAccumulate)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, TAccumulate), Func(Of TAccumulate, TElement, Boolean))
+- uid: Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  id: ThrowIfDuplicates``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDuplicates<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.ThrowIfDuplicates<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.ThrowIfDuplicates<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ThrowIfDuplicates
+    path: ../src/Enumerables.cs
+    startLine: 315
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Verifies that no pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are equal.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> ThrowIfDuplicates<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: >-
+        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if no pair of them are
+            equal.
+    content.vb: Public Shared Function ThrowIfDuplicates(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.ThrowIfDuplicates*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      If any pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+          equal.
+  nameWithType.vb: Enumerables.ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.ThrowIfDuplicates(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
+- uid: Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  commentId: M:Extensions.Enumerables.ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  id: ThrowIfDuplicatesBy``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ThrowIfDuplicatesBy<TKey, TElement>(IEnumerable<TElement>, Func<TElement, TKey>)
+  nameWithType: Enumerables.ThrowIfDuplicatesBy<TKey, TElement>(IEnumerable<TElement>, Func<TElement, TKey>)
+  fullName: Extensions.Enumerables.ThrowIfDuplicatesBy<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, TKey>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ThrowIfDuplicatesBy
+    path: ../src/Enumerables.cs
+    startLine: 333
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Verifies that the specified <code class="paramref">selector</code> maps every element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+
+    to a unique value from <code class="typeparamref">TKey</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> ThrowIfDuplicatesBy<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, TKey> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},{TKey}}
+      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+    typeParameters:
+    - id: TKey
+      description: >-
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are compared for
+            uniqueness.
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if the specified <code class="paramref">selector</code> maps every element in it to a unique value from <code class="typeparamref">TKey</code>.
+    content.vb: Public Shared Function ThrowIfDuplicatesBy(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, TKey)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.ThrowIfDuplicatesBy*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      If the specified <code class="paramref">selector</code> does not map every
+          element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to a unique value in <code class="typeparamref">TKey</code>.
+  nameWithType.vb: Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
+  fullName.vb: Extensions.Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TKey))
+  name.vb: ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
+- uid: Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extensions.Enumerables.ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  id: ToDictionaryInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ToDictionaryInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
+  nameWithType: Enumerables.ToDictionaryInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
+  fullName: Extensions.Enumerables.ToDictionaryInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ToDictionaryInverse
+    path: ../src/Enumerables.cs
+    startLine: 360
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code>
+
+    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimage.
+  example: []
+  syntax:
+    content: 'public static IDictionary<TKey, TElement> ToDictionaryInverse<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector) where TKey : notnull'
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
+      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+    typeParameters:
+    - id: TKey
+      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TElement}}
+      description: A new <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ToDictionaryInverse(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TKey))) As IDictionary(Of TKey, TElement)
+  overload: Extensions.Enumerables.ToDictionaryInverse*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      If the inverse of the specified <code class="paramref">selector</code> applied to the
+          elements from <code class="typeparamref">TKey</code> does not define a function to <code class="typeparamref">TElement</code>.
+  nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
+  fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
+  name.vb: ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
+- uid: Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  commentId: M:Extensions.Enumerables.ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  id: ToDictionaryInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ToDictionaryInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
+  nameWithType: Enumerables.ToDictionaryInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
+  fullName: Extensions.Enumerables.ToDictionaryInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ToDictionaryInverse
+    path: ../src/Enumerables.cs
+    startLine: 381
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">keySelector</code>
+
+    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value obtained by
+
+    applying the specified <code class="paramref">valueSelector</code> to its preimage.
+  example: []
+  syntax:
+    content: 'public static IDictionary<TKey, TValue> ToDictionaryInverse<TKey, TValue, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector) where TKey : notnull'
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: keySelector
+      type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
+      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+    - id: valueSelector
+      type: System.Func{{TElement},{TValue}}
+      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TValue</code>.
+    typeParameters:
+    - id: TKey
+      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+    - id: TValue
+      description: The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is mapped.
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+      description: A new <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ToDictionaryInverse(Of TKey, TValue, TElement)(elements As IEnumerable(Of TElement), keySelector As Func(Of TElement, IEnumerable(Of TKey)), valueSelector As Func(Of TElement, TValue)) As IDictionary(Of TKey, TValue)
+  overload: Extensions.Enumerables.ToDictionaryInverse*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: >-
+      If the inverse of the specified <code class="paramref">keySelector</code> applied to the
+          elements from <code class="typeparamref">TKey</code> does not define a function to <code class="typeparamref">TValue</code>.
+  nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
+  fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
+  name.vb: ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
+- uid: Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  commentId: M:Extensions.Enumerables.ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  id: ToLookupInverse``2(System.Collections.Generic.IEnumerable{``1},System.Func{``1,System.Collections.Generic.IEnumerable{``0}})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ToLookupInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
+  nameWithType: Enumerables.ToLookupInverse<TKey, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>)
+  fullName: Extensions.Enumerables.ToLookupInverse<TKey, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ToLookupInverse
+    path: ../src/Enumerables.cs
+    startLine: 397
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code>
+
+    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimages.
+  example: []
+  syntax:
+    content: public static ILookup<TKey, TElement> ToLookupInverse<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: selector
+      type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
+      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+    typeParameters:
+    - id: TKey
+      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Linq.ILookup{{TKey},{TElement}}
+      description: A new <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ToLookupInverse(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, IEnumerable(Of TKey))) As ILookup(Of TKey, TElement)
+  overload: Extensions.Enumerables.ToLookupInverse*
+  nameWithType.vb: Enumerables.ToLookupInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
+  fullName.vb: Extensions.Enumerables.ToLookupInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
+  name.vb: ToLookupInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
+- uid: Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  commentId: M:Extensions.Enumerables.ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  id: ToLookupInverse``3(System.Collections.Generic.IEnumerable{``2},System.Func{``2,System.Collections.Generic.IEnumerable{``0}},System.Func{``2,``1})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: ToLookupInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
+  nameWithType: Enumerables.ToLookupInverse<TKey, TValue, TElement>(IEnumerable<TElement>, Func<TElement, IEnumerable<TKey>>, Func<TElement, TValue>)
+  fullName: Extensions.Enumerables.ToLookupInverse<TKey, TValue, TElement>(System.Collections.Generic.IEnumerable<TElement>, System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>, System.Func<TElement, TValue>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: ToLookupInverse
+    path: ../src/Enumerables.cs
+    startLine: 416
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">keySelector</code>
+
+    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value obtained by
+
+    applying the specified <code class="paramref">valueSelector</code> to its preimages.
+  example: []
+  syntax:
+    content: public static ILookup<TKey, TValue> ToLookupInverse<TKey, TValue, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: keySelector
+      type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
+      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+    - id: valueSelector
+      type: System.Func{{TElement},{TValue}}
+      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TValue</code>.
+    typeParameters:
+    - id: TKey
+      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+    - id: TValue
+      description: The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is mapped.
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Linq.ILookup{{TKey},{TValue}}
+      description: A new <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function ToLookupInverse(Of TKey, TValue, TElement)(elements As IEnumerable(Of TElement), keySelector As Func(Of TElement, IEnumerable(Of TKey)), valueSelector As Func(Of TElement, TValue)) As ILookup(Of TKey, TValue)
+  overload: Extensions.Enumerables.ToLookupInverse*
+  nameWithType.vb: Enumerables.ToLookupInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
+  fullName.vb: Extensions.Enumerables.ToLookupInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
+  name.vb: ToLookupInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
+- uid: Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  commentId: M:Extensions.Enumerables.WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  id: WhereNot``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: WhereNot<TElements>(IEnumerable<TElements>, Func<TElements, bool>)
+  nameWithType: Enumerables.WhereNot<TElements>(IEnumerable<TElements>, Func<TElements, bool>)
+  fullName: Extensions.Enumerables.WhereNot<TElements>(System.Collections.Generic.IEnumerable<TElements>, System.Func<TElements, bool>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: WhereNot
+    path: ../src/Enumerables.cs
+    startLine: 436
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements from this one that do not satisfy
+
+    the specified <code class="paramref">predicate</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElements> WhereNot<TElements>(this IEnumerable<TElements> elements, Func<TElements, bool> predicate)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElements}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    - id: predicate
+      type: System.Func{{TElements},System.Boolean}
+      description: A function from <code class="typeparamref">TElements</code> to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElements
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElements}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function WhereNot(Of TElements)(elements As IEnumerable(Of TElements), predicate As Func(Of TElements, Boolean)) As IEnumerable(Of TElements)
+  overload: Extensions.Enumerables.WhereNot*
+  nameWithType.vb: Enumerables.WhereNot(Of TElements)(IEnumerable(Of TElements), Func(Of TElements, Boolean))
+  fullName.vb: Extensions.Enumerables.WhereNot(Of TElements)(System.Collections.Generic.IEnumerable(Of TElements), System.Func(Of TElements, Boolean))
+  name.vb: WhereNot(Of TElements)(IEnumerable(Of TElements), Func(Of TElements, Boolean))
+- uid: Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Extensions.Enumerables.WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  id: WhereNotNull``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Extensions.Enumerables
+  langs:
+  - csharp
+  - vb
+  name: WhereNotNull<TElement>(IEnumerable<TElement>)
+  nameWithType: Enumerables.WhereNotNull<TElement>(IEnumerable<TElement>)
+  fullName: Extensions.Enumerables.WhereNotNull<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/src/Enumerables.cs
+      branch: main
+      repo: git@github.com:jeffrey-w/Extensions.git
+    id: WhereNotNull
+    path: ../src/Enumerables.cs
+    startLine: 447
+  assemblies:
+  - Extensions
+  namespace: Extensions
+  summary: Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements from this one that are not <code>null</code>.
+  example: []
+  syntax:
+    content: public static IEnumerable<TElement> WhereNotNull<TElement>(this IEnumerable<TElement> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    typeParameters:
+    - id: TElement
+      description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: System.Collections.Generic.IEnumerable{{TElement}}
+      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function WhereNotNull(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
+  overload: Extensions.Enumerables.WhereNotNull*
+  nameWithType.vb: Enumerables.WhereNotNull(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: Extensions.Enumerables.WhereNotNull(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: WhereNotNull(Of TElement)(IEnumerable(Of TElement))
+references:
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Extensions
+  commentId: N:Extensions
+  href: Extensions.html
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Extensions.Enumerables.AggregateAsync*
+  commentId: Overload:Extensions.Enumerables.AggregateAsync
+  href: Extensions.Enumerables.html#Extensions_Enumerables_AggregateAsync__3_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0_System_Threading_Tasks_Task___1___System_Func___1___2__
+  name: AggregateAsync
+  nameWithType: Enumerables.AggregateAsync
+  fullName: Extensions.Enumerables.AggregateAsync
+- uid: System.Collections.Generic.IEnumerable{{TElement}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TElement>
+  nameWithType: IEnumerable<TElement>
+  fullName: System.Collections.Generic.IEnumerable<TElement>
+  nameWithType.vb: IEnumerable(Of TElement)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TElement)
+  name.vb: IEnumerable(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: '{TAccumulate}'
+  commentId: '!:TAccumulate'
+  definition: TAccumulate
+  name: TAccumulate
+  nameWithType: TAccumulate
+  fullName: TAccumulate
+- uid: System.Func{{TAccumulate},{TElement},System.Threading.Tasks.Task{{TAccumulate}}}
+  commentId: T:System.Func{``1,``0,System.Threading.Tasks.Task{``1}}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TAccumulate, TElement, Task<TAccumulate>>
+  nameWithType: Func<TAccumulate, TElement, Task<TAccumulate>>
+  fullName: System.Func<TAccumulate, TElement, System.Threading.Tasks.Task<TAccumulate>>
+  nameWithType.vb: Func(Of TAccumulate, TElement, Task(Of TAccumulate))
+  fullName.vb: System.Func(Of TAccumulate, TElement, System.Threading.Tasks.Task(Of TAccumulate))
+  name.vb: Func(Of TAccumulate, TElement, Task(Of TAccumulate))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TAccumulate
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAccumulate
+  - name: )
+  - name: )
+- uid: System.Func{{TAccumulate},{TResult}}
+  commentId: T:System.Func{``1,``2}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TAccumulate, TResult>
+  nameWithType: Func<TAccumulate, TResult>
+  fullName: System.Func<TAccumulate, TResult>
+  nameWithType.vb: Func(Of TAccumulate, TResult)
+  fullName.vb: System.Func(Of TAccumulate, TResult)
+  name.vb: Func(Of TAccumulate, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task{{TResult}}
+  commentId: T:System.Threading.Tasks.Task{``2}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: TAccumulate
+  name: TAccumulate
+  nameWithType: TAccumulate
+  fullName: TAccumulate
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Extensions.Enumerables.AppendIf*
+  commentId: Overload:Extensions.Enumerables.AppendIf
+  href: Extensions.Enumerables.html#Extensions_Enumerables_AppendIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
+  name: AppendIf
+  nameWithType: Enumerables.AppendIf
+  fullName: Extensions.Enumerables.AppendIf
+- uid: '{TElement}'
+  commentId: '!:TElement'
+  definition: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement
+- uid: System.Func{{TElement},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, bool>
+  nameWithType: Func<TElement, bool>
+  fullName: System.Func<TElement, bool>
+  nameWithType.vb: Func(Of TElement, Boolean)
+  fullName.vb: System.Func(Of TElement, Boolean)
+  name.vb: Func(Of TElement, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: TElement
+  name: TElement
+  nameWithType: TElement
+  fullName: TElement
+- uid: Extensions.Enumerables.AppendIfNotNull*
+  commentId: Overload:Extensions.Enumerables.AppendIfNotNull
+  href: Extensions.Enumerables.html#Extensions_Enumerables_AppendIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
+  name: AppendIfNotNull
+  nameWithType: Enumerables.AppendIfNotNull
+  fullName: Extensions.Enumerables.AppendIfNotNull
+- uid: Extensions.Enumerables.PrependIf*
+  commentId: Overload:Extensions.Enumerables.PrependIf
+  href: Extensions.Enumerables.html#Extensions_Enumerables_PrependIf__1_System_Collections_Generic_IEnumerable___0____0_System_Func___0_System_Boolean__
+  name: PrependIf
+  nameWithType: Enumerables.PrependIf
+  fullName: Extensions.Enumerables.PrependIf
+- uid: Extensions.Enumerables.PrependIfNotNull*
+  commentId: Overload:Extensions.Enumerables.PrependIfNotNull
+  href: Extensions.Enumerables.html#Extensions_Enumerables_PrependIfNotNull__1_System_Collections_Generic_IEnumerable___0____0_
+  name: PrependIfNotNull
+  nameWithType: Enumerables.PrependIfNotNull
+  fullName: Extensions.Enumerables.PrependIfNotNull
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.tolist
+  name: ToList<TSource>(IEnumerable<TSource>)
+  nameWithType: Enumerable.ToList<TSource>(IEnumerable<TSource>)
+  fullName: System.Linq.Enumerable.ToList<TSource>(System.Collections.Generic.IEnumerable<TSource>)
+  nameWithType.vb: Enumerable.ToList(Of TSource)(IEnumerable(Of TSource))
+  fullName.vb: System.Linq.Enumerable.ToList(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource))
+  name.vb: ToList(Of TSource)(IEnumerable(Of TSource))
+  spec.csharp:
+  - uid: System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.tolist
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.enumerable.tolist
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: )
+- uid: Extensions.Enumerables.Cached*
+  commentId: Overload:Extensions.Enumerables.Cached
+  href: Extensions.Enumerables.html#Extensions_Enumerables_Cached__1_System_Collections_Generic_IEnumerable___0__
+  name: Cached
+  nameWithType: Enumerables.Cached
+  fullName: Extensions.Enumerables.Cached
+- uid: Extensions.Enumerables.ConcatSelection*
+  commentId: Overload:Extensions.Enumerables.ConcatSelection
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ConcatSelection__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Collections_Generic_IEnumerable___0___
+  name: ConcatSelection
+  nameWithType: Enumerables.ConcatSelection
+  fullName: Extensions.Enumerables.ConcatSelection
+- uid: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TElement}}}
+  commentId: T:System.Func{``0,System.Collections.Generic.IEnumerable{``0}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, IEnumerable<TElement>>
+  nameWithType: Func<TElement, IEnumerable<TElement>>
+  fullName: System.Func<TElement, System.Collections.Generic.IEnumerable<TElement>>
+  nameWithType.vb: Func(Of TElement, IEnumerable(Of TElement))
+  fullName.vb: System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: Func(Of TElement, IEnumerable(Of TElement))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+- uid: Extensions.Enumerables.ForEach*
+  commentId: Overload:Extensions.Enumerables.ForEach
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ForEach__1_System_Collections_Generic_IEnumerable___0__System_Action___0__
+  name: ForEach
+  nameWithType: Enumerables.ForEach
+  fullName: Extensions.Enumerables.ForEach
+- uid: System.Action{{TElement}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TElement>
+  nameWithType: Action<TElement>
+  fullName: System.Action<TElement>
+  nameWithType.vb: Action(Of TElement)
+  fullName.vb: System.Action(Of TElement)
+  name.vb: Action(Of TElement)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Extensions.Enumerables.IsSingleton*
+  commentId: Overload:Extensions.Enumerables.IsSingleton
+  href: Extensions.Enumerables.html#Extensions_Enumerables_IsSingleton__1_System_Collections_Generic_IEnumerable___0__
+  name: IsSingleton
+  nameWithType: Enumerables.IsSingleton
+  fullName: Extensions.Enumerables.IsSingleton
+- uid: Extensions.Enumerables.NotAll*
+  commentId: Overload:Extensions.Enumerables.NotAll
+  href: Extensions.Enumerables.html#Extensions_Enumerables_NotAll__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  name: NotAll
+  nameWithType: Enumerables.NotAll
+  fullName: Extensions.Enumerables.NotAll
+- uid: Extensions.Enumerables.NotAny*
+  commentId: Overload:Extensions.Enumerables.NotAny
+  href: Extensions.Enumerables.html#Extensions_Enumerables_NotAny__1_System_Collections_Generic_IEnumerable___0__
+  name: NotAny
+  nameWithType: Enumerables.NotAny
+  fullName: Extensions.Enumerables.NotAny
+- uid: Extensions.Enumerables.SelectAsync*
+  commentId: Overload:Extensions.Enumerables.SelectAsync
+  href: Extensions.Enumerables.html#Extensions_Enumerables_SelectAsync__2_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Threading_Tasks_Task___1___
+  name: SelectAsync
+  nameWithType: Enumerables.SelectAsync
+  fullName: Extensions.Enumerables.SelectAsync
+- uid: System.Func{{TElement},System.Threading.Tasks.Task{{TResult}}}
+  commentId: T:System.Func{``0,System.Threading.Tasks.Task{``1}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, Task<TResult>>
+  nameWithType: Func<TElement, Task<TResult>>
+  fullName: System.Func<TElement, System.Threading.Tasks.Task<TResult>>
+  nameWithType.vb: Func(Of TElement, Task(Of TResult))
+  fullName.vb: System.Func(Of TElement, System.Threading.Tasks.Task(Of TResult))
+  name.vb: Func(Of TElement, Task(Of TResult))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{``1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<TResult>>
+  nameWithType: Task<IEnumerable<TResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TResult>>
+  nameWithType.vb: Task(Of IEnumerable(Of TResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TResult))
+  name.vb: Task(Of IEnumerable(Of TResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Extensions.Enumerables.SelectNotNull*
+  commentId: Overload:Extensions.Enumerables.SelectNotNull
+  href: Extensions.Enumerables.html#Extensions_Enumerables_SelectNotNull__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__
+  name: SelectNotNull
+  nameWithType: Enumerables.SelectNotNull
+  fullName: Extensions.Enumerables.SelectNotNull
+- uid: System.Func{{TElement},{TResult}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, TResult>
+  nameWithType: Func<TElement, TResult>
+  fullName: System.Func<TElement, TResult>
+  nameWithType.vb: Func(Of TElement, TResult)
+  fullName.vb: System.Func(Of TElement, TResult)
+  name.vb: Func(Of TElement, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{TResult}}
+  commentId: T:System.Collections.Generic.IEnumerable{``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TResult>
+  nameWithType: IEnumerable<TResult>
+  fullName: System.Collections.Generic.IEnumerable<TResult>
+  nameWithType.vb: IEnumerable(Of TResult)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TResult)
+  name.vb: IEnumerable(Of TResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Extensions.Enumerables.SequenceHashCode*
+  commentId: Overload:Extensions.Enumerables.SequenceHashCode
+  href: Extensions.Enumerables.html#Extensions_Enumerables_SequenceHashCode__1_System_Collections_Generic_IEnumerable___0__
+  name: SequenceHashCode
+  nameWithType: Enumerables.SequenceHashCode
+  fullName: Extensions.Enumerables.SequenceHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Extensions.Enumerables.Shuffle*
+  commentId: Overload:Extensions.Enumerables.Shuffle
+  href: Extensions.Enumerables.html#Extensions_Enumerables_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+  name: Shuffle
+  nameWithType: Enumerables.Shuffle
+  fullName: Extensions.Enumerables.Shuffle
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.random
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: Extensions.Enumerables.TakeWhileAggregate*
+  commentId: Overload:Extensions.Enumerables.TakeWhileAggregate
+  href: Extensions.Enumerables.html#Extensions_Enumerables_TakeWhileAggregate__2_System_Collections_Generic_IEnumerable___0____1_System_Func___1___0___1__System_Func___1___0_System_Boolean__
+  name: TakeWhileAggregate
+  nameWithType: Enumerables.TakeWhileAggregate
+  fullName: Extensions.Enumerables.TakeWhileAggregate
+- uid: System.Func{{TAccumulate},{TElement},{TAccumulate}}
+  commentId: T:System.Func{``1,``0,``1}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TAccumulate, TElement, TAccumulate>
+  nameWithType: Func<TAccumulate, TElement, TAccumulate>
+  fullName: System.Func<TAccumulate, TElement, TAccumulate>
+  nameWithType.vb: Func(Of TAccumulate, TElement, TAccumulate)
+  fullName.vb: System.Func(Of TAccumulate, TElement, TAccumulate)
+  name.vb: Func(Of TAccumulate, TElement, TAccumulate)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TAccumulate
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TAccumulate
+  - name: )
+- uid: System.Func{{TAccumulate},{TElement},System.Boolean}
+  commentId: T:System.Func{``1,``0,System.Boolean}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TAccumulate, TElement, bool>
+  nameWithType: Func<TAccumulate, TElement, bool>
+  fullName: System.Func<TAccumulate, TElement, bool>
+  nameWithType.vb: Func(Of TAccumulate, TElement, Boolean)
+  fullName.vb: System.Func(Of TAccumulate, TElement, Boolean)
+  name.vb: Func(Of TAccumulate, TElement, Boolean)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAccumulate
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Extensions.Enumerables.ThrowIfDuplicates*
+  commentId: Overload:Extensions.Enumerables.ThrowIfDuplicates
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ThrowIfDuplicates__1_System_Collections_Generic_IEnumerable___0__
+  name: ThrowIfDuplicates
+  nameWithType: Enumerables.ThrowIfDuplicates
+  fullName: Extensions.Enumerables.ThrowIfDuplicates
+- uid: Extensions.Enumerables.ThrowIfDuplicatesBy*
+  commentId: Overload:Extensions.Enumerables.ThrowIfDuplicatesBy
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ThrowIfDuplicatesBy__2_System_Collections_Generic_IEnumerable___1__System_Func___1___0__
+  name: ThrowIfDuplicatesBy
+  nameWithType: Enumerables.ThrowIfDuplicatesBy
+  fullName: Extensions.Enumerables.ThrowIfDuplicatesBy
+- uid: System.Func{{TElement},{TKey}}
+  commentId: T:System.Func{``1,``0}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, TKey>
+  nameWithType: Func<TElement, TKey>
+  fullName: System.Func<TElement, TKey>
+  nameWithType.vb: Func(Of TElement, TKey)
+  fullName.vb: System.Func(Of TElement, TKey)
+  name.vb: Func(Of TElement, TKey)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: Extensions.Enumerables.ToDictionaryInverse*
+  commentId: Overload:Extensions.Enumerables.ToDictionaryInverse
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ToDictionaryInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
+  name: ToDictionaryInverse
+  nameWithType: Enumerables.ToDictionaryInverse
+  fullName: Extensions.Enumerables.ToDictionaryInverse
+- uid: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
+  commentId: T:System.Func{``1,System.Collections.Generic.IEnumerable{``0}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, IEnumerable<TKey>>
+  nameWithType: Func<TElement, IEnumerable<TKey>>
+  fullName: System.Func<TElement, System.Collections.Generic.IEnumerable<TKey>>
+  nameWithType.vb: Func(Of TElement, IEnumerable(Of TKey))
+  fullName.vb: System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey))
+  name.vb: Func(Of TElement, IEnumerable(Of TKey))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TKey
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IDictionary{{TKey},{TElement}}
+  commentId: T:System.Collections.Generic.IDictionary{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TElement>
+  nameWithType: IDictionary<TKey, TElement>
+  fullName: System.Collections.Generic.IDictionary<TKey, TElement>
+  nameWithType.vb: IDictionary(Of TKey, TElement)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TElement)
+  name.vb: IDictionary(Of TKey, TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Func{{TElement},{TValue}}
+  commentId: T:System.Func{``2,``1}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElement, TValue>
+  nameWithType: Func<TElement, TValue>
+  fullName: System.Func<TElement, TValue>
+  nameWithType.vb: Func(Of TElement, TValue)
+  fullName.vb: System.Func(Of TElement, TValue)
+  name.vb: Func(Of TElement, TValue)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IDictionary{{TKey},{TValue}}
+  commentId: T:System.Collections.Generic.IDictionary{``0,``1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Linq.ILookup`2
+  commentId: T:System.Linq.ILookup`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  name: ILookup<TKey, TElement>
+  nameWithType: ILookup<TKey, TElement>
+  fullName: System.Linq.ILookup<TKey, TElement>
+  nameWithType.vb: ILookup(Of TKey, TElement)
+  fullName.vb: System.Linq.ILookup(Of TKey, TElement)
+  name.vb: ILookup(Of TKey, TElement)
+  spec.csharp:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: Extensions.Enumerables.ToLookupInverse*
+  commentId: Overload:Extensions.Enumerables.ToLookupInverse
+  href: Extensions.Enumerables.html#Extensions_Enumerables_ToLookupInverse__2_System_Collections_Generic_IEnumerable___1__System_Func___1_System_Collections_Generic_IEnumerable___0___
+  name: ToLookupInverse
+  nameWithType: Enumerables.ToLookupInverse
+  fullName: Extensions.Enumerables.ToLookupInverse
+- uid: System.Linq.ILookup{{TKey},{TElement}}
+  commentId: T:System.Linq.ILookup{``0,``1}
+  parent: System.Linq
+  definition: System.Linq.ILookup`2
+  href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  name: ILookup<TKey, TElement>
+  nameWithType: ILookup<TKey, TElement>
+  fullName: System.Linq.ILookup<TKey, TElement>
+  nameWithType.vb: ILookup(Of TKey, TElement)
+  fullName.vb: System.Linq.ILookup(Of TKey, TElement)
+  name.vb: ILookup(Of TKey, TElement)
+  spec.csharp:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: System.Linq.ILookup{{TKey},{TValue}}
+  commentId: T:System.Linq.ILookup{``0,``1}
+  parent: System.Linq
+  definition: System.Linq.ILookup`2
+  href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  name: ILookup<TKey, TValue>
+  nameWithType: ILookup<TKey, TValue>
+  fullName: System.Linq.ILookup<TKey, TValue>
+  nameWithType.vb: ILookup(Of TKey, TValue)
+  fullName.vb: System.Linq.ILookup(Of TKey, TValue)
+  name.vb: ILookup(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.ILookup`2
+    name: ILookup
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.ilookup-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Extensions.Enumerables.WhereNot*
+  commentId: Overload:Extensions.Enumerables.WhereNot
+  href: Extensions.Enumerables.html#Extensions_Enumerables_WhereNot__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  name: WhereNot
+  nameWithType: Enumerables.WhereNot
+  fullName: Extensions.Enumerables.WhereNot
+- uid: System.Collections.Generic.IEnumerable{{TElements}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TElements>
+  nameWithType: IEnumerable<TElements>
+  fullName: System.Collections.Generic.IEnumerable<TElements>
+  nameWithType.vb: IEnumerable(Of TElements)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TElements)
+  name.vb: IEnumerable(Of TElements)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElements
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElements
+  - name: )
+- uid: System.Func{{TElements},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TElements, bool>
+  nameWithType: Func<TElements, bool>
+  fullName: System.Func<TElements, bool>
+  nameWithType.vb: Func(Of TElements, Boolean)
+  fullName.vb: System.Func(Of TElements, Boolean)
+  name.vb: Func(Of TElements, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElements
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElements
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Extensions.Enumerables.WhereNotNull*
+  commentId: Overload:Extensions.Enumerables.WhereNotNull
+  href: Extensions.Enumerables.html#Extensions_Enumerables_WhereNotNull__1_System_Collections_Generic_IEnumerable___0__
+  name: WhereNotNull
+  nameWithType: Enumerables.WhereNotNull
+  fullName: Extensions.Enumerables.WhereNotNull
