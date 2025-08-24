@@ -16,4 +16,15 @@ public static class Objects
         return obj.GetType()
                   .GetEveryBaseType();
     }
+    
+    /// <summary>
+    /// Provides the <see cref="HashSet{T}"/> containing only this <see cref="object"/>.
+    /// </summary>
+    /// <typeparam name="TElement">The <see cref="Type"/> to which this <see cref="object"/> belongs.</typeparam>
+    /// <param name="element">This <see cref="object"/>.</param>
+    /// <returns>This <see cref="object"/>, wrapped in a <see cref="HashSet{T}"/>.</returns>
+    public static ISet<TElement> ToSingletonHashSet<TElement>(TElement element)
+    {
+        return new HashSet<TElement> { element };
+    }
 }
