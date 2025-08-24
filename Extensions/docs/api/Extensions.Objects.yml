@@ -21,11 +21,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Objects
     path: ../src/Objects.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: The <code>Objects</code> class provides additional operations on the <xref href="System.Object" data-throw-if-not-resolved="false"></xref> type.
+  summary: >-
+    The <code>Objects</code> class provides additional operations on the
+
+    <xref href="System.Object" data-throw-if-not-resolved="false"></xref> type.
   example: []
   syntax:
     content: public static class Objects
@@ -59,7 +62,7 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: GetEveryType
     path: ../src/Objects.cs
-    startLine: 13
+    startLine: 18
   assemblies:
   - Extensions
   namespace: Extensions
@@ -98,11 +101,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ToSingletonHashSet
     path: ../src/Objects.cs
-    startLine: 25
+    startLine: 36
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Provides the <xref href="System.Collections.Generic.HashSet%601" data-throw-if-not-resolved="false"></xref> containing only this <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.HashSet%601" data-throw-if-not-resolved="false"></xref> containing only this
+
+    <xref href="System.Object" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static ISet<TElement> ToSingletonHashSet<TElement>(TElement element)

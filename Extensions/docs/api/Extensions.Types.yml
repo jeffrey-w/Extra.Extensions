@@ -22,11 +22,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Types
     path: ../src/Types.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: The <code>Types</code> class provides additional operations on the <xref href="System.Type" data-throw-if-not-resolved="false"></xref> class.
+  summary: >-
+    The <code>Types</code> class provides additional operations on the
+
+    <xref href="System.Type" data-throw-if-not-resolved="false"></xref> class.
   example: []
   syntax:
     content: public static class Types
@@ -60,7 +63,7 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: IsNullable
     path: ../src/Types.cs
-    startLine: 12
+    startLine: 15
   assemblies:
   - Extensions
   namespace: Extensions
@@ -96,7 +99,7 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: IsStatic
     path: ../src/Types.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Extensions
   namespace: Extensions
@@ -132,7 +135,7 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: GetEveryBaseType
     path: ../src/Types.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - Extensions
   namespace: Extensions

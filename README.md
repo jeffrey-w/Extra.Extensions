@@ -10,7 +10,7 @@ The Extensions library can be installed using NuGet.
 
 API documentation may be found here
 
-## Contributing 
+## Contributing
 
 The Extensions library is privately maintained. Please open an issue to request
 a feature or report a bug. If you would like to contribute, you may request an

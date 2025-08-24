@@ -10,9 +10,6 @@ items:
   - uid: Extensions.Enumerables
     name: Enumerables
     type: Class
-  - uid: Extensions.IdentityFunction
-    name: IdentityFunction
-    type: Class
   - uid: Extensions.Integers
     name: Integers
     type: Class

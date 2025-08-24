@@ -6,7 +6,6 @@ items:
   children:
   - Extensions.Comparables
   - Extensions.Enumerables
-  - Extensions.IdentityFunction
   - Extensions.Integers
   - Extensions.Members
   - Extensions.Objects
@@ -34,12 +33,6 @@ references:
   name: Enumerables
   nameWithType: Enumerables
   fullName: Extensions.Enumerables
-- uid: Extensions.IdentityFunction
-  commentId: T:Extensions.IdentityFunction
-  href: Extensions.IdentityFunction.html
-  name: IdentityFunction
-  nameWithType: IdentityFunction
-  fullName: Extensions.IdentityFunction
 - uid: Extensions.Integers
   commentId: T:Extensions.Integers
   href: Extensions.Integers.html

@@ -20,11 +20,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Integers
     path: ../src/Integers.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: The <code>Integers</code> class provides additional operations on the <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> type.
+  summary: >-
+    The <code>Integers</code> class provides additional operations on the
+
+    <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> type.
   example: []
   syntax:
     content: public static class Integers
@@ -58,11 +61,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: IsSuccessor
     path: ../src/Integers.cs
-    startLine: 13
+    startLine: 18
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Determines whether this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater the <code class="paramref">other</code> one.
+  summary: >-
+    Determines whether this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater the
+
+    <code class="paramref">other</code> one.
   example: []
   syntax:
     content: public static bool IsSuccessor(this int i, int other)
@@ -75,7 +81,10 @@ items:
       description: The <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> to compare against this one
     return:
       type: System.Boolean
-      description: <code>true</code> if this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater than the <code class="paramref">other</code> one.
+      description: >-
+        <code>true</code> if this <xref href="System.Int32" data-throw-if-not-resolved="false"></xref> is one greater than the
+
+        <code class="paramref">other</code> one.
     content.vb: Public Shared Function IsSuccessor(i As Integer, other As Integer) As Boolean
   overload: Extensions.Integers.IsSuccessor*
   nameWithType.vb: Integers.IsSuccessor(Integer, Integer)

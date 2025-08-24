@@ -20,11 +20,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Parameters
     path: ../src/Parameters.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: The <code>Parameters</code> class provides additional operations on the <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> type.
+  summary: >-
+    The <code>Parameters</code> class provides additional operations on the
+
+    <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> type.
   example: []
   syntax:
     content: public static class Parameters
@@ -58,14 +61,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: HasCustomAttribute
     path: ../src/Parameters.cs
-    startLine: 17
+    startLine: 23
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Determines whether this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>,
+    Determines whether this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified
 
-    <code class="typeparamref">TAttribute</code>.
+    <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>, <code class="typeparamref">TAttribute</code>.
   example: []
   syntax:
     content: 'public static bool HasCustomAttribute<TAttribute>(this ParameterInfo parameter) where TAttribute : Attribute'
@@ -76,11 +79,15 @@ items:
     typeParameters:
     - id: TAttribute
       description: >-
-        The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of attribute that this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> is being
-            queried for.
+        The <xref href="System.Type" data-throw-if-not-resolved="false"></xref> of attribute that this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> is
+
+        being queried for.
     return:
       type: System.Boolean
-      description: <code>true</code> if this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>.
+      description: >-
+        <code>true</code> if this <xref href="System.Reflection.ParameterInfo" data-throw-if-not-resolved="false"></xref> has the specified
+
+        <xref href="System.Attribute" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function HasCustomAttribute(Of TAttribute As Attribute)(parameter As ParameterInfo) As Boolean
   overload: Extensions.Parameters.HasCustomAttribute*
   nameWithType.vb: Parameters.HasCustomAttribute(Of TAttribute)(ParameterInfo)

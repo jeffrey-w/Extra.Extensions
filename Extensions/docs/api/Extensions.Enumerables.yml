@@ -45,11 +45,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Enumerables
     path: ../src/Enumerables.cs
-    startLine: 5
+    startLine: 6
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: The <code>Enumerables</code> class provides additional operations on the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> type.
+  summary: >-
+    The <code>Enumerables</code> class provides additional operations on the
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> type.
   example: []
   syntax:
     content: public static class Enumerables
@@ -83,16 +86,20 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: AggregateAsync
     path: ../src/Enumerables.cs
-    startLine: 22
+    startLine: 40
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the element from <code class="typeparamref">TResult</code> obtained by combining the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+    Provides the element from <code class="typeparamref">TResult</code> obtained by combining
 
-    into an element from <code class="typeparamref">TAccumulate</code>, initialized by the specified <code class="paramref">seed</code>, and
+    the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> into an element from
 
-    then applying the specified <code class="paramref">selector</code> to the result.
+    <code class="typeparamref">TAccumulate</code>, initialized by the specified
+
+    <code class="paramref">seed</code>, and then applying the specified
+
+    <code class="paramref">selector</code> to the result.
   example: []
   syntax:
     content: public static Task<TResult> AggregateAsync<TElement, TAccumulate, TResult>(this IEnumerable<TElement> elements, TAccumulate seed, Func<TAccumulate, TElement, Task<TAccumulate>> accumulator, Func<TAccumulate, TResult> selector)
@@ -102,22 +109,35 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: seed
       type: '{TAccumulate}'
-      description: The value from which combination of elements in this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> initiates.
+      description: >-
+        The value from which combination of elements in this
+
+        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> initiates.
     - id: accumulator
       type: System.Func{{TAccumulate},{TElement},System.Threading.Tasks.Task{{TAccumulate}}}
       description: >-
-        An asynchronous function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code>
-            pairs to <code class="typeparamref">TAccumulate</code>.
+        An asynchronous function from <code class="typeparamref">TAccumulate</code>-
+
+        <code class="typeparamref">TElement</code> pairs to <code class="typeparamref">TAccumulate</code>.
     - id: selector
       type: System.Func{{TAccumulate},{TResult}}
-      description: A function from <code class="typeparamref">TAccumulate</code> to <code class="typeparamref">TResult</code>.
+      description: >-
+        A function from <code class="typeparamref">TAccumulate</code> to
+
+        <code class="typeparamref">TResult</code>.
     typeParameters:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: TAccumulate
-      description: The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined.
+      description: >-
+        The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        combined.
     - id: TResult
-      description: The type that the specified <code class="paramref">selector</code> projects members of <code class="typeparamref">TAccumulate</code> to.
+      description: >-
+        The type that the specified <code class="paramref">selector</code> projects members of
+
+        <code class="typeparamref">TAccumulate</code> to.
     return:
       type: System.Threading.Tasks.Task{{TResult}}
       description: A new <code class="typeparamref">TResult</code> instance.
@@ -145,14 +165,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: AppendIf
     path: ../src/Enumerables.cs
-    startLine: 43
+    startLine: 69
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
-    end of this one, if it satisfies the specified <code class="paramref">predicate</code>.
+    <code class="paramref">element</code> at the end of this one, if it satisfies the
+
+    specified <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> AppendIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
@@ -196,14 +218,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: AppendIfNotNull
     path: ../src/Enumerables.cs
-    startLine: 56
+    startLine: 89
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
-    end of this one, if it is not <code>null</code>.
+    <code class="paramref">element</code> at the end of this one, if it is not <code>null</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> AppendIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
@@ -244,14 +266,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: PrependIf
     path: ../src/Enumerables.cs
-    startLine: 70
+    startLine: 112
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
-    beginning of this one, if it satisfies the specified <code class="paramref">predicate</code>.
+    <code class="paramref">element</code> at the beginning of this one, if it satisfies the
+
+    specified <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> PrependIf<TElement>(this IEnumerable<TElement> elements, TElement element, Func<TElement, bool> predicate)
@@ -295,14 +319,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: PrependIfNotNull
     path: ../src/Enumerables.cs
-    startLine: 83
+    startLine: 133
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified <code class="paramref">element</code> at the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by including the specified
 
-    beginning of this one, if it is not <code>null</code>.
+    <code class="paramref">element</code> at the beginning of this one, if it is not
+
+    <code>null</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> PrependIfNotNull<TElement>(this IEnumerable<TElement> elements, TElement? element)
@@ -343,23 +369,40 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Cached
     path: ../src/Enumerables.cs
-    startLine: 103
+    startLine: 164
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the same elements as this one, but that only evaluates
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the same elements as
 
-    them once upon first emission from an associated <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref>.
+    this one, but that only evaluates them once upon first emission from an
+
+    associated <xref href="System.Collections.Generic.IEnumerator%601" data-throw-if-not-resolved="false"></xref>.
   remarks: >-
-    Note that this method is not semantically equivalent to those that force immediate evaluation (e.g.,
-        <xref href="System.Linq.Enumerable.ToList%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d)?text=ToList" data-throw-if-not-resolved="false"></xref>) since the elements contained by the new
-        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are still lazily evaluated during an initial enumeration, but are not reevaluated
-        during subsequent ones. Caution using this method is advised since it may alter the expected semantics of
-        enumeration. Specifically, the effect of adding or removing elements from the data structure that backs this
-        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> will not be observed by enumerating the returned <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
-        Additionally, no guarantees are made with respect to the thread safety of the cached
-        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and concurrent iterations should be externally synchronized.
+    Note that this method is not semantically equivalent to those that force
+
+    immediate evaluation (e.g.,
+
+    <xref href="System.Linq.Enumerable.ToList%60%601(System.Collections.Generic.IEnumerable%7b%60%600%7d)?text=ToList" data-throw-if-not-resolved="false"></xref>)
+
+    since the elements contained by the new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are still
+
+    lazily evaluated during an initial enumeration, but are not reevaluated during
+
+    subsequent ones. Caution using this method is advised since it may alter the
+
+    expected semantics of enumeration. Specifically, the effect of adding or
+
+    removing elements from the data structure that backs this
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> will not be observed by enumerating the returned
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>. Additionally, no guarantees are made with
+
+    respect to the thread safety of the cached <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and
+
+    concurrent iterations should be externally synchronized.
   example: []
   syntax:
     content: public static IEnumerable<TElement> Cached<TElement>(this IEnumerable<TElement> elements)
@@ -397,14 +440,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ConcatSelection
     path: ../src/Enumerables.cs
-    startLine: 116
+    startLine: 180
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains every element from this one, and those induced by
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains every element from
 
-    applying the specified <code class="paramref">selector</code> to them.
+    this one, and those induced by applying the specified
+
+    <code class="paramref">selector</code> to them.
   example: []
   syntax:
     content: public static IEnumerable<TElement> ConcatSelection<TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TElement>> selector)
@@ -445,11 +490,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ForEach
     path: ../src/Enumerables.cs
-    startLine: 130
+    startLine: 202
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Performs the specified <code class="paramref">action</code> on each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    Performs the specified <code class="paramref">action</code> on each element from this
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public static void ForEach<TElement>(this IEnumerable<TElement> elements, Action<TElement> action)
@@ -459,7 +507,10 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: action
       type: System.Action{{TElement}}
-      description: The logic to execute against each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+      description: >-
+        The logic to execute against each element from this
+
+        <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     typeParameters:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
@@ -487,11 +538,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: IsSingleton
     path: ../src/Enumerables.cs
-    startLine: 144
+    startLine: 221
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains only one element.
+  summary: >-
+    Determines whether this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> contains only one
+
+    element.
   example: []
   syntax:
     content: public static bool IsSingleton<TElement>(this IEnumerable<TElement> elements)
@@ -529,11 +583,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: NotAll
     path: ../src/Enumerables.cs
-    startLine: 166
+    startLine: 250
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Determines whether any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not satisfy the specified <code class="paramref">predicate</code>.
+  summary: >-
+    Determines whether any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not
+
+    satisfy the specified
+
+    <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static bool NotAll<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
@@ -550,8 +609,9 @@ items:
     return:
       type: System.Boolean
       description: >-
-        <code>true</code> if at least one element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> does not satisfy the
-            specified <code class="paramref">predicate</code>.
+        <code>true</code> if at least one element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+
+        does not satisfy the specified <code class="paramref">predicate</code>.
     content.vb: Public Shared Function NotAll(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
   overload: Extensions.Enumerables.NotAll*
   nameWithType.vb: Enumerables.NotAll(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
@@ -576,7 +636,7 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: NotAny
     path: ../src/Enumerables.cs
-    startLine: 177
+    startLine: 265
   assemblies:
   - Extensions
   namespace: Extensions
@@ -618,11 +678,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: NotAny
     path: ../src/Enumerables.cs
-    startLine: 191
+    startLine: 285
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Determines whether no element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> satisfies the specified <code class="paramref">predicate</code>.
+  summary: >-
+    Determines whether no element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> satisfies
+
+    the specified <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static bool NotAny<TElement>(this IEnumerable<TElement> elements, Func<TElement, bool> predicate)
@@ -638,7 +701,10 @@ items:
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Boolean
-      description: <code>true</code> if the specified <code class="paramref">predicate</code> is not satisfied by any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
+      description: >-
+        <code>true</code> if the specified <code class="paramref">predicate</code> is not satisfied by
+
+        any element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     content.vb: Public Shared Function NotAny(Of TElement)(elements As IEnumerable(Of TElement), predicate As Func(Of TElement, Boolean)) As Boolean
   overload: Extensions.Enumerables.NotAny*
   nameWithType.vb: Enumerables.NotAny(Of TElement)(IEnumerable(Of TElement), Func(Of TElement, Boolean))
@@ -663,14 +729,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: SelectAsync
     path: ../src/Enumerables.cs
-    startLine: 206
+    startLine: 307
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code> to each
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified
 
-    element in this one.
+    <code class="paramref">selector</code> to each element in this one.
   example: []
   syntax:
     content: public static Task<IEnumerable<TResult>> SelectAsync<TElement, TResult>(this IEnumerable<TElement> elements, Func<TElement, Task<TResult>> selector)
@@ -680,12 +746,18 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: selector
       type: System.Func{{TElement},System.Threading.Tasks.Task{{TResult}}}
-      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TResult</code>.
+      description: >-
+        A function from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TResult</code>.
     typeParameters:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: TResult
-      description: The type that the specified <code class="paramref">selector</code> projects elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
+      description: >-
+        The type that the specified <code class="paramref">selector</code> projects elements from
+
+        this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
     return:
       type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TResult}}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
@@ -713,14 +785,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: SelectNotNull
     path: ../src/Enumerables.cs
-    startLine: 224
+    startLine: 335
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code> to the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by applying the specified
 
-    elements from this one, retaining only those projections that are not <code>null</code>.
+    <code class="paramref">selector</code> to the elements from this one, retaining only
+
+    those projections that are not <code>null</code>.
   example: []
   syntax:
     content: public static IEnumerable<TResult> SelectNotNull<TElement, TResult>(this IEnumerable<TElement> elements, Func<TElement, TResult?> selector)
@@ -730,12 +804,18 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: selector
       type: System.Func{{TElement},{TResult}}
-      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TResult</code>.
+      description: >-
+        A function from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TResult</code>.
     typeParameters:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: TResult
-      description: The type that the specified <code class="paramref">selector</code> projects elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
+      description: >-
+        The type that the specified <code class="paramref">selector</code> projects elements from
+
+        this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to.
     return:
       type: System.Collections.Generic.IEnumerable{{TResult}}
       description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
@@ -763,11 +843,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: SequenceHashCode
     path: ../src/Enumerables.cs
-    startLine: 237
+    startLine: 354
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Provides the hash code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, computed over the elements it contains.
+  summary: >-
+    Provides the hash code for this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, computed over
+
+    the elements it contains.
   example: []
   syntax:
     content: public static int SequenceHashCode<TElement>(this IEnumerable<TElement> elements)
@@ -805,11 +888,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Shuffle
     path: ../src/Enumerables.cs
-    startLine: 248
+    startLine: 368
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order.
+  summary: >-
+    Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random
+
+    order.
   example: []
   syntax:
     content: public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements)
@@ -847,11 +933,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: Shuffle
     path: ../src/Enumerables.cs
-    startLine: 261
+    startLine: 383
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order induced by the specified <code class="paramref">random</code> number generator.
+  summary: >-
+    Provides the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> in a random order
+
+    induced by the specified <code class="paramref">random</code> number generator.
   example: []
   syntax:
     content: public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements, Random random)
@@ -892,18 +981,20 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: TakeWhileAggregate
     path: ../src/Enumerables.cs
-    startLine: 287
+    startLine: 425
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting the elements emitted by this one that satisfy the
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting the elements
 
-    specified <code class="paramref">predicate</code> when combined by the specified <code class="paramref">accumulator</code>. The
+    emitted by this one that satisfy the specified <code class="paramref">predicate</code>
 
-    combination against which the specified <code class="paramref">predicate</code> is evaluated is initialized by the
+    when combined by the specified <code class="paramref">accumulator</code>. The combination
 
-    specified <code class="paramref">seed</code>.
+    against which the specified <code class="paramref">predicate</code> is evaluated is
+
+    initialized by the specified <code class="paramref">seed</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> TakeWhileAggregate<TElement, TAccumulate>(this IEnumerable<TElement> elements, TAccumulate seed, Func<TAccumulate, TElement, TAccumulate> accumulator, Func<TAccumulate, TElement, bool> predicate)
@@ -913,30 +1004,42 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: seed
       type: '{TAccumulate}'
-      description: The initial value from <code class="typeparamref">TAccumulate</code> with which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined.
+      description: >-
+        The initial value from <code class="typeparamref">TAccumulate</code> with which elements
+
+        from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined.
     - id: accumulator
       type: System.Func{{TAccumulate},{TElement},{TAccumulate}}
       description: >-
-        A function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code>
-            pairs to <code class="typeparamref">TAccumulate</code>.
+        A function from <code class="typeparamref">TAccumulate</code>-
+
+        <code class="typeparamref">TElement</code> pairs to <code class="typeparamref">TAccumulate</code>.
     - id: predicate
       type: System.Func{{TAccumulate},{TElement},System.Boolean}
       description: >-
-        A function from <code class="typeparamref">TAccumulate</code>-<code class="typeparamref">TElement</code> pairs
-            to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
+        A function from <code class="typeparamref">TAccumulate</code>-
+
+        <code class="typeparamref">TElement</code> pairs to <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref>.
     typeParameters:
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: TAccumulate
       description: >-
-        The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are combined,
-            and against which the specified <code class="paramref">predicate</code> is evaluated.
+        The type into which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        combined, and against which the specified <code class="paramref">predicate</code> is
+
+        evaluated.
     return:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: >-
-        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the elements emitted by the enumerator for this one
-            until their combination, induced by the specified <code class="paramref">accumulator</code>, no longer satisfies the
-            specified <code class="paramref">predicate</code>.
+        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> that contains the elements emitted by the
+
+        enumerator for this one until their combination, induced by the specified
+
+        <code class="paramref">accumulator</code>, no longer satisfies the specified
+
+        <code class="paramref">predicate</code>.
     content.vb: Public Shared Function TakeWhileAggregate(Of TElement, TAccumulate)(elements As IEnumerable(Of TElement), seed As TAccumulate, accumulator As Func(Of TAccumulate, TElement, TAccumulate), predicate As Func(Of TAccumulate, TElement, Boolean)) As IEnumerable(Of TElement)
   overload: Extensions.Enumerables.TakeWhileAggregate*
   nameWithType.vb: Enumerables.TakeWhileAggregate(Of TElement, TAccumulate)(IEnumerable(Of TElement), TAccumulate, Func(Of TAccumulate, TElement, TAccumulate), Func(Of TAccumulate, TElement, Boolean))
@@ -961,11 +1064,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ThrowIfDuplicates
     path: ../src/Enumerables.cs
-    startLine: 315
+    startLine: 460
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Verifies that no pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are equal.
+  summary: >-
+    Verifies that no pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+    equal.
   example: []
   syntax:
     content: public static IEnumerable<TElement> ThrowIfDuplicates<TElement>(this IEnumerable<TElement> elements)
@@ -979,16 +1085,15 @@ items:
     return:
       type: System.Collections.Generic.IEnumerable{{TElement}}
       description: >-
-        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if no pair of them are
-            equal.
+        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if no
+
+        pair of them are equal.
     content.vb: Public Shared Function ThrowIfDuplicates(Of TElement)(elements As IEnumerable(Of TElement)) As IEnumerable(Of TElement)
   overload: Extensions.Enumerables.ThrowIfDuplicates*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
-    description: >-
-      If any pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
-          equal.
+    description: If any pair of elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are equal.
   nameWithType.vb: Enumerables.ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
   fullName.vb: Extensions.Enumerables.ThrowIfDuplicates(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
   name.vb: ThrowIfDuplicates(Of TElement)(IEnumerable(Of TElement))
@@ -1011,14 +1116,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ThrowIfDuplicatesBy
     path: ../src/Enumerables.cs
-    startLine: 333
+    startLine: 492
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Verifies that the specified <code class="paramref">selector</code> maps every element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>
+    Verifies that the specified <code class="paramref">selector</code> maps every element
 
-    to a unique value from <code class="typeparamref">TKey</code>.
+    from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to a unique value from
+
+    <code class="typeparamref">TKey</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> ThrowIfDuplicatesBy<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, TKey> selector)
@@ -1028,25 +1135,37 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: selector
       type: System.Func{{TElement},{TKey}}
-      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+      description: >-
+        A function from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TKey</code>.
     typeParameters:
     - id: TKey
       description: >-
-        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are compared for
-            uniqueness.
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        compared for uniqueness.
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
       type: System.Collections.Generic.IEnumerable{{TElement}}
-      description: A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if the specified <code class="paramref">selector</code> maps every element in it to a unique value from <code class="typeparamref">TKey</code>.
+      description: >-
+        A new <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> containing the elements from this one if
+
+        the specified <code class="paramref">selector</code>
+
+        maps every element in it to a unique value from <code class="typeparamref">TKey</code>.
     content.vb: Public Shared Function ThrowIfDuplicatesBy(Of TKey, TElement)(elements As IEnumerable(Of TElement), selector As Func(Of TElement, TKey)) As IEnumerable(Of TElement)
   overload: Extensions.Enumerables.ThrowIfDuplicatesBy*
   exceptions:
   - type: System.InvalidOperationException
     commentId: T:System.InvalidOperationException
     description: >-
-      If the specified <code class="paramref">selector</code> does not map every
-          element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to a unique value in <code class="typeparamref">TKey</code>.
+      If the specified <code class="paramref">selector</code> does not map every element from
+
+      this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to a unique value in
+
+      <code class="typeparamref">TKey</code>.
   nameWithType.vb: Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
   fullName.vb: Extensions.Enumerables.ThrowIfDuplicatesBy(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, TKey))
   name.vb: ThrowIfDuplicatesBy(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, TKey))
@@ -1069,14 +1188,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ToDictionaryInverse
     path: ../src/Enumerables.cs
-    startLine: 360
+    startLine: 533
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code>
+    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
-    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimage.
+    specified <code class="paramref">selector</code> to the elements from this
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimage.
   example: []
   syntax:
     content: 'public static IDictionary<TKey, TElement> ToDictionaryInverse<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector) where TKey : notnull'
@@ -1086,10 +1207,16 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: selector
       type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
-      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+      description: >-
+        A relation from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TKey</code>.
     typeParameters:
     - id: TKey
-      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+      description: >-
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        distinguished.
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
@@ -1102,7 +1229,10 @@ items:
     commentId: T:System.ArgumentException
     description: >-
       If the inverse of the specified <code class="paramref">selector</code> applied to the
-          elements from <code class="typeparamref">TKey</code> does not define a function to <code class="typeparamref">TElement</code>.
+
+      elements from <code class="typeparamref">TKey</code> does not define a function to
+
+      <code class="typeparamref">TElement</code>.
   nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
   fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)))
   name.vb: ToDictionaryInverse(Of TKey, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)))
@@ -1125,16 +1255,20 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ToDictionaryInverse
     path: ../src/Enumerables.cs
-    startLine: 381
+    startLine: 575
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">keySelector</code>
+    Provides the <xref href="System.Collections.Generic.IDictionary%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
-    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value obtained by
+    specified <code class="paramref">keySelector</code> to the elements from this
 
-    applying the specified <code class="paramref">valueSelector</code> to its preimage.
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value
+
+    obtained by applying the specified <code class="paramref">valueSelector</code> to its
+
+    preimage.
   example: []
   syntax:
     content: 'public static IDictionary<TKey, TValue> ToDictionaryInverse<TKey, TValue, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector) where TKey : notnull'
@@ -1144,15 +1278,27 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: keySelector
       type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
-      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+      description: >-
+        A relation from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TKey</code>.
     - id: valueSelector
       type: System.Func{{TElement},{TValue}}
-      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TValue</code>.
+      description: >-
+        A function from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TValue</code>.
     typeParameters:
     - id: TKey
-      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+      description: >-
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        distinguished.
     - id: TValue
-      description: The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is mapped.
+      description: >-
+        The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is
+
+        mapped.
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
@@ -1165,7 +1311,10 @@ items:
     commentId: T:System.ArgumentException
     description: >-
       If the inverse of the specified <code class="paramref">keySelector</code> applied to the
-          elements from <code class="typeparamref">TKey</code> does not define a function to <code class="typeparamref">TValue</code>.
+
+      elements from <code class="typeparamref">TKey</code> does not define a function to
+
+      <code class="typeparamref">TValue</code>.
   nameWithType.vb: Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
   fullName.vb: Extensions.Enumerables.ToDictionaryInverse(Of TKey, TValue, TElement)(System.Collections.Generic.IEnumerable(Of TElement), System.Func(Of TElement, System.Collections.Generic.IEnumerable(Of TKey)), System.Func(Of TElement, TValue))
   name.vb: ToDictionaryInverse(Of TKey, TValue, TElement)(IEnumerable(Of TElement), Func(Of TElement, IEnumerable(Of TKey)), Func(Of TElement, TValue))
@@ -1188,14 +1337,16 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ToLookupInverse
     path: ../src/Enumerables.cs
-    startLine: 397
+    startLine: 603
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">selector</code>
+    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
-    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimages.
+    specified <code class="paramref">selector</code> to the elements from this
+
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with its preimages.
   example: []
   syntax:
     content: public static ILookup<TKey, TElement> ToLookupInverse<TKey, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> selector)
@@ -1205,10 +1356,16 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: selector
       type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
-      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+      description: >-
+        A relation from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TKey</code>.
     typeParameters:
     - id: TKey
-      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+      description: >-
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        distinguished.
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
@@ -1238,16 +1395,20 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: ToLookupInverse
     path: ../src/Enumerables.cs
-    startLine: 416
+    startLine: 640
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the specified <code class="paramref">keySelector</code>
+    Provides the <xref href="System.Linq.ILookup%602" data-throw-if-not-resolved="false"></xref> induced by applying the
 
-    to the elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value obtained by
+    specified <code class="paramref">keySelector</code> to the elements from this
 
-    applying the specified <code class="paramref">valueSelector</code> to its preimages.
+    <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>, and associating each result with the value
+
+    obtained by applying the specified <code class="paramref">valueSelector</code> to its
+
+    preimages.
   example: []
   syntax:
     content: public static ILookup<TKey, TValue> ToLookupInverse<TKey, TValue, TElement>(this IEnumerable<TElement> elements, Func<TElement, IEnumerable<TKey>> keySelector, Func<TElement, TValue> valueSelector)
@@ -1257,15 +1418,27 @@ items:
       description: This <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     - id: keySelector
       type: System.Func{{TElement},System.Collections.Generic.IEnumerable{{TKey}}}
-      description: A relation from <code class="typeparamref">TElement</code> to <code class="typeparamref">TKey</code>.
+      description: >-
+        A relation from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TKey</code>.
     - id: valueSelector
       type: System.Func{{TElement},{TValue}}
-      description: A function from <code class="typeparamref">TElement</code> to <code class="typeparamref">TValue</code>.
+      description: >-
+        A function from <code class="typeparamref">TElement</code> to
+
+        <code class="typeparamref">TValue</code>.
     typeParameters:
     - id: TKey
-      description: The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are distinguished.
+      description: >-
+        The type over which elements from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> are
+
+        distinguished.
     - id: TValue
-      description: The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is mapped.
+      description: >-
+        The type to which each element from this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> is
+
+        mapped.
     - id: TElement
       description: The type of element held by this <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref>.
     return:
@@ -1295,14 +1468,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: WhereNot
     path: ../src/Enumerables.cs
-    startLine: 436
+    startLine: 669
   assemblies:
   - Extensions
   namespace: Extensions
   summary: >-
-    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements from this one that do not satisfy
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements
 
-    the specified <code class="paramref">predicate</code>.
+    from this one that do not satisfy the specified <code class="paramref">predicate</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElements> WhereNot<TElements>(this IEnumerable<TElements> elements, Func<TElements, bool> predicate)
@@ -1343,11 +1516,14 @@ items:
       repo: git@github.com:jeffrey-w/Extensions.git
     id: WhereNotNull
     path: ../src/Enumerables.cs
-    startLine: 447
+    startLine: 685
   assemblies:
   - Extensions
   namespace: Extensions
-  summary: Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements from this one that are not <code>null</code>.
+  summary: >-
+    Provides the <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> induced by selecting those elements
+
+    from this one that are not <code>null</code>.
   example: []
   syntax:
     content: public static IEnumerable<TElement> WhereNotNull<TElement>(this IEnumerable<TElement> elements)
