@@ -6,6 +6,27 @@ namespace Extensions;
 public static class Types
 {
     /// <summary>
+    /// Determines whether the <c>null</c> value belongs to this <see cref="Type"/>.
+    /// </summary>
+    /// <param name="type">This <see cref="Type"/>.</param>
+    /// <returns><c>true</c> if the <c>null</c> value belongs to this <see cref="Type"/>.</returns>
+    [Obsolete("This extension method is deprecated, and will be removed in a future version. Prefer the corresponding extension property instead.")]
+    public static bool IsNullable(this Type type)
+    {
+        return !type.IsValueType || Nullable.GetUnderlyingType(type) is not null;
+    }
+    
+    /// <summary>
+    /// Determines whether this <see cref="Type"/> is static.
+    /// </summary>
+    /// <param name="type">This <see cref="Type"/>.</param>
+    /// <returns><c>true</c> if this <see cref="Type"/> is static.</returns>
+    public static bool IsStatic(this Type type)
+    {
+        return type is { IsAbstract: true, IsSealed: true };
+    }
+    
+    /// <summary>
     /// Provides every <see cref="Type"/> from witch this one derives.
     /// </summary>
     /// <remarks>The provided collection of <see cref="Type"/>s excludes <c>typeof(object)</c>.</remarks>
