@@ -34,7 +34,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Extra.Extensions/Extra.Extensions/docs/_site
+          path: Extra.Extensions/docs/_site
 
   deploy:
     needs: build
