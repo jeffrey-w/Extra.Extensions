@@ -20,14 +20,4 @@ public static class Members
         return member.GetCustomAttributes<TAttribute>()
                      .Any();
     }
-
-    /// <summary>
-    /// Determines whether this <see cref="Type"/> is static.
-    /// </summary>
-    /// <param name="type">This <see cref="Type"/>.</param>
-    /// <returns><c>true</c> if this <see cref="Type"/> is static.</returns>
-    public static bool IsStatic(this Type type)
-    {
-        return type is { IsAbstract: true, IsSealed: true };
-    }
 }
