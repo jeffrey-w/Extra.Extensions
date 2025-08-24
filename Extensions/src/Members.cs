@@ -3,7 +3,7 @@ using System.Reflection;
 namespace Extensions;
 
 /// <summary>
-/// The <c>MemberInfo</c> class provides additional operations on the
+/// The <c>Members</c> class provides additional operations on the
 /// <see cref="MemberInfo" /> type.
 /// </summary>
 public static class Members
