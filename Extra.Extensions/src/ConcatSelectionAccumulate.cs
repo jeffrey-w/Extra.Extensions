@@ -2,19 +2,19 @@ namespace Extra.Extensions;
 
 internal static class ConcatSelectionAccumulate
 {
-    public static ConcatSelectionAggregator<TElement> Empty<TElement>(Func<TElement, IEnumerable<TElement>> selector)
+    public static ConcatSelectionAccumulate<TElement> Empty<TElement>(Func<TElement, IEnumerable<TElement>> selector)
     {
-        return new ConcatSelectionAggregator<TElement>([], [], selector);
+        return new ConcatSelectionAccumulate<TElement>([], [], selector);
     }
 }
 
-internal sealed class ConcatSelectionAggregator<TElement>
+internal sealed class ConcatSelectionAccumulate<TElement>
 {
     private readonly IEnumerable<TElement> _prefix;
     private readonly IEnumerable<TElement> _suffix;
     private readonly Func<TElement, IEnumerable<TElement>> _selector;
 
-    internal ConcatSelectionAggregator(
+    internal ConcatSelectionAccumulate(
         IEnumerable<TElement> prefix,
         IEnumerable<TElement> suffix,
         Func<TElement, IEnumerable<TElement>> selector)
@@ -24,9 +24,9 @@ internal sealed class ConcatSelectionAggregator<TElement>
         _selector = selector;
     }
 
-    public ConcatSelectionAggregator<TElement> Add(TElement element)
+    public ConcatSelectionAccumulate<TElement> Add(TElement element)
     {
-        return new ConcatSelectionAggregator<TElement>(
+        return new ConcatSelectionAccumulate<TElement>(
             _prefix.Append(element),
             _suffix.Concat(_selector(element)),
             _selector);
