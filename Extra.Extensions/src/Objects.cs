@@ -34,7 +34,7 @@ public static class Objects
     /// <returns>
     /// This <see cref="object" />, wrapped in a <see cref="HashSet{T}" />.
     /// </returns>
-    public static ISet<TElement> ToSingletonHashSet<TElement>(TElement element)
+    public static ISet<TElement> ToSingletonHashSet<TElement>(this TElement element)
     {
         return new HashSet<TElement> { element };
     }
