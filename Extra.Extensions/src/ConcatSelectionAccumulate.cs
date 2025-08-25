@@ -11,8 +11,8 @@ internal static class ConcatSelectionAccumulate
 internal sealed class ConcatSelectionAggregator<TElement>
 {
     private readonly IEnumerable<TElement> _prefix;
-    private readonly Func<TElement, IEnumerable<TElement>> _selector;
     private readonly IEnumerable<TElement> _suffix;
+    private readonly Func<TElement, IEnumerable<TElement>> _selector;
 
     internal ConcatSelectionAggregator(
         IEnumerable<TElement> prefix,

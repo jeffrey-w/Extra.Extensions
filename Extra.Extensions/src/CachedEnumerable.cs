@@ -4,8 +4,8 @@ namespace Extra.Extensions;
 
 internal sealed class CachedEnumerable<TElement>(IEnumerable<TElement> elements) : IEnumerable<TElement>
 {
-    private readonly List<TElement> _cache = [];
     private readonly IEnumerator<TElement> _enumerator = elements.GetEnumerator();
+    private readonly List<TElement> _cache = [];
 
     public IEnumerator<TElement> GetEnumerator()
     {
