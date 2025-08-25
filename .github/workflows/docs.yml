@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'Extra.Extensions/Extra.Extensions/**'
+      - 'Extra.Extensions/**'
       - '.github/workflows/docs.yml'
   workflow_dispatch:
 
