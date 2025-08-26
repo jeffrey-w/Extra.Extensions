@@ -7,7 +7,8 @@ namespace Extra.Extensions;
 public static class Objects
 {
     /// <summary>
-    /// Provides every <see cref="Type" /> associated with this <see cref="object" />.
+    /// Provides every <see cref="Type" /> to which this <see cref="object" />
+    /// belongs.
     /// </summary>
     /// <remarks>
     /// The provided collection of <see cref="Type" />s excludes <c>typeof(object)</c>.
