@@ -12,4 +12,4 @@ The Extra.Extensions library can be installed using [NuGet](https://www.nuget.or
 
 ## Code Repository
 
-Source code for ReflActive may be found [here](https://github.com/jeffrey-w/Extra.Extensions).
+Source code for Extra.Extensions may be found [here](https://github.com/jeffrey-w/Extra.Extensions).

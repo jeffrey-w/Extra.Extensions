@@ -8,7 +8,7 @@ The Extra.Extensions library can be installed using [NuGet](https://www.nuget.or
 
 ## Usage
 
-API documentation may be found [here](https://jeffrey-w.github.io/Extra.Extensions/).
+API documentation for the Extra.Extensions library may be found [here](https://jeffrey-w.github.io/Extra.Extensions/).
 
 ## Contributing
 
