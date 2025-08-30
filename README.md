@@ -4,11 +4,13 @@ The Extra.Extensions library provides additional operations on common types.
 
 ## Installation
 
-The Extra.Extensions library can be installed using [NuGet](https://www.nuget.org/packages/Extra.Extensions/).
+The Extra.Extensions library can be installed using
+[NuGet](https://www.nuget.org/packages/Extra.Extensions/).
 
 ## Usage
 
-API documentation for the Extra.Extensions library may be found [here](https://jeffrey-w.github.io/Extra.Extensions/).
+API documentation for the Extra.Extensions library may be found
+[here](https://jeffrey-w.github.io/Extra.Extensions/).
 
 ## Contributing
 
