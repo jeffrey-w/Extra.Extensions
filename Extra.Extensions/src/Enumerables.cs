@@ -7,6 +7,28 @@ namespace Extra.Extensions;
 public static class Enumerables
 {
     /// <summary>
+    /// Determines whether the <paramref name="first"/> and
+    /// <paramref name="second"/> <see cref="IEnumerable{T}"/>s are equal by
+    /// virtue of containing the same elements in the same order, or because
+    /// both are <c>null</c>.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element that the specified
+    /// <see cref="IEnumerable{T}"/>s hold.</typeparam>
+    /// <param name="first">One the <see cref="IEnumerable{T}"/>s to compare.</param>
+    /// <param name="second">The other <see cref="IEnumerable{T}"/> to compare.</param>
+    /// <param name="comparer">The <see cref="IEqualityComparer{T}"/> by which
+    /// comparisons are made.</param>
+    /// <returns><c>true</c> if both <see cref="IEnumerable{T}"/>s contain the
+    /// same elements in the same order, or are both <c>null</c>.</returns>
+    public static bool NullableSequenceEqual<TElement>(
+        IEnumerable<TElement>? first,
+        IEnumerable<TElement>? second,
+        IEqualityComparer<TElement>? comparer = null)
+    {
+        return first is null ? second is null : second is not null && first.SequenceEqual(second, comparer);
+    }
+    
+    /// <summary>
     /// Provides the element from <typeparamref name="TResult" /> obtained by combining
     /// the elements from this <see cref="IEnumerable{T}" /> into an element from
     /// <typeparamref name="TAccumulate" />, initialized by the specified
@@ -350,10 +372,26 @@ public static class Enumerables
     /// The type of element held by this <see cref="IEnumerable{T}" />.
     /// </typeparam>
     /// <param name="elements">This <see cref="IEnumerable{T}" />.</param>
+    /// <param name="comparer">The <see cref="IEqualityComparer{T}"/> by which
+    /// to compute hash codes.</param>
     /// <returns>The has code for this <see cref="IEnumerable{T}" />.</returns>
-    public static int SequenceHashCode<TElement>(this IEnumerable<TElement> elements)
+    public static int SequenceHashCode<TElement>(
+        this IEnumerable<TElement> elements,
+        IEqualityComparer<TElement>? comparer = null)
     {
-        return elements.Aggregate(0, HashCode.Combine);
+        return elements.Aggregate(
+            new HashCode(),
+            (code, element) => Combine(code, element, comparer),
+            code => code.ToHashCode());
+    }
+
+    private static HashCode Combine<TElement>(
+        HashCode code,
+        TElement element,
+        IEqualityComparer<TElement>? comparer)
+    {
+        code.Add(element, comparer);
+        return code;
     }
 
     /// <summary>
