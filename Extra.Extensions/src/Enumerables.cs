@@ -231,6 +231,24 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Provides the <see cref="IEnumerable{T}" /> that contains the elements from
+    /// this one, each associated with the ordinal at which it is emitted
+    /// incremented by the specified <paramref name="origin" />.
+    /// </summary>
+    /// <typeparam name="TElement">The type of element held by this
+    /// <see cref="IEnumerable{T}"/>.</typeparam>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <param name="origin">The offset by which the ordinal for each element is
+    /// incremented.</param>
+    /// <returns>A new <see cref="IEnumerable{T}"/>.</returns>
+    public static IEnumerable<(int index, TElement element)> IndexFrom<TElement>(
+        IEnumerable<TElement> elements,
+        int origin)
+    {
+        return elements.Select((element, index) => (index + origin, element));
+    }
+
+    /// <summary>
     /// Determines whether this <see cref="IEnumerable{T}" /> contains only one
     /// element.
     /// </summary>
