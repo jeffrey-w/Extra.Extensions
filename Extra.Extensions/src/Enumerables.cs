@@ -515,7 +515,7 @@ public static class Enumerables
     /// </exception>
     public static IEnumerable<TElement> ThrowIfDuplicates<TElement>(this IEnumerable<TElement> elements)
     {
-        return ThrowIfDuplicatesBy(elements, element => element);
+        return elements.ThrowIfDuplicatesBy(element => element);
     }
 
     /// <summary>
