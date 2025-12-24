@@ -60,6 +60,7 @@ public static class Enumerables
     /// <typeparamref name="TResult" />.
     /// </param>
     /// <returns>A new <typeparamref name="TResult" /> instance.</returns>
+    [Obsolete("This method will be removed in a future release.")]
     public static async Task<TResult> AggregateAsync<TElement, TAccumulate, TResult>(
         this IEnumerable<TElement> elements,
         TAccumulate seed,
@@ -344,6 +345,7 @@ public static class Enumerables
     /// <typeparamref name="TResult" />.
     /// </param>
     /// <returns>A new <see cref="IEnumerable{T}" />.</returns>
+    [Obsolete("This method will be removed in a future release.")]
     public static async Task<IEnumerable<TResult>> SelectAsync<TElement, TResult>(
         this IEnumerable<TElement> elements,
         Func<TElement, Task<TResult>> selector)
