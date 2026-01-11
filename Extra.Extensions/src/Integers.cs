@@ -11,7 +11,7 @@ public static class Integers
     /// <paramref name="other" /> one.
     /// </summary>
     /// <param name="i"> This <see cref="int" />.</param>
-    /// <param name="other">The <see cref="int" /> to compare against this one</param>
+    /// <param name="other">The <see cref="int" /> to compare against this one.</param>
     /// <returns>
     /// <c>true</c> if this <see cref="int" /> is one less than the
     /// <paramref name="other" /> one.
@@ -26,7 +26,7 @@ public static class Integers
     /// <paramref name="other" /> one.
     /// </summary>
     /// <param name="i"> This <see cref="int" />.</param>
-    /// <param name="other">The <see cref="int" /> to compare against this one</param>
+    /// <param name="other">The <see cref="int" /> to compare against this one.</param>
     /// <returns>
     /// <c>true</c> if this <see cref="int" /> is one greater than the
     /// <paramref name="other" /> one.
@@ -34,5 +34,18 @@ public static class Integers
     public static bool IsSuccessor(this int i, int other)
     {
         return other + 1 == i;
+    }
+
+    /// <summary>
+    /// Determines whether this <see cref="int"/> is a multiple of the
+    /// <paramref name="other"/> one.
+    /// </summary>
+    /// <param name="i">This <see cref="int"/>.</param>
+    /// <param name="other">The <see cref="int"/> to compare against this one</param>
+    /// <returns><c>true</c> if this <see cref="int"/> is a multiple of the
+    /// <see cref="other"/> one.</returns>
+    public static bool IsDividedBy(this int i, int other)
+    {
+        return i % other == 0;
     }
 }
