@@ -404,8 +404,67 @@ public static class Enumerables
             }
         }
 
-
+        /// <summary>
+        /// Verifies that this <see cref="IEnumerable{T}"/> is empty.
+        /// </summary>
+        /// <returns>
+        /// A new, empty <see cref="IEnumerable{T}" />.
+        /// </returns>
+        /// <exception cref="InvalidOperationException">
+        /// If this <see cref="IEnumerable{T}"/> is not empty.
+        /// </exception>
+        public IEnumerable<TElement> ThrowIfAny()
         {
+            return ThrowIfCountDuringEnumeration(elements, count => count > 0);
+        }
+
+        /// <summary>
+        /// Verifies that this <see cref="IEnumerable{T}"/> is not empty.
+        /// </summary>
+        /// <returns>
+        /// A new <see cref="IEnumerable{T}" /> that holds the same
+        /// <paramref name="elements"/> as this one.
+        /// </returns>
+        /// <exception cref="InvalidOperationException">
+        /// If this <see cref="IEnumerable{T}"/> is empty.
+        /// </exception>
+        public IEnumerable<TElement> ThrowIfNotAny()
+        {
+            return ThrowIfCountAfterEnumeration(elements, count => count == 0);
+        }
+
+        /// <summary>
+        /// Verifies that this <see cref="IEnumerable{T}"/> is empty or holds
+        /// more than one element.
+        /// </summary>
+        /// <returns>
+        /// A new <see cref="IEnumerable{T}" /> that holds the same
+        /// <paramref name="elements"/> as this one.
+        /// </returns>
+        /// <exception cref="InvalidOperationException">
+        /// If this <see cref="IEnumerable{T}"/> holds only one element.
+        /// </exception>
+        public IEnumerable<TElement> ThrowIfSingleton()
+        {
+            return ThrowIfCountAfterEnumeration(elements, count => count == 1);
+        }
+
+        /// <summary>
+        /// Verifies that this <see cref="IEnumerable{T}"/> holds only one element.
+        /// </summary>
+        /// <returns>
+        /// A new <see cref="IEnumerable{T}" /> that holds the same
+        /// <paramref name="elements"/> as this one.
+        /// </returns>
+        /// <exception cref="InvalidOperationException">
+        /// If this <see cref="IEnumerable{T}"/> is empty or holds more than one
+        /// element.
+        /// </exception>
+        public IEnumerable<TElement> ThrowIfNotSingleton()
+        {
+            return ThrowIfCountDuringEnumeration(elements, count => count > 1);
+        }
+
         /// <summary>
         /// Verifies that no pair of elements from this <see cref="IEnumerable{T}" /> are
         /// equal.
@@ -638,9 +697,34 @@ public static class Enumerables
         return keys.Select(key => (key, element));
     }
 
+    private static IEnumerable<TElement> ThrowIfCountDuringEnumeration<TElement>(
+        IEnumerable<TElement> elements,
+        Func<int, bool> predicate)
     {
+        var count = 0;
+        foreach (var element in elements)
+        {
+            if (predicate(++count))
+            {
+                throw new InvalidOperationException();
+            }
+            yield return element;
+        }
     }
 
+    private static IEnumerable<TElement> ThrowIfCountAfterEnumeration<TElement>(
+        IEnumerable<TElement> elements,
+        Func<int, bool> predicate)
     {
+        var count = 0;
+        foreach (var element in elements)
+        {
+            count++;
+            yield return element;
+        }
+        if (predicate(count))
+        {
+            throw new InvalidOperationException();
+        }
     }
 }
