@@ -597,14 +597,15 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Verifies that this <see cref="IEnumerable{T}"/> holds only one element.
+    /// Verifies that this <see cref="IEnumerable{T}"/> is empty or holds more
+    /// than one element.
     /// </summary>
     /// <returns>
-    /// A new <see cref="IEnumerable{T}"/> with the same element as this one.
+    /// A new <see cref="IEnumerable{T}"/> with the same elements as this one.
     /// </returns>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <exception cref="InvalidOperationException">
-    /// If this <see cref="IEnumerable{T}"/> does not hold only one element.
+    /// If this <see cref="IEnumerable{T}"/> dholds only one element.
     /// </exception>
     public static IEnumerable<TElement> ThrowIfSingleton<TElement>(this IEnumerable<TElement> elements)
     {
@@ -612,16 +613,15 @@ public static class Enumerables
     }
 
     /// <summary>
-    /// Verifies that this <see cref="IEnumerable{T}"/> holds more than one
-    /// element.
+    /// Verifies that this <see cref="IEnumerable{T}"/> holds only one element.
     /// </summary>
     /// <returns>
-    /// A new <see cref="IEnumerable{T}"/> that holds the same elements as this
+    /// A new <see cref="IEnumerable{T}"/> that holds the same element as this
     /// one.
     /// </returns>
     /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
     /// <exception cref="InvalidOperationException">
-    /// If this <see cref="IEnumerable{T}"/> is empty or holds only one element.
+    /// If this <see cref="IEnumerable{T}"/> does not hold only one element.
     /// </exception>
     public static IEnumerable<TElement> ThrowIfNotSingleton<TElement>(this IEnumerable<TElement> elements)
     {
