@@ -566,6 +566,100 @@ public static class Enumerables
     }
 
     /// <summary>
+    /// Verifies that this <see cref="IEnumerable{T}"/> is empty.
+    /// </summary>
+    /// <returns>
+    /// A new, empty <see cref="IEnumerable{T}" />.
+    /// </returns>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <exception cref="InvalidOperationException">
+    /// If this <see cref="IEnumerable{T}"/> is not empty.
+    /// </exception>
+    public static IEnumerable<TElement> ThrowIfAny<TElement>(this IEnumerable<TElement> elements)
+    {
+        return ThrowIfCountDuringEnumeration(elements, count => count > 0);
+    }
+
+    /// <summary>
+    /// Verifies that this <see cref="IEnumerable{T}"/> is not empty.
+    /// </summary>
+    /// <returns>
+    /// A new <see cref="IEnumerable{T}"/> that holds the same elements as this
+    /// one.
+    /// </returns>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <exception cref="InvalidOperationException">
+    /// If this <see cref="IEnumerable{T}"/> is empty.
+    /// </exception>
+    public static IEnumerable<TElement> ThrowIfNotAny<TElement>(this IEnumerable<TElement> elements)
+    {
+        return ThrowIfCountAfterEnumeration(elements, count => count == 0);
+    }
+
+    /// <summary>
+    /// Verifies that this <see cref="IEnumerable{T}"/> holds only one element.
+    /// </summary>
+    /// <returns>
+    /// A new <see cref="IEnumerable{T}"/> with the same element as this one.
+    /// </returns>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <exception cref="InvalidOperationException">
+    /// If this <see cref="IEnumerable{T}"/> does not hold only one element.
+    /// </exception>
+    public static IEnumerable<TElement> ThrowIfSingleton<TElement>(this IEnumerable<TElement> elements)
+    {
+        return ThrowIfCountAfterEnumeration(elements, count => count == 1);
+    }
+
+    /// <summary>
+    /// Verifies that this <see cref="IEnumerable{T}"/> holds more than one
+    /// element.
+    /// </summary>
+    /// <returns>
+    /// A new <see cref="IEnumerable{T}"/> that holds the same elements as this
+    /// one.
+    /// </returns>
+    /// <param name="elements">This <see cref="IEnumerable{T}"/>.</param>
+    /// <exception cref="InvalidOperationException">
+    /// If this <see cref="IEnumerable{T}"/> is empty or holds only one element.
+    /// </exception>
+    public static IEnumerable<TElement> ThrowIfNotSingleton<TElement>(this IEnumerable<TElement> elements)
+    {
+        return ThrowIfCountDuringEnumeration(elements, count => count != 1);
+    }
+    
+    private static IEnumerable<TElement> ThrowIfCountDuringEnumeration<TElement>(
+        IEnumerable<TElement> elements,
+        Func<int, bool> predicate)
+    {
+        var count = 0;
+        foreach (var element in elements)
+        {
+            if (predicate(++count))
+            {
+                throw new InvalidOperationException();
+            }
+            yield return element;
+        }
+    }
+
+    private static IEnumerable<TElement> ThrowIfCountAfterEnumeration<TElement>(
+        IEnumerable<TElement> elements,
+        Func<int, bool> predicate)
+    {
+        var count = 0;
+        foreach (var element in elements)
+        {
+            count++;
+            yield return element;
+        }
+        if (predicate(count))
+        {
+            throw new InvalidOperationException();
+        }
+    }
+
+    /// <summary>
     /// Provides the <see cref="IDictionary{TKey,TValue}" /> induced by applying the
     /// specified <paramref name="selector" /> to the elements from this
     /// <see cref="IEnumerable{T}" />, and associating each result with its preimage.
