@@ -6,46 +6,47 @@ namespace Extra.Extensions;
 /// </summary>
 public static class Integers
 {
-    /// <summary>
-    /// Determines whether this <see cref="int" /> is one less than the
-    /// <paramref name="other" /> one.
-    /// </summary>
     /// <param name="i"> This <see cref="int" />.</param>
-    /// <param name="other">The <see cref="int" /> to compare against this one.</param>
-    /// <returns>
-    /// <c>true</c> if this <see cref="int" /> is one less than the
-    /// <paramref name="other" /> one.
-    /// </returns>
-    public static bool IsPredecessor(this int i, int other)
+    extension(int i)
     {
-        return other - 1 == i;
-    }
-    
-    /// <summary>
-    /// Determines whether this <see cref="int" /> is one greater than the
-    /// <paramref name="other" /> one.
-    /// </summary>
-    /// <param name="i"> This <see cref="int" />.</param>
-    /// <param name="other">The <see cref="int" /> to compare against this one.</param>
-    /// <returns>
-    /// <c>true</c> if this <see cref="int" /> is one greater than the
-    /// <paramref name="other" /> one.
-    /// </returns>
-    public static bool IsSuccessor(this int i, int other)
-    {
-        return other + 1 == i;
-    }
+        /// <summary>
+        /// Determines whether this <see cref="int" /> is one less than the
+        /// <paramref name="other" /> one.
+        /// </summary>
+        /// <param name="other">The <see cref="int" /> to compare against this one.</param>
+        /// <returns>
+        /// <c>true</c> if this <see cref="int" /> is one less than the
+        /// <paramref name="other" /> one.
+        /// </returns>
+        public bool IsPredecessor(int other)
+        {
+            return other - 1 == i;
+        }
 
-    /// <summary>
-    /// Determines whether this <see cref="int"/> is a multiple of the
-    /// <paramref name="other"/> one.
-    /// </summary>
-    /// <param name="i">This <see cref="int"/>.</param>
-    /// <param name="other">The <see cref="int"/> to compare against this one</param>
-    /// <returns><c>true</c> if this <see cref="int"/> is a multiple of the
-    /// <see cref="other"/> one.</returns>
-    public static bool IsDividedBy(this int i, int other)
-    {
-        return i % other == 0;
+        /// <summary>
+        /// Determines whether this <see cref="int" /> is one greater than the
+        /// <paramref name="other" /> one.
+        /// </summary>
+        /// <param name="other">The <see cref="int" /> to compare against this one.</param>
+        /// <returns>
+        /// <c>true</c> if this <see cref="int" /> is one greater than the
+        /// <paramref name="other" /> one.
+        /// </returns>
+        public bool IsSuccessor(int other)
+        {
+            return other + 1 == i;
+        }
+
+        /// <summary>
+        /// Determines whether this <see cref="int"/> is a multiple of the
+        /// <paramref name="other"/> one.
+        /// </summary>
+        /// <param name="other">The <see cref="int"/> to compare against this one</param>
+        /// <returns><c>true</c> if this <see cref="int"/> is a multiple of the
+        /// <see cref="other"/> one.</returns>
+        public bool IsDividedBy(int other)
+        {
+            return i % other == 0;
+        }
     }
 }
