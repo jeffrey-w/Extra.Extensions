@@ -425,7 +425,7 @@ public static class Enumerables
     /// <returns>A new <see cref="IEnumerable{T}" />.</returns>
     public static IEnumerable<TElement> Shuffle<TElement>(this IEnumerable<TElement> elements)
     {
-        return elements.Shuffle(new Random());
+        return elements.Shuffle(Random.Shared);
     }
 
     /// <summary>
